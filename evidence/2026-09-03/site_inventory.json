@@ -1,5 +1,6 @@
 {
-  "collected_utc": "2026-09-03T21:20:00Z",
+  "status": "ok",
+  "collected_utc": "2026-09-03T22:17:16Z",
   "source": "evolutionnetzero.com sitemap_index.xml (Yoast SEO)",
   "collection_method": "direct HTTPS fetch, no auth",
   "pages_count": 36,
