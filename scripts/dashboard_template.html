@@ -1,0 +1,625 @@
+<title>ENZ AI Visibility</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --bg:#0a0b0a; --surface:#131513; --surface-raised:#181b18; --surface-hi:#1e221e;
+    --border:#262b26; --border-soft:#1c201c;
+    --ink:#F1F4F0; --ink-soft:#A7AEA4; --ink-faint:#6B726A;
+    --lime:#B8FF3E; --lime-ink:#0d1400; --lime-soft:rgba(184,255,62,0.14); --lime-border:rgba(184,255,62,0.4);
+    --amber:#F2B24B; --amber-soft:rgba(242,178,75,0.14);
+    --red:#F26B6B; --red-soft:rgba(242,107,107,0.14);
+    --blue:#6BB8F2; --blue-soft:rgba(107,184,242,0.14);
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 12px 32px -16px rgba(0,0,0,0.6);
+    color-scheme: dark;
+  }
+  *{box-sizing:border-box;}
+  html,body{background:var(--bg);}
+  body{
+    color:var(--ink); font-family:"IBM Plex Sans",-apple-system,sans-serif;
+    margin:0; padding:0 0 4rem;
+  }
+  .mono{font-family:"IBM Plex Mono",monospace;}
+  a{color:var(--lime); text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  ::selection{background:var(--lime-soft); color:var(--ink);}
+
+  /* ---------- Top bar ---------- */
+  .topbar{
+    display:flex; align-items:center; gap:0.9rem;
+    padding:1.1rem 1.5rem; border-bottom:1px solid var(--border);
+    background:var(--surface); position:sticky; top:0; z-index:20;
+    flex-wrap:wrap;
+  }
+  .topbar img.logo{height:34px; width:auto; display:block; filter:drop-shadow(0 0 12px rgba(242,107,107,0.15));}
+  .topbar .brandtext{display:flex; flex-direction:column; line-height:1.15;}
+  .topbar .brandtext b{font-family:"Manrope",sans-serif; font-weight:800; font-size:1rem; letter-spacing:-0.01em;}
+  .topbar .brandtext span{font-size:0.72rem; color:var(--ink-faint); font-family:"IBM Plex Mono",monospace; letter-spacing:0.03em;}
+  .topbar .spacer{flex:1;}
+  .topbar .runinfo{font-family:"IBM Plex Mono",monospace; font-size:0.72rem; color:var(--ink-soft); text-align:right;}
+  .topbar .runinfo b{color:var(--lime); font-weight:600;}
+
+  .wrap{max-width:1280px; margin:0 auto; padding:0 1.5rem;}
+
+  /* ---------- Hero ---------- */
+  .hero{display:grid; grid-template-columns:1.5fr 1fr; gap:1px; background:var(--border); border:1px solid var(--border); border-radius:14px; overflow:hidden; margin:1.5rem 0; box-shadow:var(--shadow);}
+  @media (max-width:860px){.hero{grid-template-columns:1fr;}}
+  .hero .panel{background:var(--surface); padding:1.75rem;}
+  .hero .eyebrow{font-family:"IBM Plex Mono",monospace; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--lime); margin-bottom:0.6rem;}
+  .hero h1{font-family:"Manrope",sans-serif; font-weight:800; font-size:clamp(1.7rem,3.4vw,2.5rem); line-height:1.08; margin:0 0 0.9rem; text-wrap:balance;}
+  .hero h1 .accent{color:var(--lime);}
+  .hero p{color:var(--ink-soft); font-size:0.95rem; line-height:1.6; max-width:52ch; margin:0;}
+  .hero .side-label{font-family:"IBM Plex Mono",monospace; font-size:0.7rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); margin-bottom:0.6rem;}
+  .hero .side-title{font-family:"Manrope",sans-serif; font-weight:700; font-size:1.05rem; line-height:1.4; margin:0 0 0.6rem;}
+  .hero .side-body{color:var(--ink-soft); font-size:0.88rem; line-height:1.55; margin:0 0 1rem;}
+  .statuspill{display:inline-flex; align-items:center; gap:0.4em; font-family:"IBM Plex Mono",monospace; font-size:0.76rem; padding:0.3rem 0.6rem; border-radius:999px;}
+  .statuspill::before{content:""; width:6px; height:6px; border-radius:50%; background:currentColor;}
+  .statuspill.baseline{background:var(--blue-soft); color:var(--blue);}
+
+  /* ---------- Stat tile row ---------- */
+  .stats{display:grid; grid-template-columns:repeat(6,1fr); gap:1px; background:var(--border); border:1px solid var(--border); border-radius:14px; overflow:hidden; margin-bottom:1.5rem; box-shadow:var(--shadow);}
+  @media (max-width:1100px){.stats{grid-template-columns:repeat(3,1fr);}}
+  @media (max-width:620px){.stats{grid-template-columns:repeat(2,1fr);}}
+  .stat{background:var(--surface); padding:1.1rem 1.15rem; display:flex; flex-direction:column; gap:0.3rem; min-width:0;}
+  .stat .label{font-family:"IBM Plex Mono",monospace; font-size:0.64rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--ink-faint);}
+  .stat .value{font-family:"Manrope",sans-serif; font-weight:800; font-size:1.6rem; font-variant-numeric:tabular-nums;}
+  .stat .sub{font-size:0.72rem; color:var(--ink-soft);}
+  .stat .value.lime{color:var(--lime);}
+  .stat .value.amber{color:var(--amber);}
+
+  /* ---------- Tabs ---------- */
+  .tabbar{display:flex; gap:0.35rem; overflow-x:auto; padding:0.5rem; background:var(--surface); border:1px solid var(--border); border-radius:12px; margin-bottom:1.5rem; -ms-overflow-style:none; scrollbar-width:none;}
+  .tabbar::-webkit-scrollbar{display:none;}
+  .tabbtn{
+    font-family:"IBM Plex Sans",sans-serif; font-weight:600; font-size:0.84rem;
+    color:var(--ink-soft); background:transparent; border:none; padding:0.55rem 0.95rem;
+    border-radius:8px; cursor:pointer; white-space:nowrap; transition:background .15s,color .15s;
+  }
+  .tabbtn:hover{background:var(--surface-hi); color:var(--ink);}
+  .tabbtn.active{background:var(--lime); color:var(--lime-ink);}
+  .tabbtn:focus-visible{outline:2px solid var(--lime); outline-offset:2px;}
+
+  .tabpanel{display:none;}
+  .tabpanel.active{display:block;}
+
+  /* ---------- Cards / sections ---------- */
+  .card{background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.4rem; box-shadow:var(--shadow); margin-bottom:1.25rem;}
+  .card h2{font-family:"Manrope",sans-serif; font-weight:700; font-size:1.08rem; margin:0 0 0.9rem;}
+  .card h2 .count{color:var(--ink-faint); font-family:"IBM Plex Mono",monospace; font-size:0.75rem; font-weight:400; margin-left:0.5em;}
+  .card p.desc{color:var(--ink-soft); font-size:0.85rem; margin:-0.5rem 0 1rem; max-width:70ch;}
+  .grid2{display:grid; grid-template-columns:1fr 1fr; gap:1.25rem;}
+  @media (max-width:860px){.grid2{grid-template-columns:1fr;}}
+
+  /* ---------- Filter bar ---------- */
+  .filterbar{display:flex; flex-wrap:wrap; gap:0.6rem; margin-bottom:1.25rem; background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:0.9rem 1rem;}
+  .filterbar select, .filterbar input[type="text"]{
+    background:var(--surface-hi); color:var(--ink); border:1px solid var(--border); border-radius:7px;
+    padding:0.4rem 0.6rem; font-family:"IBM Plex Sans",sans-serif; font-size:0.78rem; min-width:9rem;
+  }
+  .filterbar label{font-family:"IBM Plex Mono",monospace; font-size:0.65rem; color:var(--ink-faint); text-transform:uppercase; letter-spacing:0.05em; display:flex; flex-direction:column; gap:0.25rem;}
+  .filterbar .clearbtn{align-self:flex-end; background:transparent; border:1px solid var(--border); color:var(--ink-soft); border-radius:7px; padding:0.4rem 0.7rem; font-size:0.76rem; cursor:pointer; font-family:"IBM Plex Sans",sans-serif;}
+  .filterbar .clearbtn:hover{border-color:var(--lime); color:var(--lime);}
+
+  /* ---------- Table ---------- */
+  .tablewrap{overflow-x:auto; border:1px solid var(--border); border-radius:10px;}
+  table{border-collapse:collapse; width:100%; font-size:0.82rem;}
+  th{
+    text-align:left; font-family:"IBM Plex Mono",monospace; font-size:0.66rem; letter-spacing:0.04em; text-transform:uppercase;
+    color:var(--ink-faint); background:var(--surface-hi); padding:0.6rem 0.8rem; border-bottom:1px solid var(--border);
+    position:sticky; top:0;
+  }
+  td{padding:0.65rem 0.8rem; border-bottom:1px solid var(--border-soft); color:var(--ink-soft); vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  tr:hover td{background:var(--surface-hi);}
+  td.strong{color:var(--ink); font-weight:600;}
+  .badge{display:inline-flex; align-items:center; gap:0.35em; font-family:"IBM Plex Mono",monospace; font-size:0.7rem; padding:0.2rem 0.55rem; border-radius:999px; white-space:nowrap;}
+  .badge.yes{background:var(--lime-soft); color:var(--lime);}
+  .badge.no{background:var(--surface-hi); color:var(--ink-faint);}
+  .badge.stage-decision{background:var(--amber-soft); color:var(--amber);}
+  .badge.stage-consideration{background:var(--blue-soft); color:var(--blue);}
+  .badge.stage-awareness{background:var(--surface-hi); color:var(--ink-soft);}
+  .badge.conf-high{background:var(--lime-soft); color:var(--lime);}
+  .badge.conf-medium{background:var(--amber-soft); color:var(--amber);}
+  .badge.conf-low{background:var(--red-soft); color:var(--red);}
+
+  /* ---------- Bars ---------- */
+  .barrow{display:flex; align-items:center; gap:0.7rem; padding:0.4rem 0; font-size:0.82rem;}
+  .barrow .barname{width:11rem; flex-shrink:0; color:var(--ink); font-weight:500; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+  .barrow .bartrack{flex:1; height:8px; background:var(--surface-hi); border-radius:4px; overflow:hidden;}
+  .barrow .barfill{height:100%; background:var(--lime); border-radius:4px;}
+  .barrow .barval{width:3rem; text-align:right; font-family:"IBM Plex Mono",monospace; color:var(--ink-soft); flex-shrink:0;}
+
+  /* ---------- Evidence excerpt block ---------- */
+  .evrecord{border:1px solid var(--border); border-radius:10px; padding:1rem 1.1rem; margin-bottom:0.8rem; background:var(--surface-raised);}
+  .evrecord .evtop{display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:0.5rem;}
+  .evrecord .evquery{font-weight:600; color:var(--ink); font-size:0.92rem;}
+  .evrecord .evmeta{font-family:"IBM Plex Mono",monospace; font-size:0.68rem; color:var(--ink-faint);}
+  .evrecord .evexcerpt{font-style:italic; color:var(--ink-soft); font-size:0.85rem; border-left:2px solid var(--lime-border); padding-left:0.7rem; margin:0.5rem 0;}
+  .evrecord .evcompetitors{display:flex; flex-wrap:wrap; gap:0.4rem; margin-top:0.5rem;}
+  .evrecord .evchip{font-family:"IBM Plex Mono",monospace; font-size:0.7rem; background:var(--surface-hi); color:var(--ink-soft); padding:0.2rem 0.55rem; border-radius:6px;}
+
+  .notebox{background:var(--amber-soft); border:1px solid var(--border); border-radius:10px; padding:0.85rem 1rem; font-size:0.82rem; color:var(--ink); margin-bottom:1rem; line-height:1.55;}
+  .notebox.blue{background:var(--blue-soft);}
+  .notebox b{color:var(--amber);}
+  .notebox.blue b{color:var(--blue);}
+
+  .actioncard{display:flex; gap:1rem; align-items:flex-start; border:1px solid var(--border); border-radius:10px; padding:1rem 1.15rem; margin-bottom:0.8rem; background:var(--surface-raised);}
+  .actioncard .rank{font-family:"Manrope",sans-serif; font-weight:800; font-size:1.3rem; color:var(--lime); width:2rem; flex-shrink:0;}
+  .actioncard .body h3{margin:0 0 0.3rem; font-size:0.95rem; font-family:"Manrope",sans-serif;}
+  .actioncard .body p{margin:0; color:var(--ink-soft); font-size:0.84rem; line-height:1.55;}
+  .actioncard .tags{display:flex; gap:0.4rem; margin-top:0.5rem; flex-wrap:wrap;}
+  .tag{font-family:"IBM Plex Mono",monospace; font-size:0.66rem; padding:0.15rem 0.5rem; border-radius:6px; background:var(--surface-hi); color:var(--ink-faint);}
+
+  .metricdef{border-bottom:1px solid var(--border-soft); padding:0.9rem 0;}
+  .metricdef:last-child{border-bottom:none;}
+  .metricdef .mname{font-family:"Manrope",sans-serif; font-weight:700; font-size:0.92rem; margin-bottom:0.3rem;}
+  .metricdef .mformula{font-family:"IBM Plex Mono",monospace; font-size:0.74rem; color:var(--lime); margin-bottom:0.35rem;}
+  .metricdef .mdesc{font-size:0.83rem; color:var(--ink-soft); line-height:1.55;}
+  .metricdef .mnot{font-size:0.78rem; color:var(--ink-faint); margin-top:0.3rem;}
+
+  .exportbox textarea{width:100%; min-height:220px; background:var(--surface-hi); color:var(--ink-soft); border:1px solid var(--border); border-radius:8px; font-family:"IBM Plex Mono",monospace; font-size:0.72rem; padding:0.8rem; resize:vertical;}
+  .exportbtns{display:flex; gap:0.6rem; margin:0.6rem 0;}
+  .exportbtns button{background:var(--lime); color:var(--lime-ink); border:none; border-radius:7px; padding:0.5rem 0.9rem; font-family:"IBM Plex Sans",sans-serif; font-weight:600; font-size:0.8rem; cursor:pointer;}
+  .exportbtns button.secondary{background:var(--surface-hi); color:var(--ink);}
+  .exportbtns button:focus-visible{outline:2px solid var(--lime); outline-offset:2px;}
+
+  footer{max-width:1280px; margin:2rem auto 0; padding:0 1.5rem; font-family:"IBM Plex Mono",monospace; font-size:0.72rem; color:var(--ink-faint); text-align:center;}
+  [hidden]{display:none!important;}
+</style>
+
+<div class="topbar">
+  <img class="logo" src="data:image/png;base64,{{LOGO_B64}}" alt="Evolution NetZero EZ logo">
+  <div class="brandtext"><b>AI VISIBILITY</b><span>evolutionnetzero.com &middot; independent audit</span></div>
+  <div class="spacer"></div>
+  <div class="runinfo">Last run: <b id="lastRunLabel">—</b><br>Coverage <span id="coverageLabel">—</span> &middot; Confidence <span id="confidenceLabel">—</span></div>
+</div>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="panel">
+      <div class="eyebrow">Day-1 Baseline &middot; Executive read-out</div>
+      <h1>One clear hit.<br><span class="accent">Fourteen open questions.</span></h1>
+      <p id="heroBody">Evolution NetZero surfaced on exactly one of fifteen neutral hotel-energy questions today — and it was the one closest to its own positioning. The other fourteen went to named competitors or nobody. This baseline exists to close that gap, not to celebrate the one hit.</p>
+      <div style="margin-top:1rem;"><span class="statuspill baseline">Direction: baseline (no prior day yet) &middot; Confidence: 85%</span></div>
+    </div>
+    <div class="panel" style="background:var(--surface-raised);">
+      <div class="side-label">What this means commercially</div>
+      <div class="side-title">This is a starting line, not a scoreboard.</div>
+      <p class="side-body">One real citation of evolutionnetzero.com, on a query that almost paraphrases ENZ's own homepage copy, is a useful signal that the positioning is legible to a search/AI layer. It is not evidence of broad awareness — 13 of 15 questions returned zero ENZ presence, several on ENZ's own home turf (Dorset hospitality).</p>
+      <div class="side-label">Single highest-priority action</div>
+      <p class="side-body" id="topActionBody" style="color:var(--ink);">—</p>
+    </div>
+  </div>
+
+  <div class="stats" id="statTiles"></div>
+
+  <div class="tabbar" id="tabbar"></div>
+
+  <div id="panels"></div>
+
+</div>
+
+<footer>Independent audit &middot; not connected to HubSpot &middot; built from evidence in <span class="mono">evidence/2026-09-03/</span> &middot; see Methodology tab for full limitations</footer>
+
+<script id="data-metrics" type="application/json">{{METRICS_JSON}}</script>
+<script id="data-core15" type="application/json">{{CORE15_JSON}}</script>
+<script id="data-news" type="application/json">{{NEWS_JSON}}</script>
+<script id="data-site" type="application/json">{{SITE_JSON}}</script>
+<script id="data-promptbank" type="application/json">{{PROMPTBANK_JSON}}</script>
+<script id="data-history" type="application/json">{{HISTORY_JSON}}</script>
+
+<script>
+const METRICS = JSON.parse(document.getElementById('data-metrics').textContent);
+const CORE15 = JSON.parse(document.getElementById('data-core15').textContent);
+const NEWS = JSON.parse(document.getElementById('data-news').textContent);
+const SITE = JSON.parse(document.getElementById('data-site').textContent);
+const PROMPTBANK = JSON.parse(document.getElementById('data-promptbank').textContent);
+const HISTORY = JSON.parse(document.getElementById('data-history').textContent);
+const RECORDS = CORE15.records;
+const promptMeta = Object.fromEntries(PROMPTBANK.core_15.map(p => [p.id, p]));
+
+function fmtPct(v){ return (v===null||v===undefined) ? 'N/A' : v + '%'; }
+function esc(s){ return (s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+// ---------- top bar ----------
+document.getElementById('lastRunLabel').textContent = METRICS.run_date;
+document.getElementById('coverageLabel').textContent = fmtPct(METRICS.prompt_coverage_pct);
+document.getElementById('confidenceLabel').textContent = fmtPct(METRICS.confidence_score_pct);
+
+// ---------- top action ----------
+const decisionGaps = METRICS.content_gap_prompts.filter(g => ['decision','purchase-intent'].includes(g.funnel_stage));
+const dorsetGaps = decisionGaps.filter(g => g.query.toLowerCase().includes('dorset'));
+const orderedGaps = dorsetGaps.concat(decisionGaps.filter(g => !dorsetGaps.includes(g)));
+if (orderedGaps.length){
+  const top = orderedGaps[0];
+  document.getElementById('topActionBody').textContent =
+    `Close the gap on "${top.query}" — ${top.competitors_present.join(', ')} appeared, ENZ did not. Publish or strengthen a page that answers this exact question with evidence.`;
+}
+
+// ---------- stat tiles ----------
+const tiles = [
+  {label:'Independent visibility', value: fmtPct(METRICS.independent_visibility_pct), sub: `${METRICS.independent_visibility_evidence.length} of ${METRICS.sample.prompts_scheduled} core prompts`, cls:'lime'},
+  {label:'7-day change', value: METRICS.trends['7_day'].available ? (METRICS.trends['7_day'].independent_visibility_change_pct_points+'pp') : 'N/A', sub: METRICS.trends['7_day'].available ? `vs ${METRICS.trends['7_day'].baseline_date}` : 'no prior run yet', cls:''},
+  {label:'High-intent visibility', value: fmtPct(METRICS.high_intent_visibility_pct), sub: `${METRICS.high_intent_sample_size} decision/purchase prompts`, cls:'amber'},
+  {label:'Share of voice', value: fmtPct(METRICS.competitor_share_of_voice_pct), sub: `vs ${Object.keys(METRICS.mention_counts).length-1} named competitors`, cls:''},
+  {label:'Owned citation rate', value: fmtPct(METRICS.owned_citation_rate_pct), sub: `${METRICS.owned_citations.length} of ${METRICS.total_citations_captured} citations`, cls:'lime'},
+  {label:'Coverage & confidence', value: fmtPct(METRICS.prompt_coverage_pct), sub: `confidence ${fmtPct(METRICS.confidence_score_pct)}`, cls:''},
+];
+document.getElementById('statTiles').innerHTML = tiles.map(t => `
+  <div class="stat">
+    <span class="label">${t.label}</span>
+    <span class="value ${t.cls}">${t.value}</span>
+    <span class="sub">${t.sub}</span>
+  </div>`).join('');
+
+// ---------- tabs ----------
+const TABS = [
+  {id:'overview', label:'Overview'},
+  {id:'matrix', label:'Prompt Matrix'},
+  {id:'competitors', label:'Competitors'},
+  {id:'citations', label:'Citations'},
+  {id:'gaps', label:'Content Gaps'},
+  {id:'site', label:'Site & Search Evidence'},
+  {id:'trends', label:'Trends & Actions'},
+  {id:'methodology', label:'Methodology'},
+  {id:'raw', label:'Raw Evidence'},
+];
+document.getElementById('tabbar').innerHTML = TABS.map((t,i) =>
+  `<button class="tabbtn${i===0?' active':''}" data-tab="${t.id}">${t.label}</button>`).join('');
+
+function showTab(id){
+  document.querySelectorAll('.tabbtn').forEach(b => b.classList.toggle('active', b.dataset.tab===id));
+  document.querySelectorAll('.tabpanel').forEach(p => p.classList.toggle('active', p.id==='panel-'+id));
+}
+document.getElementById('tabbar').addEventListener('click', e => {
+  const btn = e.target.closest('.tabbtn'); if(!btn) return;
+  showTab(btn.dataset.tab);
+});
+
+// ---------- build panels ----------
+const panels = document.getElementById('panels');
+
+function panel(id, html){
+  const d = document.createElement('div');
+  d.className = 'tabpanel' + (id==='overview' ? ' active' : '');
+  d.id = 'panel-' + id;
+  d.innerHTML = html;
+  panels.appendChild(d);
+}
+
+// -- Overview --
+panel('overview', `
+  <div class="grid2">
+    <div class="card">
+      <h2>The one hit, in full</h2>
+      <p class="desc">Every field captured for the single prompt where Evolution NetZero appeared today.</p>
+      ${(() => {
+        const r = RECORDS.find(r => r.enz_mentioned);
+        return `<div class="evrecord">
+          <div class="evtop"><span class="evquery">${esc(r.query)}</span><span class="evmeta">${r.date_time_utc} &middot; ${esc(r.source_engine)}</span></div>
+          <div class="evexcerpt">&ldquo;${esc(r.evidence_excerpt)}&rdquo;</div>
+          <div style="font-size:0.8rem;color:var(--ink-soft);">Position: <b style="color:var(--lime)">#${r.enz_recommendation_position}</b> &middot; Cited: <a href="${r.enz_url_cited}" target="_blank">${r.enz_url_cited}</a> &middot; Confidence: ${r.confidence}</div>
+        </div>`;
+      })()}
+    </div>
+    <div class="card">
+      <h2>Today's briefing</h2>
+      <p class="desc">Generated by scripts/daily_briefing.py from real change thresholds.</p>
+      <div class="notebox blue"><b>Day 1.</b> No prior run exists, so nothing below is a "change" — it's the baseline every future day is measured against.</div>
+      <ul style="font-size:0.85rem; color:var(--ink-soft); line-height:1.8; padding-left:1.1rem; margin:0;">
+        <li>Independent visibility: <b style="color:var(--ink)">${fmtPct(METRICS.independent_visibility_pct)}</b></li>
+        <li>Content-gap count: <b style="color:var(--ink)">${METRICS.content_gap_count}</b> of ${METRICS.sample.prompts_run} prompts</li>
+        <li>New organisations observed: <b style="color:var(--ink)">${METRICS.new_competitors_this_run.length}</b></li>
+        <li>Sources unavailable: <b style="color:var(--amber)">${NEWS.unavailable_sources.length ? NEWS.unavailable_sources.map(u=>esc(u.source)).join(', ') : 'none'}</b></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <h2>Independent GPT / web audit — what "visibility" means here</h2>
+    <p class="desc">15 fixed, neutral prompts (never mentioning ENZ) run once through Claude's own web search. This is a proxy for AI/web answer visibility — it is explicitly <b>not</b> a query to ChatGPT, Gemini, Copilot or Perplexity, which have no free API access. See Methodology for the full caveat.</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Prompt</th><th>Stage</th><th>ENZ</th><th>Competitors named</th></tr></thead>
+      <tbody>
+        ${RECORDS.map(r => `<tr>
+          <td class="strong">${esc(r.query)}</td>
+          <td><span class="badge stage-${r.funnel_stage}">${r.funnel_stage}</span></td>
+          <td><span class="badge ${r.enz_mentioned?'yes':'no'}">${r.enz_mentioned?'Yes · #'+r.enz_recommendation_position:'No'}</span></td>
+          <td>${r.competitors_mentioned.map(c=>esc(c.name)).join(', ') || '—'}</td>
+        </tr>`).join('')}
+      </tbody>
+    </table></div>
+  </div>
+`);
+
+// -- Prompt Matrix (with filters) --
+panel('matrix', `
+  <div class="filterbar" id="matrixFilters">
+    <label>Stage<select id="f-stage"><option value="">All</option></select></label>
+    <label>Sector<select id="f-sector"><option value="">All</option></select></label>
+    <label>Service<select id="f-service"><option value="">All</option></select></label>
+    <label>Location<select id="f-location"><option value="">All</option></select></label>
+    <label>Mention status<select id="f-mention"><option value="">All</option><option value="yes">Mentioned</option><option value="no">Not mentioned</option></select></label>
+    <label>Confidence<select id="f-confidence"><option value="">All</option></select></label>
+    <button class="clearbtn" id="clearFilters">Clear filters</button>
+  </div>
+  <div class="card">
+    <h2>Prompt-performance matrix<span class="count" id="matrixCount"></span></h2>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Prompt</th><th>Sector</th><th>Service</th><th>Location</th><th>Stage</th><th>ENZ</th><th>Confidence</th></tr></thead>
+      <tbody id="matrixBody"></tbody>
+    </table></div>
+  </div>
+`);
+
+// -- Competitors --
+panel('competitors', (() => {
+  const entries = Object.entries(METRICS.mention_counts).filter(([k])=>k!=='Evolution NetZero').sort((a,b)=>b[1]-a[1]);
+  const max = Math.max(...entries.map(e=>e[1]), 1);
+  const seedSet = new Set(PROMPTBANK.seed_competitors.map(c=>c.name));
+  return `
+  <div class="card">
+    <h2>Mentions across today's 15 prompts<span class="count">${entries.length} organisations</span></h2>
+    <p class="desc">Evolution NetZero mentions: <b style="color:var(--lime)">${METRICS.mention_counts['Evolution NetZero']||0}</b>. Everything below is a competitor, classified as seed-list (from the original brief) or emerging (newly observed).</p>
+    ${entries.map(([name,count]) => `
+      <div class="barrow">
+        <span class="barname" title="${esc(name)}">${esc(name)} ${seedSet.has(name)?'<span class="tag" style="margin-left:0.3em;">seed</span>':'<span class="tag" style="margin-left:0.3em;color:var(--lime);">emerging</span>'}</span>
+        <span class="bartrack"><span class="barfill" style="width:${count/max*100}%"></span></span>
+        <span class="barval">${count}</span>
+      </div>`).join('')}
+  </div>
+  <div class="card">
+    <h2>Role classification</h2>
+    <p class="desc">Technology suppliers, installation contractors and vendor-agnostic consultancies are tracked as distinct roles, not lumped together.</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Organisation</th><th>Role (as evidenced)</th><th>Seen in</th></tr></thead>
+      <tbody>
+        ${(() => {
+          const roleMap = {};
+          RECORDS.forEach(r => r.competitors_mentioned.forEach(c => {
+            if(!roleMap[c.name]) roleMap[c.name] = {role:c.role, prompts:new Set()};
+            roleMap[c.name].prompts.add(r.id);
+          }));
+          return Object.entries(roleMap).sort((a,b)=>b[1].prompts.size-a[1].prompts.size)
+            .map(([name,d]) => `<tr><td class="strong">${esc(name)}</td><td>${esc(d.role)}</td><td class="mono">${[...d.prompts].join(', ')}</td></tr>`).join('');
+        })()}
+      </tbody>
+    </table></div>
+  </div>`;
+})());
+
+// -- Citations --
+panel('citations', (() => {
+  const allCitations = [];
+  RECORDS.forEach(r => {
+    if(r.enz_url_cited) allCitations.push({name:'Evolution NetZero', url:r.enz_url_cited, owned:true, promptId:r.id});
+    r.competitors_mentioned.forEach(c => { if(c.url) allCitations.push({name:c.name, url:c.url, owned:false, promptId:r.id}); });
+  });
+  const domainCounts = {};
+  allCitations.forEach(c => { try{ const d = new URL(c.url).hostname.replace('www.',''); domainCounts[d]=(domainCounts[d]||0)+1; }catch(e){} });
+  const sortedDomains = Object.entries(domainCounts).sort((a,b)=>b[1]-a[1]);
+  const max = Math.max(...sortedDomains.map(d=>d[1]),1);
+  return `
+  <div class="grid2">
+    <div class="card">
+      <h2>Top cited domains<span class="count">${sortedDomains.length} domains</span></h2>
+      ${sortedDomains.slice(0,15).map(([d,c]) => `
+        <div class="barrow">
+          <span class="barname" title="${esc(d)}">${esc(d)}${d.includes('evolutionnetzero')?' <span class="tag" style="color:var(--lime);">owned</span>':''}</span>
+          <span class="bartrack"><span class="barfill" style="width:${c/max*100}%; ${d.includes('evolutionnetzero')?'background:var(--lime);':'background:var(--blue);'}"></span></span>
+          <span class="barval">${c}</span>
+        </div>`).join('')}
+    </div>
+    <div class="card">
+      <h2>Owned vs external</h2>
+      <p class="desc">Owned citation rate: <b style="color:var(--lime)">${fmtPct(METRICS.owned_citation_rate_pct)}</b> (${METRICS.owned_citations.length} of ${METRICS.total_citations_captured} total captured citations).</p>
+      <div class="notebox">Only one owned citation exists in today's evidence — <a href="${METRICS.owned_citations[0]||'#'}" target="_blank">${esc(METRICS.owned_citations[0]||'none')}</a>. A 2.3% owned-citation rate off a single-day, 15-prompt sample is a data point, not yet a trend — treat with the same caution as the visibility score itself.</div>
+    </div>
+  </div>
+  <div class="card">
+    <h2>All captured citations<span class="count">${allCitations.length} records</span></h2>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Organisation</th><th>URL</th><th>Owned</th><th>From prompt</th></tr></thead>
+      <tbody>${allCitations.map(c => `<tr><td class="strong">${esc(c.name)}</td><td><a href="${c.url}" target="_blank" class="mono" style="font-size:0.75rem;">${esc(c.url)}</a></td><td>${c.owned?'<span class="badge yes">Owned</span>':'<span class="badge no">External</span>'}</td><td class="mono">${c.promptId}</td></tr>`).join('')}</tbody>
+    </table></div>
+  </div>`;
+})());
+
+// -- Content gaps --
+panel('gaps', `
+  <div class="card">
+    <h2>Zero-visibility gaps<span class="count">${METRICS.content_gap_prompts.length} of ${METRICS.sample.prompts_run} prompts</span></h2>
+    <p class="desc">Prompts where a competitor was named and Evolution NetZero was not. Ranked with Dorset-located, decision-stage prompts first (explicit location priority).</p>
+    ${orderedGaps.map((g,i) => `
+      <div class="actioncard">
+        <span class="rank">${String(i+1).padStart(2,'0')}</span>
+        <div class="body">
+          <h3>${esc(g.query)}</h3>
+          <p>Named instead: ${g.competitors_present.map(esc).join(', ')}</p>
+          <div class="tags"><span class="tag stage-${g.funnel_stage}">${g.funnel_stage}</span><span class="tag">${g.id}</span></div>
+        </div>
+      </div>`).join('')}
+  </div>
+`);
+
+// -- Site & search evidence --
+panel('site', `
+  <div class="grid2">
+    <div class="card">
+      <h2>evolutionnetzero.com sitemap<span class="count">${SITE.pages_count} pages &middot; ${SITE.posts_count} posts</span></h2>
+      <p class="desc">Collected directly from the site's own Yoast sitemap — this is conventional site evidence, kept separate from the AI-visibility score.</p>
+      <div class="tablewrap" style="max-height:320px;"><table>
+        <thead><tr><th>URL</th></tr></thead>
+        <tbody>${SITE.pages.map(u => `<tr><td><a href="${u}" target="_blank" class="mono" style="font-size:0.76rem;">${esc(u.replace('https://evolutionnetzero.com',''))||'/'}</a></td></tr>`).join('')}</tbody>
+      </table></div>
+    </div>
+    <div class="card">
+      <h2>News &amp; press evidence<span class="count">Google News RSS</span></h2>
+      <p class="desc">Free, no key. Zero coverage found for the exact brand name — shown plainly, not hidden.</p>
+      ${NEWS.queries.map(q => `
+        <div class="evrecord">
+          <div class="evtop"><span class="evquery">"${esc(q.query)}"</span><span class="evmeta">${q.result_count} article(s)</span></div>
+          ${q.result_count===0 ? '<div class="evexcerpt">No coverage found.</div>' :
+            `<ul style="margin:0.4rem 0 0; padding-left:1.1rem; font-size:0.8rem; color:var(--ink-soft);">${(q.articles||q.titles||[]).slice(0,4).map(a => `<li>${esc(a.title || a)}${a.publisher ? ' — '+esc(a.publisher) : ''}</li>`).join('')}</ul>`}
+        </div>`).join('')}
+      ${NEWS.unavailable_sources.length ? `<div class="notebox"><b>Unavailable this run:</b> ${NEWS.unavailable_sources.map(u=>esc(u.source)+' — '+esc(u.reason)).join('; ')}</div>` : ''}
+      <div class="notebox blue">Google Search Console, GA4 and Bing Webmaster Tools are <b>not connected</b>. This section will show real ranking/traffic evidence once credentials are added — see Methodology.</div>
+    </div>
+  </div>
+`);
+
+// -- Trends & actions --
+panel('trends', `
+  <div class="card">
+    <h2>7 / 30 / 90-day trends</h2>
+    ${['7_day','30_day','90_day'].map(k => {
+      const t = METRICS.trends[k];
+      const label = k.replace('_',' ');
+      return t.available
+        ? `<div class="notebox">${label}: <b>${t.independent_visibility_change_pct_points>=0?'+':''}${t.independent_visibility_change_pct_points}pp</b> vs ${t.baseline_date}</div>`
+        : `<div class="notebox blue">${label}: <b>not available yet</b> — ${esc(t.reason)}</div>`;
+    }).join('')}
+    <p class="desc" style="margin-top:0.8rem;">History currently holds ${HISTORY.runs.length} run(s). Trends populate automatically as the scheduled daily audit accumulates real history — nothing here is interpolated or estimated.</p>
+  </div>
+  <div class="card">
+    <h2>Recommended actions<span class="count">ranked by intent &times; evidence gap</span></h2>
+    ${orderedGaps.slice(0,6).map((g,i) => `
+      <div class="actioncard">
+        <span class="rank">${i+1}</span>
+        <div class="body">
+          <h3>${esc(g.query)}</h3>
+          <p>Publish or strengthen a page directly answering this question, with quantified evidence (case study, comparison framework, or original data) — not a generic service page. Competitors currently owning this answer: ${g.competitors_present.map(esc).join(', ')}.</p>
+          <div class="tags"><span class="tag stage-${g.funnel_stage}">${g.funnel_stage}</span>${g.query.toLowerCase().includes('dorset')?'<span class="tag" style="color:var(--lime);">location priority</span>':''}</div>
+        </div>
+      </div>`).join('')}
+  </div>
+`);
+
+// -- Methodology --
+panel('methodology', `
+  <div class="card">
+    <h2>What this measures — and what it deliberately does not</h2>
+    <p class="desc">These are independent visibility scores. None of them are market share, revenue, traffic or lead generation, and none of them are blended with HubSpot data.</p>
+    ${[
+      ['Independent visibility', 'ENZ hits ÷ valid neutral prompts run', '% of the core prompt set where ENZ appeared organically, unprompted.'],
+      ['Top-3 recommendation rate', 'ENZ hits in top 3 ÷ valid prompts run', 'How often ENZ was among the first three identifiable recommendations, when mentioned at all.'],
+      ['Owned citation rate', 'evolutionnetzero.com citations ÷ all captured citations', 'How much of the citation pool ENZ\'s own site accounts for, vs everyone else\'s.'],
+      ['Third-party validation rate', 'third-party mentions ÷ relevant external sources', 'Not yet computed — needs a defined review/discussion source set first. Shown as N/A, not zero.'],
+      ['Competitor share of voice', 'ENZ mentions ÷ (ENZ + all monitored competitor mentions)', 'A relative attention share among named organisations only — not a market metric.'],
+      ['High-intent visibility', 'ENZ hits ÷ decision+purchase-stage prompts only', 'Visibility restricted to the prompts closest to an actual buying decision.'],
+      ['Prompt coverage', 'prompts successfully run ÷ prompts scheduled', 'How complete today\'s data collection actually was.'],
+      ['Content-gap score', 'count of high-value prompts where ENZ absent, competitor present', 'Where the biggest, most commercially relevant blind spots are.'],
+      ['Source-quality breakdown', 'citations tiered: government / trade publication / general web / low value', 'A composition breakdown, not a single 0–100 score — collapsing it to one number would overstate precision on a 15-prompt sample.'],
+      ['Confidence score', 'sample completeness × sample-size ratio × single-engine cap', 'Capped at 85% while only one search backend (Claude Web Search) is in use — see limitations below.'],
+    ].map(([name,formula,desc]) => `<div class="metricdef"><div class="mname">${name}</div><div class="mformula">${formula}</div><div class="mdesc">${desc}</div></div>`).join('')}
+  </div>
+  <div class="card">
+    <h2>Known limitations (read before trusting any single number)</h2>
+    <div class="notebox blue"><b>Single search backend.</b> The AI-answer audit runs through Claude's own web search only. There is no free API access to ChatGPT, Gemini, Copilot or Perplexity, so this dashboard never claims to represent them — every record is labelled "Claude Web Search", not "AI engines" generically.</div>
+    <div class="notebox blue"><b>Day-1 baseline.</b> 7/30/90-day trends require real history that doesn't exist yet. They will populate from the second scheduled run onward — never backfilled or estimated.</div>
+    <div class="notebox blue"><b>Third-party validation rate is N/A</b>, not zero — it needs a defined set of review/discussion sources to check against, which hasn't been built yet.</div>
+    <div class="notebox blue"><b>GSC / GA4 / Bing are not connected.</b> Their evidence sections will populate once credentials are supplied — see the repo's .env.example.</div>
+    <div class="notebox"><b>GDELT was rate-limited this run</b> and is marked unavailable in the evidence file, not substituted with an estimate.</div>
+  </div>
+`);
+
+// -- Raw evidence viewer --
+panel('raw', `
+  <div class="card">
+    <h2>Raw evidence — every field, every record</h2>
+    <p class="desc">The exact JSON collected today. This is what every number on this dashboard traces back to.</p>
+    <div class="exportbox">
+      <div class="exportbtns">
+        <button id="copyBtn">Copy JSON to clipboard</button>
+        <button class="secondary" id="loadBtn">Load pasted JSON below</button>
+      </div>
+      <textarea id="rawJson">${JSON.stringify(CORE15, null, 2)}</textarea>
+    </div>
+  </div>
+  ${RECORDS.map(r => `
+    <div class="evrecord">
+      <div class="evtop"><span class="evquery">${esc(r.query)}</span><span class="evmeta">${r.id} &middot; ${r.date_time_utc} &middot; ${esc(r.source_engine)} &middot; <span class="badge conf-${r.confidence}">${r.confidence} confidence</span></span></div>
+      <div class="evexcerpt">&ldquo;${esc(r.evidence_excerpt)}&rdquo;</div>
+      <div style="font-size:0.78rem; color:var(--ink-soft); line-height:1.6;">
+        Result type: ${esc(r.result_type)} &middot; ENZ mentioned: <b>${r.enz_mentioned?'Yes':'No'}</b>${r.enz_mentioned?` &middot; Position #${r.enz_recommendation_position} &middot; URL: <a href="${r.enz_url_cited}" target="_blank">${r.enz_url_cited}</a>`:''}<br>
+        Sentiment/context: ${esc(r.sentiment_context)}<br>
+        Collection method: ${esc(CORE15.collection_method)}
+      </div>
+      ${r.competitors_mentioned.length ? `<div class="evcompetitors">${r.competitors_mentioned.map(c=>`<span class="evchip">${esc(c.name)} — ${esc(c.role)}</span>`).join('')}</div>` : ''}
+      ${r.notes ? `<div style="font-size:0.78rem; color:var(--ink-faint); margin-top:0.5rem;">Note: ${esc(r.notes)}</div>` : ''}
+    </div>`).join('')}
+`);
+
+// ---------- matrix filter logic ----------
+function uniq(arr){ return [...new Set(arr)].filter(Boolean).sort(); }
+function fillSelect(id, values){
+  const sel = document.getElementById(id);
+  values.forEach(v => { const o = document.createElement('option'); o.value=v; o.textContent=v; sel.appendChild(o); });
+}
+fillSelect('f-stage', uniq(RECORDS.map(r=>r.funnel_stage)));
+fillSelect('f-sector', uniq(Object.values(promptMeta).map(m=>m.sector)));
+fillSelect('f-service', uniq(Object.values(promptMeta).map(m=>m.service)));
+fillSelect('f-location', uniq(Object.values(promptMeta).map(m=>m.location)));
+fillSelect('f-confidence', uniq(RECORDS.map(r=>r.confidence)));
+
+function renderMatrix(){
+  const fStage = document.getElementById('f-stage').value;
+  const fSector = document.getElementById('f-sector').value;
+  const fService = document.getElementById('f-service').value;
+  const fLocation = document.getElementById('f-location').value;
+  const fMention = document.getElementById('f-mention').value;
+  const fConfidence = document.getElementById('f-confidence').value;
+
+  const rows = RECORDS.filter(r => {
+    const m = promptMeta[r.id] || {};
+    if (fStage && r.funnel_stage !== fStage) return false;
+    if (fSector && m.sector !== fSector) return false;
+    if (fService && m.service !== fService) return false;
+    if (fLocation && m.location !== fLocation) return false;
+    if (fMention === 'yes' && !r.enz_mentioned) return false;
+    if (fMention === 'no' && r.enz_mentioned) return false;
+    if (fConfidence && r.confidence !== fConfidence) return false;
+    return true;
+  });
+
+  document.getElementById('matrixCount').textContent = `${rows.length} of ${RECORDS.length} prompts`;
+  document.getElementById('matrixBody').innerHTML = rows.map(r => {
+    const m = promptMeta[r.id] || {};
+    return `<tr>
+      <td class="strong">${esc(r.query)}</td>
+      <td>${esc(m.sector||'—')}</td>
+      <td>${esc(m.service||'—')}</td>
+      <td>${esc(m.location||'—')}</td>
+      <td><span class="badge stage-${r.funnel_stage}">${r.funnel_stage}</span></td>
+      <td><span class="badge ${r.enz_mentioned?'yes':'no'}">${r.enz_mentioned?'Yes':'No'}</span></td>
+      <td><span class="badge conf-${r.confidence}">${r.confidence}</span></td>
+    </tr>`;
+  }).join('');
+}
+['f-stage','f-sector','f-service','f-location','f-mention','f-confidence'].forEach(id => {
+  document.getElementById(id).addEventListener('change', renderMatrix);
+});
+document.getElementById('clearFilters').addEventListener('click', () => {
+  ['f-stage','f-sector','f-service','f-location','f-mention','f-confidence'].forEach(id => document.getElementById(id).value = '');
+  renderMatrix();
+});
+renderMatrix();
+
+// ---------- export / import ----------
+document.getElementById('copyBtn').addEventListener('click', () => {
+  const ta = document.getElementById('rawJson');
+  ta.select();
+  navigator.clipboard.writeText(ta.value).then(() => {
+    const btn = document.getElementById('copyBtn');
+    const orig = btn.textContent; btn.textContent = 'Copied!';
+    setTimeout(()=>btn.textContent=orig, 1500);
+  }).catch(()=>{});
+});
+document.getElementById('loadBtn').addEventListener('click', () => {
+  try {
+    const parsed = JSON.parse(document.getElementById('rawJson').value);
+    alert(`Parsed OK: ${parsed.records ? parsed.records.length : Object.keys(parsed).length} record(s) found. (This preview parses/validates only — republish the artifact to apply new data permanently.)`);
+  } catch(e) {
+    alert('Invalid JSON: ' + e.message);
+  }
+});
+</script>
