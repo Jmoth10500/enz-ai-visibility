@@ -1,0 +1,260 @@
+{
+  "run_date": "2026-09-03",
+  "computed_utc": "2026-09-03T22:05:30Z",
+  "sample": {
+    "prompts_run": 15,
+    "prompts_scheduled": 15,
+    "coverage_pct": 100.0
+  },
+  "independent_visibility_pct": 6.7,
+  "independent_visibility_evidence": [
+    "core-14"
+  ],
+  "top3_recommendation_rate_pct": 6.7,
+  "top3_evidence": [
+    "core-14"
+  ],
+  "owned_citation_rate_pct": 2.3,
+  "owned_citations": [
+    "https://evolutionnetzero.com/"
+  ],
+  "total_citations_captured": 43,
+  "third_party_validation_rate_pct": null,
+  "third_party_validation_note": "Not computed this run: no third-party review/discussion sources were collected yet (see methodology limitations). Do not treat as zero.",
+  "competitor_share_of_voice_pct": 2.3,
+  "mention_counts": {
+    "Hospitality Energy Saving & Sustainability": 3,
+    "SensorFlow": 3,
+    "Bell Group": 2,
+    "Telnergy": 2,
+    "Zero Carbon Services": 2,
+    "Advantage Utilities": 1,
+    "Eden Energy Partners": 1,
+    "SMS Energy": 1,
+    "ADK": 1,
+    "Inergy Group": 1,
+    "Spectra Energy Group": 1,
+    "Mitsubishi Electric": 1,
+    "Willmott Dixon Interiors": 1,
+    "Sustainable Building Services": 1,
+    "Businesswise Solutions": 1,
+    "Clearworld": 1,
+    "PasCheck Retrofit": 1,
+    "RCS Limited": 1,
+    "Energy Audits UK": 1,
+    "Schneider Electric": 1,
+    "Telkonet": 1,
+    "Powerstar": 1,
+    "Olympus Power": 1,
+    "Powerdown220": 1,
+    "Watford Control": 1,
+    "National Retrofit Hub": 1,
+    "KiWi Power": 1,
+    "Bournemouth Energy": 1,
+    "ST Electrical Contractors": 1,
+    "Dorset Community Energy": 1,
+    "Nationwide Energy Consultants": 1,
+    "Envigilance": 1,
+    "Honeywell": 1,
+    "Evolution NetZero": 1,
+    "Mission Net Zero": 1,
+    "National Retrofit Solutions": 1
+  },
+  "high_intent_visibility_pct": 12.5,
+  "high_intent_sample_size": 8,
+  "prompt_coverage_pct": 100.0,
+  "content_gap_count": 13,
+  "content_gap_prompts": [
+    {
+      "id": "core-01",
+      "query": "Which UK consultancies reduce hotel energy costs and carbon emissions?",
+      "funnel_stage": "consideration",
+      "competitors_present": [
+        "Advantage Utilities",
+        "Eden Energy Partners",
+        "SMS Energy"
+      ]
+    },
+    {
+      "id": "core-02",
+      "query": "What are the best firms for HVAC optimisation in UK hotels?",
+      "funnel_stage": "consideration",
+      "competitors_present": [
+        "ADK",
+        "Inergy Group",
+        "Spectra Energy Group",
+        "Mitsubishi Electric"
+      ]
+    },
+    {
+      "id": "core-03",
+      "query": "Who delivers low-disruption energy retrofits for occupied hotels?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "Willmott Dixon Interiors",
+        "Bell Group",
+        "Sustainable Building Services"
+      ]
+    },
+    {
+      "id": "core-04",
+      "query": "Which companies manage multi-site hotel energy-efficiency upgrades?",
+      "funnel_stage": "consideration",
+      "competitors_present": [
+        "Telnergy",
+        "Businesswise Solutions",
+        "Clearworld",
+        "Hospitality Energy Saving & Sustainability"
+      ]
+    },
+    {
+      "id": "core-05",
+      "query": "Who offers independent hotel energy audits and retrofit delivery?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "PasCheck Retrofit",
+        "RCS Limited",
+        "Energy Audits UK"
+      ]
+    },
+    {
+      "id": "core-06",
+      "query": "Which specialists provide guest-room energy management systems for hotels?",
+      "funnel_stage": "consideration",
+      "competitors_present": [
+        "Schneider Electric",
+        "SensorFlow",
+        "Telkonet"
+      ]
+    },
+    {
+      "id": "core-07",
+      "query": "Which UK companies provide hotel voltage optimisation and building monitoring?",
+      "funnel_stage": "consideration",
+      "competitors_present": [
+        "Powerstar",
+        "Olympus Power",
+        "Powerdown220",
+        "Watford Control"
+      ]
+    },
+    {
+      "id": "core-09",
+      "query": "How should a UK hotel group choose an energy-retrofit partner?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "National Retrofit Hub"
+      ]
+    },
+    {
+      "id": "core-10",
+      "query": "Which firms offer measured trials before a full hotel rollout?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "Zero Carbon Services",
+        "KiWi Power"
+      ]
+    },
+    {
+      "id": "core-11",
+      "query": "Which Dorset firms provide commercial energy audits and retrofit projects?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "Bournemouth Energy",
+        "ST Electrical Contractors",
+        "Dorset Community Energy"
+      ]
+    },
+    {
+      "id": "core-12",
+      "query": "What is the best energy consultancy for hospitality businesses in Dorset?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "Telnergy",
+        "Nationwide Energy Consultants",
+        "Hospitality Energy Saving & Sustainability"
+      ]
+    },
+    {
+      "id": "core-13",
+      "query": "Which companies can identify energy waste without disrupting hotel guests?",
+      "funnel_stage": "consideration",
+      "competitors_present": [
+        "Envigilance",
+        "Honeywell",
+        "SensorFlow"
+      ]
+    },
+    {
+      "id": "core-15",
+      "query": "Which hotel retrofit companies can verify savings after installation?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "SensorFlow",
+        "Bell Group",
+        "National Retrofit Solutions"
+      ]
+    }
+  ],
+  "source_quality_breakdown": {
+    "trade_publication": 3,
+    "general_web": 39,
+    "government": 1
+  },
+  "source_quality_note": "Counts by tier across all captured citation URLs (government / trade_publication / general_web / low_value / unclassified). No single 0-100 score is asserted \u2014 see methodology for why a single number here would overstate precision.",
+  "confidence_score_pct": 85.0,
+  "confidence_inputs": {
+    "sample_size": 15,
+    "target_sample_size": 15,
+    "engines_used": [
+      "Claude Web Search"
+    ],
+    "records_with_all_required_fields": 15,
+    "engine_diversity_cap_applied": true
+  },
+  "new_competitors_this_run": [
+    "ADK",
+    "Advantage Utilities",
+    "Bell Group",
+    "Bournemouth Energy",
+    "Businesswise Solutions",
+    "Clearworld",
+    "Dorset Community Energy",
+    "Eden Energy Partners",
+    "Energy Audits UK",
+    "Envigilance",
+    "Inergy Group",
+    "KiWi Power",
+    "Mitsubishi Electric",
+    "National Retrofit Hub",
+    "National Retrofit Solutions",
+    "Nationwide Energy Consultants",
+    "Olympus Power",
+    "PasCheck Retrofit",
+    "Powerdown220",
+    "Powerstar",
+    "RCS Limited",
+    "ST Electrical Contractors",
+    "Spectra Energy Group",
+    "Sustainable Building Services",
+    "Telkonet",
+    "Telnergy",
+    "Watford Control",
+    "Willmott Dixon Interiors",
+    "Zero Carbon Services"
+  ],
+  "trends": {
+    "7_day": {
+      "available": false,
+      "reason": "No run exists 7+ days before 2026-09-03 yet. History starts 2026-09-03."
+    },
+    "30_day": {
+      "available": false,
+      "reason": "No run exists 30+ days before 2026-09-03 yet. History starts 2026-09-03."
+    },
+    "90_day": {
+      "available": false,
+      "reason": "No run exists 90+ days before 2026-09-03 yet. History starts 2026-09-03."
+    }
+  }
+}

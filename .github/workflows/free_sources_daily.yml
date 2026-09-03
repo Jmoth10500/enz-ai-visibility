@@ -1,0 +1,62 @@
+name: Daily free-source collection
+
+# Runs the parts of the audit that need no paid API and no Claude access:
+# sitemap inventory, Google News RSS, GDELT. The AI-answer audit (core prompt
+# bank) is run separately by a scheduled Claude Code agent — see
+# docs/CLAUDE_DAILY_AUDIT.md — because it needs Claude's own web search,
+# which has no free headless API this workflow could call instead.
+
+on:
+  schedule:
+    - cron: "0 6 * * *"  # 06:00 UTC daily
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Collect free sources (sitemap, news RSS, GDELT)
+        run: python3 scripts/collect_free_sources.py
+
+      - name: Optional — Google Search Console (only if secrets are set)
+        if: ${{ env.GSC_SITE_URL != '' }}
+        env:
+          GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+        run: |
+          echo "GSC connected — extend scripts/collect_free_sources.py with a GSC branch when ready."
+          echo "This step is a no-op placeholder until that script exists, so the workflow never fails on it."
+
+      - name: Recompute scores from all evidence collected so far
+        run: python3 scripts/score.py
+
+      - name: Generate today's briefing
+        run: python3 scripts/daily_briefing.py "$(date -u +%Y-%m-%d)"
+
+      - name: Record last-successful-run marker
+        run: |
+          mkdir -p metrics
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > metrics/last_successful_free_source_run.txt
+
+      - name: Commit updated evidence + metrics
+        run: |
+          git config user.name "enz-ai-visibility-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add evidence metrics
+          git diff --cached --quiet || git commit -m "Daily free-source collection: $(date -u +%Y-%m-%d)"
+          git push
+
+  # If this job fails for any reason (source down, network issue, etc.), the
+  # previous commit's evidence/metrics/dashboard data simply stays as-is —
+  # nothing here overwrites good data with broken data, because every step
+  # above either writes a complete file or the job fails before the commit
+  # step runs.

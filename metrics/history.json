@@ -1,0 +1,14 @@
+{
+  "runs": [
+    {
+      "run_date": "2026-09-03",
+      "independent_visibility_pct": 6.7,
+      "top3_recommendation_rate_pct": 6.7,
+      "owned_citation_rate_pct": 2.3,
+      "competitor_share_of_voice_pct": 2.3,
+      "high_intent_visibility_pct": 12.5,
+      "prompt_coverage_pct": 100.0,
+      "confidence_score_pct": 85.0
+    }
+  ]
+}

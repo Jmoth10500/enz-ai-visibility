@@ -1,0 +1,64 @@
+{
+  "collected_utc": "2026-09-03T21:30:00Z",
+  "source_engine": "Google News RSS",
+  "collection_method": "direct RSS fetch, no auth, no key",
+  "queries": [
+    {
+      "query": "\"Evolution NetZero\"",
+      "url": "https://news.google.com/rss/search?q=%22Evolution%20NetZero%22&hl=en-GB&gl=GB&ceid=GB:en",
+      "result_count": 0,
+      "articles": [],
+      "note": "Zero UK/global news coverage found for the exact brand name at time of query."
+    },
+    {
+      "query": "hotel energy retrofit UK",
+      "url": "https://news.google.com/rss/search?q=hotel+energy+retrofit+UK&hl=en-GB&gl=GB&ceid=GB:en",
+      "result_count": 4,
+      "articles": [
+        {"title": "Gold Standard: Leonardo Hotels achieves top Green Tourism status across entire portfolio", "publisher": "hotel magazine"},
+        {"title": "Energy Management In The Hospitality Market Size & Forecast", "publisher": "Market Growth Reports"},
+        {"title": "Hospitality's high-tech strategy for water and energy efficiency", "publisher": "Financial Times"},
+        {"title": "Energy efficiency changes for rental properties – deadline pushed back to 2030", "publisher": "Simply Business"}
+      ]
+    },
+    {
+      "query": "SensorFlow hotel",
+      "url": "https://news.google.com/rss/search?q=SensorFlow+hotel&hl=en-GB&gl=GB&ceid=GB:en",
+      "result_count": 4,
+      "articles": [
+        {"title": "Surprising Way to Save Energy on Your Hotel's Existing Infrastructure", "publisher": "Hospitality Net"},
+        {"title": "The Singaporean Startup Creating IoT Solutions to Transform the Energy Industry", "publisher": "Hive Life Magazine"},
+        {"title": "SensorFlow Raises US$8.3 Million in Series A+ Funding to", "publisher": "globenewswire.com"},
+        {"title": "Energy automation startup gets funding for global expansion", "publisher": "technode.global"}
+      ],
+      "note": "Competitor SensorFlow (on watch-list) has genuine trade + funding press coverage — ENZ has none. Real signal, not inferred."
+    },
+    {
+      "query": "Telnergy",
+      "url": "https://news.google.com/rss/search?q=Telnergy&hl=en-GB&gl=GB&ceid=GB:en",
+      "result_count": 0,
+      "articles": [],
+      "note": "Emerging competitor Telnergy also has zero news coverage — so ENZ's zero is not unique to ENZ, but SensorFlow shows the ceiling is reachable."
+    },
+    {
+      "query": "hotel HVAC optimisation",
+      "url": "https://news.google.com/rss/search?q=hotel+HVAC+optimisation&hl=en-GB&gl=GB&ceid=GB:en",
+      "result_count": 4,
+      "articles": [
+        {"title": "How Hotel Cost Controls Will Change in 2026", "publisher": "Hospitality Net"},
+        {"title": "Meet HICAP 2025 Sustainable Hotel Award winners", "publisher": "Hotel Investment Today"},
+        {"title": "Optimising operations for a sustainable future [In partnership with Beyond Green and Ruckus]", "publisher": "Boutique Hotel News"},
+        {"title": "Radisson COO Chema Basterrechea on the group's GCC strategy", "publisher": "Gulf Business"}
+      ],
+      "note": "Hospitality Net and Boutique Hotel News appear repeatedly across queries — candidate target trade publications for earned coverage."
+    }
+  ],
+  "unavailable_sources": [
+    {
+      "source": "GDELT DOC 2.0 API",
+      "status": "unavailable this run",
+      "reason": "Rate-limited by GDELT at the shared sandbox egress IP (\"Please limit requests to one every 5 seconds\") across three attempts with increasing delay. Not a code error — genuinely could not collect.",
+      "action": "Retry on next scheduled run from a fresh IP; do not substitute an estimate."
+    }
+  ]
+}
