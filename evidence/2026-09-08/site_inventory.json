@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "collected_utc": "2026-09-03T22:17:16Z",
+  "collected_utc": "2026-09-08T10:29:23Z",
   "source": "evolutionnetzero.com sitemap_index.xml (Yoast SEO)",
   "collection_method": "direct HTTPS fetch, no auth",
   "pages_count": 36,
@@ -59,8 +59,5 @@
     "https://evolutionnetzero.com/blog/student-accommodation-energy-efficiency/",
     "https://evolutionnetzero.com/blog/ecovadis-supply-chain-what-it-means/",
     "https://evolutionnetzero.com/blog/business-growth-dorset-net-zero-directory/"
-  ],
-  "carried_forward": true,
-  "carried_forward_from": "2026-09-03",
-  "carried_forward_reason": "Live sitemap fetch blocked this run: this session's network egress policy returned 403 on CONNECT to evolutionnetzero.com (and to news.google.com / api.gdeltproject.org for the same reason -- see news_rss.json unavailable_sources). Reusing the most recent successful crawl rather than fabricating fresh data. Sitemap content changes infrequently; this is not a substitute for genuinely fresh news/GDELT evidence, which is recorded as unavailable, not estimated."
+  ]
 }
