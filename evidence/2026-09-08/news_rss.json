@@ -1,0 +1,56 @@
+{
+  "collected_utc": "2026-09-08T07:41:11Z",
+  "source_engine": "Google News RSS",
+  "collection_method": "direct RSS fetch, no auth, no key",
+  "queries": [],
+  "gdelt": [],
+  "unavailable_sources": [
+    {
+      "source": "evolutionnetzero.com sitemap",
+      "status": "unavailable",
+      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "source": "Google News RSS (\"Evolution NetZero\")",
+      "status": "unavailable this run",
+      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "source": "Google News RSS (hotel energy retrofit UK)",
+      "status": "unavailable this run",
+      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "source": "Google News RSS (hotel HVAC optimisation)",
+      "status": "unavailable this run",
+      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "source": "Google News RSS (hotel decarbonisation UK)",
+      "status": "unavailable this run",
+      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "source": "Google News RSS (SensorFlow hotel)",
+      "status": "unavailable this run",
+      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "source": "Google News RSS (Telnergy)",
+      "status": "unavailable this run",
+      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "source": "Google News RSS (Envigilance hotel)",
+      "status": "unavailable this run",
+      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "source": "GDELT DOC 2.0 API (\"Evolution NetZero\")",
+      "status": "unavailable this run",
+      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "action": "Retry next scheduled run. Do not substitute an estimate."
+    }
+  ],
+  "run_note": "This Claude Code cloud session's network egress policy denied CONNECT to news.google.com, api.gdeltproject.org and evolutionnetzero.com (403 at the proxy) -- an environment restriction, not a rate limit. All 8 free sources are genuinely unavailable this run, recorded plainly per the script's own never-fabricate rule. Separately: the GitHub Action that normally runs this script daily with full internet access has failed 4 days running (2026-09-04 to 2026-09-07) at the daily_briefing.py step, before its git commit, so none of those days' free-source data was ever saved -- see scripts/score.py, which only computes metrics for dates that have a core_15.json, so daily_briefing.py crashes on any date the Claude audit hasn't also run for. Flagged for Jonathan; not fixed here as it's outside today's audit steps."
+}

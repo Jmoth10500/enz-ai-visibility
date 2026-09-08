@@ -12,6 +12,9 @@ import sys
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "dashboard_template.html")
 LOGO_PATH = "/Users/jonathannuttall/Library/Mobile Documents/com~apple~CloudDocs/Evolution Netzero/AI B.R.A.I.N/11_ASSETS/images/Logo/EZ Logo V4 Trans only.png"
+# Fallback for environments without Jonathan's local Mac filesystem (e.g. a
+# cloud/remote session) — a copy of the same logo checked into the repo.
+LOGO_PATH_FALLBACK = os.path.join(REPO, "assets", "branding", "enz_logo.png")
 OUT_PATH = os.path.join(REPO, "dist", "enz_ai_visibility_dashboard.html")
 
 
@@ -38,7 +41,8 @@ def main():
     promptbank = load(os.path.join(REPO, "prompts", "prompt_bank.json"))
     history = load(os.path.join(REPO, "metrics", "history.json"))
 
-    with open(LOGO_PATH, "rb") as f:
+    logo_path = LOGO_PATH if os.path.exists(LOGO_PATH) else LOGO_PATH_FALLBACK
+    with open(logo_path, "rb") as f:
         logo_b64 = base64.b64encode(f.read()).decode("ascii")
 
     with open(TEMPLATE) as f:
