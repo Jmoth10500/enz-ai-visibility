@@ -1,0 +1,56 @@
+{
+  "collected_utc": "2026-09-09T07:42:03Z",
+  "source_engine": "Google News RSS",
+  "collection_method": "direct RSS fetch, no auth, no key",
+  "queries": [],
+  "gdelt": [],
+  "unavailable_sources": [
+    {
+      "source": "evolutionnetzero.com sitemap",
+      "status": "unavailable",
+      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "action": "Carried forward the last successful crawl (2026-09-08) into evidence/2026-09-09/site_inventory.json, clearly labelled status: carried_forward -- not fabricated. Same handling as 2026-09-08's carry-forward from 2026-09-03."
+    },
+    {
+      "source": "Google News RSS (\"Evolution NetZero\")",
+      "status": "unavailable this run",
+      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "source": "Google News RSS (hotel energy retrofit UK)",
+      "status": "unavailable this run",
+      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "source": "Google News RSS (hotel HVAC optimisation)",
+      "status": "unavailable this run",
+      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "source": "Google News RSS (hotel decarbonisation UK)",
+      "status": "unavailable this run",
+      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "source": "Google News RSS (SensorFlow hotel)",
+      "status": "unavailable this run",
+      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "source": "Google News RSS (Telnergy)",
+      "status": "unavailable this run",
+      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "source": "Google News RSS (Envigilance hotel)",
+      "status": "unavailable this run",
+      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "source": "GDELT DOC 2.0 API (\"Evolution NetZero\")",
+      "status": "unavailable this run",
+      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "action": "Retry next scheduled run. Do not substitute an estimate."
+    }
+  ]
+}
