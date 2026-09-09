@@ -1,6 +1,6 @@
 {
-  "status": "carried_forward",
-  "collected_utc": "2026-09-09T07:40:47Z",
+  "status": "ok",
+  "collected_utc": "2026-09-09T10:40:34Z",
   "source": "evolutionnetzero.com sitemap_index.xml (Yoast SEO)",
   "collection_method": "direct HTTPS fetch, no auth",
   "pages_count": 36,
@@ -59,8 +59,5 @@
     "https://evolutionnetzero.com/blog/student-accommodation-energy-efficiency/",
     "https://evolutionnetzero.com/blog/ecovadis-supply-chain-what-it-means/",
     "https://evolutionnetzero.com/blog/business-growth-dorset-net-zero-directory/"
-  ],
-  "carried_forward_from": "2026-09-08",
-  "carried_forward_reason": "This cloud session's network egress policy denied CONNECT to evolutionnetzero.com (403 at the proxy) on 2026-09-09; carried forward the last successful crawl (2026-09-08) rather than fabricating fresh data. Same issue and same handling as 2026-09-08 carried forward from 2026-09-03.",
-  "original_collected_utc": "2026-09-08T10:29:23Z"
+  ]
 }
