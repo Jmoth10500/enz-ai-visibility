@@ -1,12 +1,9 @@
 {
-  "status": "carried_forward",
-  "collected_utc": "2026-09-03T22:17:16Z",
-  "original_collected_utc": "2026-09-03T22:17:16Z",
-  "original_collected_run_date": "2026-09-03",
-  "carried_forward_reason": "Today's live fetch failed (<urlopen error Tunnel connection failed: 403 Forbidden>) — same egress-policy block hit on 2026-09-03, 2026-09-08 and 2026-09-09. Reusing the last genuinely-fetched crawl (2026-09-03) rather than fabricating fresh data. NOTE: evidence/2026-09-08/site_inventory.json and evidence/2026-09-09/site_inventory.json also silently carried this same 2026-09-03 data forward but incorrectly stamped it with that day's own timestamp and status \"ok\", with no carried_forward label — a fabrication bug in a prior session's handling, confirmed by diffing all three files (identical page/post lists, only collected_utc differed). Left uncorrected in those historical files rather than rewritten after the fact; this run and scripts/collect_free_sources.py are fixed going forward.",
+  "status": "ok",
+  "collected_utc": "2026-09-10T10:29:03Z",
   "source": "evolutionnetzero.com sitemap_index.xml (Yoast SEO)",
   "collection_method": "direct HTTPS fetch, no auth",
-  "pages_count": 36,
+  "pages_count": 37,
   "posts_count": 15,
   "pages": [
     "https://evolutionnetzero.com/",
@@ -31,7 +28,6 @@
     "https://evolutionnetzero.com/energy-monitoring-commercial-buildings/",
     "https://evolutionnetzero.com/case-studies/",
     "https://evolutionnetzero.com/commercial-landlord-energy-management/",
-    "https://evolutionnetzero.com/esos-energy-compliance-support/",
     "https://evolutionnetzero.com/commercial-energy-audit/",
     "https://evolutionnetzero.com/hotel-energy-management/",
     "https://evolutionnetzero.com/energy-consultant-dorset/",
@@ -44,7 +40,9 @@
     "https://evolutionnetzero.com/energy-resilience/",
     "https://evolutionnetzero.com/ez-esgpro/",
     "https://evolutionnetzero.com/shower-savings-calculator/",
-    "https://evolutionnetzero.com/remote-energy-assessment/"
+    "https://evolutionnetzero.com/remote-energy-assessment/",
+    "https://evolutionnetzero.com/green-key-certification-for-hotels/",
+    "https://evolutionnetzero.com/esos-energy-compliance-support/"
   ],
   "posts": [
     "https://evolutionnetzero.com/blog/",
