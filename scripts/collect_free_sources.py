@@ -47,6 +47,39 @@ def fetch(url, timeout=15):
         return resp.read().decode("utf-8", errors="replace")
 
 
+def find_last_good_site_inventory():
+    """Most recent prior evidence/<date>/site_inventory.json that reflects an
+    actual successful crawl (status "ok", or itself honestly carried forward
+    from one) — used so a failed fetch can fall back to last-known-good site
+    data without ever claiming a fresh crawl that didn't happen."""
+    evidence_root = os.path.join(REPO, "evidence")
+    if not os.path.isdir(evidence_root):
+        return None
+    for date in sorted(os.listdir(evidence_root), reverse=True):
+        path = os.path.join(evidence_root, date, "site_inventory.json")
+        if not os.path.isfile(path):
+            continue
+        try:
+            with open(path) as f:
+                doc = json.load(f)
+        except Exception:
+            continue
+        if doc.get("status") in ("ok", "carried_forward") and doc.get("pages") is not None:
+            # Walk back to the true original crawl, not an intermediate
+            # carried-forward record, so collected_utc never drifts.
+            return {
+                "run_date": doc.get("original_collected_run_date", date),
+                "collected_utc": doc.get("original_collected_utc", doc.get("collected_utc")),
+                "source": doc.get("source"),
+                "collection_method": doc.get("collection_method"),
+                "pages_count": doc.get("pages_count"),
+                "posts_count": doc.get("posts_count"),
+                "pages": doc.get("pages"),
+                "posts": doc.get("posts"),
+            }
+    return None
+
+
 def collect_sitemap():
     try:
         index = fetch("https://evolutionnetzero.com/sitemap_index.xml")
@@ -70,7 +103,26 @@ def collect_sitemap():
             "posts": posts,
         }
     except Exception as e:
-        return {"status": "unavailable", "reason": str(e)}
+        last_good = find_last_good_site_inventory()
+        if last_good is None:
+            return {"status": "unavailable", "reason": str(e)}
+        # Honest carry-forward: keep the ORIGINAL collection timestamp and
+        # data, and say plainly that today's fetch failed and this is stale.
+        # Never stamp today's date/time on data we did not actually collect
+        # today (see docs/CLAUDE_DAILY_AUDIT.md's never-fabricate rule).
+        return {
+            "status": "carried_forward",
+            "collected_utc": last_good["collected_utc"],
+            "original_collected_utc": last_good["collected_utc"],
+            "original_collected_run_date": last_good["run_date"],
+            "carried_forward_reason": f"Today's live fetch failed ({e}); reusing last verified crawl from {last_good['run_date']} rather than fabricating fresh data.",
+            "source": last_good["source"],
+            "collection_method": last_good["collection_method"],
+            "pages_count": last_good["pages_count"],
+            "posts_count": last_good["posts_count"],
+            "pages": last_good["pages"],
+            "posts": last_good["posts"],
+        }
 
 
 def collect_news_rss():
@@ -125,12 +177,21 @@ def main():
     unavailable_sources = []
 
     sitemap = collect_sitemap()
-    if sitemap["status"] != "ok":
+    if sitemap["status"] == "unavailable":
         unavailable_sources.append({"source": "evolutionnetzero.com sitemap", **sitemap})
     else:
         with open(os.path.join(OUT_DIR, "site_inventory.json"), "w") as f:
             json.dump(sitemap, f, indent=2)
-        print(f"Sitemap: {sitemap['pages_count']} pages, {sitemap['posts_count']} posts")
+        if sitemap["status"] == "carried_forward":
+            unavailable_sources.append({
+                "source": "evolutionnetzero.com sitemap",
+                "status": "carried_forward",
+                "reason": sitemap["carried_forward_reason"],
+            })
+            print(f"Sitemap: live fetch failed, carried forward {sitemap['pages_count']} pages, "
+                  f"{sitemap['posts_count']} posts from {sitemap['original_collected_run_date']}")
+        else:
+            print(f"Sitemap: {sitemap['pages_count']} pages, {sitemap['posts_count']} posts")
 
     news_results, news_unavail = collect_news_rss()
     unavailable_sources.extend(news_unavail)

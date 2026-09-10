@@ -1,5 +1,5 @@
 {
-  "run_date": "2026-09-08",
+  "run_date": "2026-09-10",
   "computed_utc": "2026-09-10T07:40:58Z",
   "sample": {
     "prompts_run": 15,
@@ -14,51 +14,68 @@
   "top3_evidence": [
     "core-14"
   ],
-  "owned_citation_rate_pct": 2.7,
+  "owned_citation_rate_pct": 2.3,
   "owned_citations": [
     "https://evolutionnetzero.com/"
   ],
-  "total_citations_captured": 37,
+  "total_citations_captured": 43,
   "third_party_validation_rate_pct": null,
   "third_party_validation_note": "Not computed this run: no third-party review/discussion sources were collected yet (see methodology limitations). Do not treat as zero.",
-  "competitor_share_of_voice_pct": 2.4,
+  "competitor_share_of_voice_pct": 1.7,
   "mention_counts": {
-    "Sensibo": 2,
+    "Schneider Electric": 2,
     "Verdant": 2,
-    "AECOM": 2,
-    "Honeywell": 2,
+    "T\u00dcV Rheinland": 2,
     "Hospitality Energy Saving": 2,
     "Advantage Utilities": 1,
     "Eden Energy Partners": 1,
     "SMS Energy": 1,
-    "Inergy Group": 1,
+    "TJ Ref": 1,
     "ADK": 1,
+    "Inergy Group": 1,
     "Spectra Energy Group": 1,
+    "Mitsubishi Electric": 1,
     "Mitie": 1,
-    "Schneider Electric": 1,
+    "Fisk Electric Co.": 1,
     "SitelogIQ": 1,
-    "Renew Energy Partners": 1,
-    "Sustainable Energy Services": 1,
+    "Budderfly": 1,
+    "Commercial Energy Advisors": 1,
     "WSP": 1,
+    "AECOM": 1,
+    "DNV": 1,
+    "IES Consulting": 1,
+    "ENGIE Impact": 1,
+    "Tourythm": 1,
+    "Honeywell (INNCOM)": 1,
+    "Telkonet": 1,
     "WiSuite": 1,
     "Powerstar": 1,
-    "Olympus Power Ltd": 1,
+    "Olympus Power": 1,
+    "Powerdown220": 1,
+    "OKEL": 1,
     "Watford Control": 1,
+    "Powerhub Solutions": 1,
     "Greenview": 1,
+    "CRREM": 1,
     "Aston Group": 1,
     "Bell Group": 1,
-    "Power Audit UK": 1,
     "Bournemouth Energy": 1,
     "ST Electrical Contractors": 1,
+    "DCAN": 1,
+    "KJ Tait": 1,
+    "Compliant Retrofits": 1,
     "Telnergy": 1,
     "Nationwide Energy Consultants": 1,
-    "Light Up Energy": 1,
+    "GVL Energy": 1,
     "Envigilance": 1,
-    "SensorFlow": 1,
     "Ecogroup (Eniscope)": 1,
+    "Honeywell": 1,
+    "SensorFlow": 1,
+    "Marriott International": 1,
     "Evolution NetZero": 1,
     "Mission Net Zero": 1,
-    "RISE Engineering": 1,
+    "Sensibo": 1,
+    "Enertiv": 1,
     "OxMaint": 1
   },
   "high_intent_visibility_pct": 12.5,
@@ -81,9 +98,11 @@
       "query": "What are the best firms for HVAC optimisation in UK hotels?",
       "funnel_stage": "consideration",
       "competitors_present": [
-        "Inergy Group",
+        "TJ Ref",
         "ADK",
+        "Inergy Group",
         "Spectra Energy Group",
+        "Mitsubishi Electric",
         "Mitie"
       ]
     },
@@ -92,7 +111,7 @@
       "query": "Who delivers low-disruption energy retrofits for occupied hotels?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "Sensibo",
+        "Fisk Electric Co.",
         "Schneider Electric"
       ]
     },
@@ -102,8 +121,9 @@
       "funnel_stage": "consideration",
       "competitors_present": [
         "SitelogIQ",
+        "Budderfly",
         "Verdant",
-        "Renew Energy Partners"
+        "Commercial Energy Advisors"
       ]
     },
     {
@@ -111,9 +131,12 @@
       "query": "Who offers independent hotel energy audits and retrofit delivery?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "Sustainable Energy Services",
         "WSP",
-        "AECOM"
+        "AECOM",
+        "DNV",
+        "IES Consulting",
+        "ENGIE Impact",
+        "Tourythm"
       ]
     },
     {
@@ -121,7 +144,9 @@
       "query": "Which specialists provide guest-room energy management systems for hotels?",
       "funnel_stage": "consideration",
       "competitors_present": [
-        "Honeywell",
+        "Schneider Electric",
+        "Honeywell (INNCOM)",
+        "Telkonet",
         "Verdant",
         "WiSuite"
       ]
@@ -132,8 +157,11 @@
       "funnel_stage": "consideration",
       "competitors_present": [
         "Powerstar",
-        "Olympus Power Ltd",
-        "Watford Control"
+        "Olympus Power",
+        "Powerdown220",
+        "OKEL",
+        "Watford Control",
+        "Powerhub Solutions"
       ]
     },
     {
@@ -150,9 +178,11 @@
       "query": "Which Dorset firms provide commercial energy audits and retrofit projects?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "Power Audit UK",
         "Bournemouth Energy",
-        "ST Electrical Contractors"
+        "ST Electrical Contractors",
+        "DCAN",
+        "KJ Tait",
+        "Compliant Retrofits"
       ]
     },
     {
@@ -162,7 +192,7 @@
       "competitors_present": [
         "Telnergy",
         "Nationwide Energy Consultants",
-        "Light Up Energy",
+        "GVL Energy",
         "Hospitality Energy Saving"
       ]
     },
@@ -172,9 +202,10 @@
       "funnel_stage": "consideration",
       "competitors_present": [
         "Envigilance",
-        "SensorFlow",
+        "Ecogroup (Eniscope)",
         "Honeywell",
-        "Ecogroup (Eniscope)"
+        "SensorFlow",
+        "Marriott International"
       ]
     },
     {
@@ -183,13 +214,15 @@
       "funnel_stage": "decision",
       "competitors_present": [
         "Sensibo",
-        "RISE Engineering",
-        "OxMaint"
+        "Enertiv",
+        "OxMaint",
+        "T\u00dcV Rheinland"
       ]
     }
   ],
   "source_quality_breakdown": {
-    "general_web": 37
+    "trade_publication": 1,
+    "general_web": 42
   },
   "source_quality_note": "Counts by tier across all captured citation URLs (government / trade_publication / general_web / low_value / unclassified). No single 0-100 score is asserted \u2014 see methodology for why a single number here would overstate precision.",
   "confidence_score_pct": 85.0,
@@ -209,42 +242,60 @@
     "Aston Group",
     "Bell Group",
     "Bournemouth Energy",
+    "Budderfly",
+    "CRREM",
+    "Commercial Energy Advisors",
+    "Compliant Retrofits",
+    "DCAN",
+    "DNV",
+    "ENGIE Impact",
     "Ecogroup (Eniscope)",
     "Eden Energy Partners",
+    "Enertiv",
     "Envigilance",
+    "Fisk Electric Co.",
+    "GVL Energy",
     "Greenview",
+    "Honeywell (INNCOM)",
     "Hospitality Energy Saving",
+    "IES Consulting",
     "Inergy Group",
-    "Light Up Energy",
+    "KJ Tait",
+    "Marriott International",
+    "Mitsubishi Electric",
     "Nationwide Energy Consultants",
-    "Olympus Power Ltd",
+    "OKEL",
+    "Olympus Power",
     "OxMaint",
-    "Power Audit UK",
+    "Powerdown220",
+    "Powerhub Solutions",
     "Powerstar",
-    "RISE Engineering",
-    "Renew Energy Partners",
     "ST Electrical Contractors",
     "Sensibo",
     "SitelogIQ",
     "Spectra Energy Group",
-    "Sustainable Energy Services",
+    "TJ Ref",
+    "Telkonet",
     "Telnergy",
+    "Tourythm",
+    "T\u00dcV Rheinland",
     "WSP",
     "Watford Control",
     "WiSuite"
   ],
   "trends": {
     "7_day": {
-      "available": false,
-      "reason": "No run exists 7+ days before 2026-09-08 yet. History starts 2026-09-03."
+      "available": true,
+      "baseline_date": "2026-09-03",
+      "independent_visibility_change_pct_points": 0.0
     },
     "30_day": {
       "available": false,
-      "reason": "No run exists 30+ days before 2026-09-08 yet. History starts 2026-09-03."
+      "reason": "No run exists 30+ days before 2026-09-10 yet. History starts 2026-09-03."
     },
     "90_day": {
       "available": false,
-      "reason": "No run exists 90+ days before 2026-09-08 yet. History starts 2026-09-03."
+      "reason": "No run exists 90+ days before 2026-09-10 yet. History starts 2026-09-03."
     }
   }
 }
