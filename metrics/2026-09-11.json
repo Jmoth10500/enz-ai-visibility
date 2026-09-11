@@ -1,5 +1,5 @@
 {
-  "run_date": "2026-09-10",
+  "run_date": "2026-09-11",
   "computed_utc": "2026-09-11T07:42:10Z",
   "sample": {
     "prompts_run": 15,
@@ -14,18 +14,18 @@
   "top3_evidence": [
     "core-14"
   ],
-  "owned_citation_rate_pct": 2.3,
+  "owned_citation_rate_pct": 2.1,
   "owned_citations": [
     "https://evolutionnetzero.com/"
   ],
-  "total_citations_captured": 43,
+  "total_citations_captured": 47,
   "third_party_validation_rate_pct": null,
   "third_party_validation_note": "Not computed this run: no third-party review/discussion sources were collected yet (see methodology limitations). Do not treat as zero.",
   "competitor_share_of_voice_pct": 1.7,
   "mention_counts": {
-    "Schneider Electric": 2,
+    "T\u00dcV Rheinland": 3,
     "Verdant": 2,
-    "T\u00dcV Rheinland": 2,
+    "Telkonet": 2,
     "Hospitality Energy Saving": 2,
     "Advantage Utilities": 1,
     "Eden Energy Partners": 1,
@@ -36,9 +36,10 @@
     "Spectra Energy Group": 1,
     "Mitsubishi Electric": 1,
     "Mitie": 1,
-    "Fisk Electric Co.": 1,
+    "Schneider Electric": 1,
+    "Sensibo": 1,
     "SitelogIQ": 1,
-    "Budderfly": 1,
+    "Chateau Energy": 1,
     "Commercial Energy Advisors": 1,
     "WSP": 1,
     "AECOM": 1,
@@ -47,7 +48,8 @@
     "ENGIE Impact": 1,
     "Tourythm": 1,
     "Honeywell (INNCOM)": 1,
-    "Telkonet": 1,
+    "Nomadix (ASSA ABLOY)": 1,
+    "Hotel Service Corp.": 1,
     "WiSuite": 1,
     "Powerstar": 1,
     "Olympus Power": 1,
@@ -56,25 +58,23 @@
     "Watford Control": 1,
     "Powerhub Solutions": 1,
     "Greenview": 1,
-    "CRREM": 1,
     "Aston Group": 1,
     "Bell Group": 1,
+    "National Retrofit Hub": 1,
     "Bournemouth Energy": 1,
+    "Retrofit-EPC": 1,
     "ST Electrical Contractors": 1,
-    "DCAN": 1,
-    "KJ Tait": 1,
     "Compliant Retrofits": 1,
     "Telnergy": 1,
     "Nationwide Energy Consultants": 1,
-    "GVL Energy": 1,
+    "Light Up Energy": 1,
     "Envigilance": 1,
     "Ecogroup (Eniscope)": 1,
     "Honeywell": 1,
-    "SensorFlow": 1,
     "Marriott International": 1,
+    "SensorFlow": 1,
     "Evolution NetZero": 1,
-    "Mission Net Zero": 1,
-    "Sensibo": 1,
+    "TRC Companies": 1,
     "Enertiv": 1,
     "OxMaint": 1
   },
@@ -111,8 +111,8 @@
       "query": "Who delivers low-disruption energy retrofits for occupied hotels?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "Fisk Electric Co.",
-        "Schneider Electric"
+        "Schneider Electric",
+        "Sensibo"
       ]
     },
     {
@@ -121,9 +121,10 @@
       "funnel_stage": "consideration",
       "competitors_present": [
         "SitelogIQ",
-        "Budderfly",
         "Verdant",
-        "Commercial Energy Advisors"
+        "Chateau Energy",
+        "Commercial Energy Advisors",
+        "Telkonet"
       ]
     },
     {
@@ -136,7 +137,8 @@
         "DNV",
         "IES Consulting",
         "ENGIE Impact",
-        "Tourythm"
+        "Tourythm",
+        "T\u00dcV Rheinland"
       ]
     },
     {
@@ -144,10 +146,11 @@
       "query": "Which specialists provide guest-room energy management systems for hotels?",
       "funnel_stage": "consideration",
       "competitors_present": [
-        "Schneider Electric",
         "Honeywell (INNCOM)",
         "Telkonet",
+        "Nomadix (ASSA ABLOY)",
         "Verdant",
+        "Hotel Service Corp.",
         "WiSuite"
       ]
     },
@@ -170,7 +173,8 @@
       "funnel_stage": "decision",
       "competitors_present": [
         "Aston Group",
-        "Bell Group"
+        "Bell Group",
+        "National Retrofit Hub"
       ]
     },
     {
@@ -179,9 +183,8 @@
       "funnel_stage": "decision",
       "competitors_present": [
         "Bournemouth Energy",
+        "Retrofit-EPC",
         "ST Electrical Contractors",
-        "DCAN",
-        "KJ Tait",
         "Compliant Retrofits"
       ]
     },
@@ -192,7 +195,7 @@
       "competitors_present": [
         "Telnergy",
         "Nationwide Energy Consultants",
-        "GVL Energy",
+        "Light Up Energy",
         "Hospitality Energy Saving"
       ]
     },
@@ -204,8 +207,8 @@
         "Envigilance",
         "Ecogroup (Eniscope)",
         "Honeywell",
-        "SensorFlow",
-        "Marriott International"
+        "Marriott International",
+        "SensorFlow"
       ]
     },
     {
@@ -213,7 +216,7 @@
       "query": "Which hotel retrofit companies can verify savings after installation?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "Sensibo",
+        "TRC Companies",
         "Enertiv",
         "OxMaint",
         "T\u00dcV Rheinland"
@@ -222,7 +225,7 @@
   ],
   "source_quality_breakdown": {
     "trade_publication": 1,
-    "general_web": 42
+    "general_web": 46
   },
   "source_quality_note": "Counts by tier across all captured citation URLs (government / trade_publication / general_web / low_value / unclassified). No single 0-100 score is asserted \u2014 see methodology for why a single number here would overstate precision.",
   "confidence_score_pct": 85.0,
@@ -242,39 +245,40 @@
     "Aston Group",
     "Bell Group",
     "Bournemouth Energy",
-    "Budderfly",
-    "CRREM",
+    "Chateau Energy",
     "Commercial Energy Advisors",
     "Compliant Retrofits",
-    "DCAN",
     "DNV",
     "ENGIE Impact",
     "Ecogroup (Eniscope)",
     "Eden Energy Partners",
     "Enertiv",
     "Envigilance",
-    "Fisk Electric Co.",
-    "GVL Energy",
     "Greenview",
     "Honeywell (INNCOM)",
     "Hospitality Energy Saving",
+    "Hotel Service Corp.",
     "IES Consulting",
     "Inergy Group",
-    "KJ Tait",
+    "Light Up Energy",
     "Marriott International",
     "Mitsubishi Electric",
+    "National Retrofit Hub",
     "Nationwide Energy Consultants",
+    "Nomadix (ASSA ABLOY)",
     "OKEL",
     "Olympus Power",
     "OxMaint",
     "Powerdown220",
     "Powerhub Solutions",
     "Powerstar",
+    "Retrofit-EPC",
     "ST Electrical Contractors",
     "Sensibo",
     "SitelogIQ",
     "Spectra Energy Group",
     "TJ Ref",
+    "TRC Companies",
     "Telkonet",
     "Telnergy",
     "Tourythm",
@@ -291,11 +295,11 @@
     },
     "30_day": {
       "available": false,
-      "reason": "No run exists 30+ days before 2026-09-10 yet. History starts 2026-09-03."
+      "reason": "No run exists 30+ days before 2026-09-11 yet. History starts 2026-09-03."
     },
     "90_day": {
       "available": false,
-      "reason": "No run exists 90+ days before 2026-09-10 yet. History starts 2026-09-03."
+      "reason": "No run exists 90+ days before 2026-09-11 yet. History starts 2026-09-03."
     }
   }
 }
