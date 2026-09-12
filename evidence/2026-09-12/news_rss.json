@@ -1,0 +1,55 @@
+{
+  "collected_utc": "2026-09-12T07:42:08Z",
+  "source_engine": "Google News RSS",
+  "collection_method": "direct RSS fetch, no auth, no key",
+  "queries": [],
+  "gdelt": [],
+  "unavailable_sources": [
+    {
+      "source": "evolutionnetzero.com sitemap",
+      "status": "carried_forward",
+      "reason": "Today's live fetch failed (<urlopen error Tunnel connection failed: 403 Forbidden>); reusing last verified crawl from 2026-09-11 rather than fabricating fresh data."
+    },
+    {
+      "source": "Google News RSS (\"Evolution NetZero\")",
+      "status": "unavailable this run",
+      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "source": "Google News RSS (hotel energy retrofit UK)",
+      "status": "unavailable this run",
+      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "source": "Google News RSS (hotel HVAC optimisation)",
+      "status": "unavailable this run",
+      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "source": "Google News RSS (hotel decarbonisation UK)",
+      "status": "unavailable this run",
+      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "source": "Google News RSS (SensorFlow hotel)",
+      "status": "unavailable this run",
+      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "source": "Google News RSS (Telnergy)",
+      "status": "unavailable this run",
+      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "source": "Google News RSS (Envigilance hotel)",
+      "status": "unavailable this run",
+      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "source": "GDELT DOC 2.0 API (\"Evolution NetZero\")",
+      "status": "unavailable this run",
+      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "action": "Retry next scheduled run. Do not substitute an estimate."
+    }
+  ]
+}
