@@ -1,12 +1,9 @@
 {
-  "status": "carried_forward",
-  "collected_utc": "2026-09-15T10:57:23Z",
-  "original_collected_utc": "2026-09-15T10:57:23Z",
-  "original_collected_run_date": "2026-09-15",
-  "carried_forward_reason": "Today's live fetch failed (<urlopen error Tunnel connection failed: 403 Forbidden>); reusing last verified crawl from 2026-09-15 rather than fabricating fresh data.",
+  "status": "ok",
+  "collected_utc": "2026-09-16T10:45:15Z",
   "source": "evolutionnetzero.com sitemap_index.xml (Yoast SEO)",
   "collection_method": "direct HTTPS fetch, no auth",
-  "pages_count": 37,
+  "pages_count": 38,
   "posts_count": 15,
   "pages": [
     "https://evolutionnetzero.com/",
@@ -45,7 +42,8 @@
     "https://evolutionnetzero.com/shower-savings-calculator/",
     "https://evolutionnetzero.com/remote-energy-assessment/",
     "https://evolutionnetzero.com/green-key-certification-for-hotels/",
-    "https://evolutionnetzero.com/esos-energy-compliance-support/"
+    "https://evolutionnetzero.com/esos-energy-compliance-support/",
+    "https://evolutionnetzero.com/carbon-value-calculator/"
   ],
   "posts": [
     "https://evolutionnetzero.com/blog/",
