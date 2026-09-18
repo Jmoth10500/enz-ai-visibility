@@ -1,5 +1,5 @@
 {
-  "run_date": "2026-09-17",
+  "run_date": "2026-09-18",
   "computed_utc": "2026-09-18T07:42:07Z",
   "sample": {
     "prompts_run": 15,
@@ -14,62 +14,56 @@
   "top3_evidence": [
     "core-14"
   ],
-  "owned_citation_rate_pct": 2.0,
+  "owned_citation_rate_pct": 2.3,
   "owned_citations": [
     "https://evolutionnetzero.com/"
   ],
-  "total_citations_captured": 51,
+  "total_citations_captured": 43,
   "third_party_validation_rate_pct": null,
   "third_party_validation_note": "Not computed this run: no third-party review/discussion sources were collected yet (see methodology limitations). Do not treat as zero.",
-  "competitor_share_of_voice_pct": 2.0,
+  "competitor_share_of_voice_pct": 2.3,
   "mention_counts": {
-    "Hospitality Energy Saving": 2,
-    "SMS": 2,
-    "Schneider Electric": 2,
     "Sensibo": 2,
+    "Verdant": 2,
     "Advantage Utilities": 1,
+    "Hospitality Energy Saving": 1,
     "Eden Energy Partners": 1,
     "ADK Kooling": 1,
-    "Inergy Group": 1,
+    "TJ Ref": 1,
     "Spectra Energy Group": 1,
-    "Mitsubishi Electric": 1,
+    "Inergy Group": 1,
     "SitelogIQ": 1,
-    "Chateau Energy Solutions": 1,
-    "Centrica Business Solutions": 1,
-    "Verdant": 1,
+    "Chateau Energy": 1,
     "Sustainable Energy Services": 1,
-    "RISE Engineering": 1,
     "ENGIE Impact": 1,
+    "RISE Engineering": 1,
     "Tourythm": 1,
-    "Honeywell (INNCOM)": 1,
-    "Telkonet": 1,
+    "Honeywell INNCOM": 1,
+    "Hotel Service Corp.": 1,
     "WiSuite": 1,
     "Powerstar": 1,
     "Olympus Power": 1,
     "Powerdown220": 1,
-    "Powerhub Solutions": 1,
-    "Greenview": 1,
-    "Considerate Group": 1,
-    "TUV Rheinland": 1,
-    "Aston Group": 1,
+    "Watford Control": 1,
+    "AECOM": 1,
     "National Retrofit Hub": 1,
+    "Aston Group": 1,
+    "Bell Group": 1,
     "Bournemouth Energy": 1,
     "Retrofit-EPC": 1,
-    "Dorset EPC": 1,
-    "ST Electrical Contractors": 1,
+    "Ridgewater Energy": 1,
+    "Compliant Retrofits": 1,
     "Telnergy": 1,
-    "Energy Performance Direct": 1,
     "Nationwide Energy Consultants": 1,
     "Light Up Energy": 1,
     "Envigilance": 1,
-    "EcoGroup (Eniscope)": 1,
     "SensorFlow": 1,
     "Honeywell": 1,
+    "EcoGroup": 1,
     "Evolution NetZero": 1,
-    "Carbon Trust": 1,
-    "TRC Companies": 1,
     "Enertiv": 1,
-    "OxMaint": 1
+    "OxMaint": 1,
+    "Danfoss": 1
   },
   "high_intent_visibility_pct": 12.5,
   "high_intent_sample_size": 8,
@@ -82,9 +76,8 @@
       "funnel_stage": "consideration",
       "competitors_present": [
         "Advantage Utilities",
-        "Eden Energy Partners",
         "Hospitality Energy Saving",
-        "SMS"
+        "Eden Energy Partners"
       ]
     },
     {
@@ -93,9 +86,9 @@
       "funnel_stage": "consideration",
       "competitors_present": [
         "ADK Kooling",
-        "Inergy Group",
+        "TJ Ref",
         "Spectra Energy Group",
-        "Mitsubishi Electric"
+        "Inergy Group"
       ]
     },
     {
@@ -103,7 +96,6 @@
       "query": "Who delivers low-disruption energy retrofits for occupied hotels?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "Schneider Electric",
         "Sensibo"
       ]
     },
@@ -113,8 +105,7 @@
       "funnel_stage": "consideration",
       "competitors_present": [
         "SitelogIQ",
-        "Chateau Energy Solutions",
-        "Centrica Business Solutions",
+        "Chateau Energy",
         "Verdant"
       ]
     },
@@ -124,8 +115,8 @@
       "funnel_stage": "decision",
       "competitors_present": [
         "Sustainable Energy Services",
-        "RISE Engineering",
         "ENGIE Impact",
+        "RISE Engineering",
         "Tourythm"
       ]
     },
@@ -134,9 +125,9 @@
       "query": "Which specialists provide guest-room energy management systems for hotels?",
       "funnel_stage": "consideration",
       "competitors_present": [
-        "Schneider Electric",
-        "Honeywell (INNCOM)",
-        "Telkonet",
+        "Honeywell INNCOM",
+        "Verdant",
+        "Hotel Service Corp.",
         "WiSuite"
       ]
     },
@@ -148,7 +139,7 @@
         "Powerstar",
         "Olympus Power",
         "Powerdown220",
-        "Powerhub Solutions"
+        "Watford Control"
       ]
     },
     {
@@ -156,9 +147,9 @@
       "query": "How should a UK hotel group choose an energy-retrofit partner?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "SMS",
+        "National Retrofit Hub",
         "Aston Group",
-        "National Retrofit Hub"
+        "Bell Group"
       ]
     },
     {
@@ -168,8 +159,8 @@
       "competitors_present": [
         "Bournemouth Energy",
         "Retrofit-EPC",
-        "Dorset EPC",
-        "ST Electrical Contractors"
+        "Ridgewater Energy",
+        "Compliant Retrofits"
       ]
     },
     {
@@ -178,7 +169,6 @@
       "funnel_stage": "decision",
       "competitors_present": [
         "Telnergy",
-        "Energy Performance Direct",
         "Nationwide Energy Consultants",
         "Light Up Energy"
       ]
@@ -189,9 +179,9 @@
       "funnel_stage": "consideration",
       "competitors_present": [
         "Envigilance",
-        "EcoGroup (Eniscope)",
         "SensorFlow",
-        "Honeywell"
+        "Honeywell",
+        "EcoGroup"
       ]
     },
     {
@@ -199,16 +189,16 @@
       "query": "Which hotel retrofit companies can verify savings after installation?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "TRC Companies",
-        "Sensibo",
         "Enertiv",
-        "OxMaint"
+        "OxMaint",
+        "Danfoss",
+        "Sensibo"
       ]
     }
   ],
   "source_quality_breakdown": {
     "trade_publication": 1,
-    "general_web": 50
+    "general_web": 42
   },
   "source_quality_note": "Counts by tier across all captured citation URLs (government / trade_publication / general_web / low_value / unclassified). No single 0-100 score is asserted \u2014 see methodology for why a single number here would overstate precision.",
   "confidence_score_pct": 85.0,
@@ -223,61 +213,56 @@
   },
   "new_competitors_this_run": [
     "ADK Kooling",
+    "AECOM",
     "Advantage Utilities",
     "Aston Group",
+    "Bell Group",
     "Bournemouth Energy",
-    "Carbon Trust",
-    "Centrica Business Solutions",
-    "Chateau Energy Solutions",
-    "Considerate Group",
-    "Dorset EPC",
+    "Chateau Energy",
+    "Compliant Retrofits",
+    "Danfoss",
     "ENGIE Impact",
-    "EcoGroup (Eniscope)",
+    "EcoGroup",
     "Eden Energy Partners",
-    "Energy Performance Direct",
     "Enertiv",
     "Envigilance",
-    "Greenview",
-    "Honeywell (INNCOM)",
+    "Honeywell INNCOM",
     "Hospitality Energy Saving",
+    "Hotel Service Corp.",
     "Inergy Group",
     "Light Up Energy",
-    "Mitsubishi Electric",
     "National Retrofit Hub",
     "Nationwide Energy Consultants",
     "Olympus Power",
     "OxMaint",
     "Powerdown220",
-    "Powerhub Solutions",
     "Powerstar",
     "RISE Engineering",
     "Retrofit-EPC",
-    "SMS",
-    "ST Electrical Contractors",
+    "Ridgewater Energy",
     "Sensibo",
     "SitelogIQ",
     "Spectra Energy Group",
     "Sustainable Energy Services",
-    "TRC Companies",
-    "TUV Rheinland",
-    "Telkonet",
+    "TJ Ref",
     "Telnergy",
     "Tourythm",
+    "Watford Control",
     "WiSuite"
   ],
   "trends": {
     "7_day": {
       "available": true,
-      "baseline_date": "2026-09-10",
+      "baseline_date": "2026-09-11",
       "independent_visibility_change_pct_points": 0.0
     },
     "30_day": {
       "available": false,
-      "reason": "No run exists 30+ days before 2026-09-17 yet. History starts 2026-09-03."
+      "reason": "No run exists 30+ days before 2026-09-18 yet. History starts 2026-09-03."
     },
     "90_day": {
       "available": false,
-      "reason": "No run exists 90+ days before 2026-09-17 yet. History starts 2026-09-03."
+      "reason": "No run exists 90+ days before 2026-09-18 yet. History starts 2026-09-03."
     }
   }
 }
