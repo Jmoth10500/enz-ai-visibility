@@ -1,5 +1,5 @@
 {
-  "run_date": "2026-10-01",
+  "run_date": "2026-10-02",
   "computed_utc": "2026-10-02T07:56:10Z",
   "sample": {
     "prompts_run": 15,
@@ -18,57 +18,55 @@
   "owned_citations": [
     "https://evolutionnetzero.com/"
   ],
-  "total_citations_captured": 51,
+  "total_citations_captured": 49,
   "third_party_validation_rate_pct": null,
   "third_party_validation_note": "Not computed this run: no third-party review/discussion sources were collected yet (see methodology limitations). Do not treat as zero.",
   "competitor_share_of_voice_pct": 2.0,
   "mention_counts": {
+    "Verdant": 3,
     "Advantage Utilities": 2,
     "RISE Engineering": 2,
-    "SMS Energy": 2,
     "Honeywell (INNCOM)": 2,
-    "CBRE": 2,
-    "Hospitality Energy Savings & Sustainability (HESS)": 1,
+    "Consultus": 1,
     "Eden Energy Partners": 1,
-    "Bywaters": 1,
+    "Expert Energy": 1,
     "Spectra Energy Group": 1,
     "TJ Ref": 1,
-    "ADK": 1,
     "Inergy Group": 1,
     "Kimpton": 1,
     "SitelogIQ": 1,
     "Budderfly": 1,
-    "Renew Energy Partners": 1,
     "Bright Power": 1,
     "Chateau Energy Solutions": 1,
-    "Schneider Electric (EcoStruxure)": 1,
+    "SMS Energy": 1,
     "HotelEnergy.ai": 1,
     "AECOM": 1,
+    "Telkonet": 1,
     "Hotel Service Corp.": 1,
-    "Dexatek": 1,
     "Powerstar": 1,
     "Olympus Power": 1,
-    "Schneider Electric": 1,
     "Powerdown220": 1,
     "Watford Control": 1,
     "Powerhub Solutions": 1,
-    "Greenview": 1,
-    "EarthCheck": 1,
-    "Bell Group": 1,
-    "Wyndham Hotels & Resorts": 1,
+    "Sustainable Hospitality Alliance": 1,
+    "CBRE": 1,
+    "Oracle Hospitality OPERA Cloud": 1,
     "Bournemouth Energy": 1,
     "Ridgewater Energy": 1,
     "Heart CIC": 1,
     "Wessex ECO Energy": 1,
+    "Dorset Community Energy": 1,
     "Telnergy": 1,
     "Nationwide Energy Consultants": 1,
     "Energy Performance Direct": 1,
+    "GVL Energy": 1,
     "Envigilance": 1,
-    "Telkonet": 1,
-    "EcoGroup": 1,
+    "ES Global": 1,
     "Evolution NetZero": 1,
-    "OxMaint": 1,
-    "Verdant": 1
+    "Mission Net Zero": 1,
+    "Mark Group": 1,
+    "Enertiv": 1,
+    "OxMaint": 1
   },
   "high_intent_visibility_pct": 12.5,
   "high_intent_sample_size": 8,
@@ -81,9 +79,9 @@
       "funnel_stage": "consideration",
       "competitors_present": [
         "Advantage Utilities",
-        "Hospitality Energy Savings & Sustainability (HESS)",
+        "Consultus",
         "Eden Energy Partners",
-        "Bywaters"
+        "Expert Energy"
       ]
     },
     {
@@ -93,7 +91,6 @@
       "competitors_present": [
         "Spectra Energy Group",
         "TJ Ref",
-        "ADK",
         "Inergy Group",
         "Kimpton"
       ]
@@ -105,11 +102,9 @@
       "competitors_present": [
         "SitelogIQ",
         "Budderfly",
-        "Renew Energy Partners",
         "Bright Power",
         "RISE Engineering",
-        "Chateau Energy Solutions",
-        "Schneider Electric (EcoStruxure)"
+        "Chateau Energy Solutions"
       ]
     },
     {
@@ -129,8 +124,9 @@
       "funnel_stage": "consideration",
       "competitors_present": [
         "Honeywell (INNCOM)",
-        "Hotel Service Corp.",
-        "Dexatek"
+        "Verdant",
+        "Telkonet",
+        "Hotel Service Corp."
       ]
     },
     {
@@ -140,7 +136,6 @@
       "competitors_present": [
         "Powerstar",
         "Olympus Power",
-        "Schneider Electric",
         "Powerdown220",
         "Watford Control",
         "Powerhub Solutions"
@@ -151,9 +146,7 @@
       "query": "How should a UK hotel group choose an energy-retrofit partner?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "Advantage Utilities",
-        "Bell Group",
-        "SMS Energy"
+        "Advantage Utilities"
       ]
     },
     {
@@ -161,8 +154,7 @@
       "query": "Which firms offer measured trials before a full hotel rollout?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "Wyndham Hotels & Resorts",
-        "CBRE"
+        "Oracle Hospitality OPERA Cloud"
       ]
     },
     {
@@ -173,7 +165,8 @@
         "Bournemouth Energy",
         "Ridgewater Energy",
         "Heart CIC",
-        "Wessex ECO Energy"
+        "Wessex ECO Energy",
+        "Dorset Community Energy"
       ]
     },
     {
@@ -183,7 +176,8 @@
       "competitors_present": [
         "Telnergy",
         "Nationwide Energy Consultants",
-        "Energy Performance Direct"
+        "Energy Performance Direct",
+        "GVL Energy"
       ]
     },
     {
@@ -192,9 +186,9 @@
       "funnel_stage": "consideration",
       "competitors_present": [
         "Envigilance",
+        "ES Global",
         "Honeywell (INNCOM)",
-        "Telkonet",
-        "EcoGroup"
+        "Verdant"
       ]
     },
     {
@@ -202,14 +196,15 @@
       "query": "Which hotel retrofit companies can verify savings after installation?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "OxMaint",
-        "Verdant"
+        "Enertiv",
+        "Verdant",
+        "OxMaint"
       ]
     }
   ],
   "source_quality_breakdown": {
     "trade_publication": 2,
-    "general_web": 49
+    "general_web": 47
   },
   "source_quality_note": "Counts by tier across all captured citation URLs (government / trade_publication / general_web / low_value / unclassified). No single 0-100 score is asserted \u2014 see methodology for why a single number here would overstate precision.",
   "confidence_score_pct": 85.0,
@@ -223,62 +218,60 @@
     "engine_diversity_cap_applied": true
   },
   "new_competitors_this_run": [
-    "ADK",
     "AECOM",
     "Advantage Utilities",
-    "Bell Group",
     "Bournemouth Energy",
     "Bright Power",
     "Budderfly",
-    "Bywaters",
     "CBRE",
     "Chateau Energy Solutions",
-    "Dexatek",
-    "EarthCheck",
-    "EcoGroup",
+    "Consultus",
+    "Dorset Community Energy",
+    "ES Global",
     "Eden Energy Partners",
     "Energy Performance Direct",
+    "Enertiv",
     "Envigilance",
-    "Greenview",
+    "Expert Energy",
+    "GVL Energy",
     "Heart CIC",
     "Honeywell (INNCOM)",
-    "Hospitality Energy Savings & Sustainability (HESS)",
     "Hotel Service Corp.",
     "HotelEnergy.ai",
     "Inergy Group",
     "Kimpton",
+    "Mark Group",
     "Nationwide Energy Consultants",
     "Olympus Power",
+    "Oracle Hospitality OPERA Cloud",
     "OxMaint",
     "Powerdown220",
     "Powerhub Solutions",
     "Powerstar",
     "RISE Engineering",
-    "Renew Energy Partners",
     "Ridgewater Energy",
-    "Schneider Electric (EcoStruxure)",
     "SitelogIQ",
     "Spectra Energy Group",
+    "Sustainable Hospitality Alliance",
     "TJ Ref",
     "Telkonet",
     "Telnergy",
     "Watford Control",
-    "Wessex ECO Energy",
-    "Wyndham Hotels & Resorts"
+    "Wessex ECO Energy"
   ],
   "trends": {
     "7_day": {
       "available": true,
-      "baseline_date": "2026-09-24",
+      "baseline_date": "2026-09-25",
       "independent_visibility_change_pct_points": 0.0
     },
     "30_day": {
       "available": false,
-      "reason": "No run exists 30+ days before 2026-10-01 yet. History starts 2026-09-03."
+      "reason": "No run exists 30+ days before 2026-10-02 yet. History starts 2026-09-03."
     },
     "90_day": {
       "available": false,
-      "reason": "No run exists 90+ days before 2026-10-01 yet. History starts 2026-09-03."
+      "reason": "No run exists 90+ days before 2026-10-02 yet. History starts 2026-09-03."
     }
   }
 }
