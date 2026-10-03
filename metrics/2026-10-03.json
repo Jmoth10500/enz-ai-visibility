@@ -1,5 +1,5 @@
 {
-  "run_date": "2026-09-03",
+  "run_date": "2026-10-03",
   "computed_utc": "2026-10-03T07:50:16Z",
   "sample": {
     "prompts_run": 15,
@@ -14,51 +14,62 @@
   "top3_evidence": [
     "core-14"
   ],
-  "owned_citation_rate_pct": 2.3,
+  "owned_citation_rate_pct": 2.0,
   "owned_citations": [
     "https://evolutionnetzero.com/"
   ],
-  "total_citations_captured": 43,
+  "total_citations_captured": 50,
   "third_party_validation_rate_pct": null,
   "third_party_validation_note": "Not computed this run: no third-party review/discussion sources were collected yet (see methodology limitations). Do not treat as zero.",
-  "competitor_share_of_voice_pct": 2.3,
+  "competitor_share_of_voice_pct": 2.0,
   "mention_counts": {
-    "Hospitality Energy Saving & Sustainability": 3,
-    "SensorFlow": 3,
-    "Bell Group": 2,
-    "Telnergy": 2,
-    "Zero Carbon Services": 2,
-    "Advantage Utilities": 1,
+    "Advantage Utilities": 2,
+    "OxMaint": 2,
+    "Sensibo": 2,
+    "Hospitality Energy Saving Solutions (HESS)": 1,
     "Eden Energy Partners": 1,
-    "SMS Energy": 1,
-    "ADK": 1,
-    "Inergy Group": 1,
+    "Bywaters": 1,
     "Spectra Energy Group": 1,
-    "Mitsubishi Electric": 1,
-    "Willmott Dixon Interiors": 1,
-    "Sustainable Building Services": 1,
-    "Businesswise Solutions": 1,
-    "Clearworld": 1,
-    "PasCheck Retrofit": 1,
-    "RCS Limited": 1,
-    "Energy Audits UK": 1,
-    "Schneider Electric": 1,
+    "TJ Ref": 1,
+    "Inergy Group": 1,
+    "Kimpton": 1,
+    "SitelogIQ": 1,
+    "Budderfly": 1,
+    "Chateau Energy Solutions": 1,
+    "RISE Engineering": 1,
+    "RISE": 1,
+    "AECOM": 1,
+    "HotelEnergy.ai": 1,
+    "Honeywell (INNCOM)": 1,
     "Telkonet": 1,
+    "Hotel Service Corp.": 1,
+    "WiSuite": 1,
+    "EnExpert": 1,
     "Powerstar": 1,
     "Olympus Power": 1,
+    "SMARTech Energy": 1,
     "Powerdown220": 1,
     "Watford Control": 1,
-    "National Retrofit Hub": 1,
-    "KiWi Power": 1,
+    "Powerhub Solutions": 1,
+    "Sustainable Hospitality Alliance": 1,
+    "CBRE": 1,
+    "Oracle Hospitality OPERA Cloud": 1,
     "Bournemouth Energy": 1,
-    "ST Electrical Contractors": 1,
+    "Ridgewater Energy": 1,
+    "Heart CIC": 1,
     "Dorset Community Energy": 1,
+    "Telnergy": 1,
     "Nationwide Energy Consultants": 1,
+    "GVL Energy": 1,
+    "Energy Performance Direct": 1,
     "Envigilance": 1,
+    "Ecogroup": 1,
+    "ES Global": 1,
     "Honeywell": 1,
     "Evolution NetZero": 1,
     "Mission Net Zero": 1,
-    "National Retrofit Solutions": 1
+    "Mark Group": 1,
+    "Enertiv": 1
   },
   "high_intent_visibility_pct": 12.5,
   "high_intent_sample_size": 8,
@@ -71,8 +82,9 @@
       "funnel_stage": "consideration",
       "competitors_present": [
         "Advantage Utilities",
+        "Hospitality Energy Saving Solutions (HESS)",
         "Eden Energy Partners",
-        "SMS Energy"
+        "Bywaters"
       ]
     },
     {
@@ -80,10 +92,10 @@
       "query": "What are the best firms for HVAC optimisation in UK hotels?",
       "funnel_stage": "consideration",
       "competitors_present": [
-        "ADK",
-        "Inergy Group",
         "Spectra Energy Group",
-        "Mitsubishi Electric"
+        "TJ Ref",
+        "Inergy Group",
+        "Kimpton"
       ]
     },
     {
@@ -91,9 +103,8 @@
       "query": "Who delivers low-disruption energy retrofits for occupied hotels?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "Willmott Dixon Interiors",
-        "Bell Group",
-        "Sustainable Building Services"
+        "OxMaint",
+        "Sensibo"
       ]
     },
     {
@@ -101,10 +112,10 @@
       "query": "Which companies manage multi-site hotel energy-efficiency upgrades?",
       "funnel_stage": "consideration",
       "competitors_present": [
-        "Telnergy",
-        "Businesswise Solutions",
-        "Clearworld",
-        "Hospitality Energy Saving & Sustainability"
+        "SitelogIQ",
+        "Budderfly",
+        "Chateau Energy Solutions",
+        "RISE Engineering"
       ]
     },
     {
@@ -112,9 +123,9 @@
       "query": "Who offers independent hotel energy audits and retrofit delivery?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "PasCheck Retrofit",
-        "RCS Limited",
-        "Energy Audits UK"
+        "RISE",
+        "AECOM",
+        "HotelEnergy.ai"
       ]
     },
     {
@@ -122,9 +133,11 @@
       "query": "Which specialists provide guest-room energy management systems for hotels?",
       "funnel_stage": "consideration",
       "competitors_present": [
-        "Schneider Electric",
-        "SensorFlow",
-        "Telkonet"
+        "Honeywell (INNCOM)",
+        "Telkonet",
+        "Hotel Service Corp.",
+        "WiSuite",
+        "EnExpert"
       ]
     },
     {
@@ -134,8 +147,10 @@
       "competitors_present": [
         "Powerstar",
         "Olympus Power",
+        "SMARTech Energy",
         "Powerdown220",
-        "Watford Control"
+        "Watford Control",
+        "Powerhub Solutions"
       ]
     },
     {
@@ -143,7 +158,7 @@
       "query": "How should a UK hotel group choose an energy-retrofit partner?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "National Retrofit Hub"
+        "Advantage Utilities"
       ]
     },
     {
@@ -151,8 +166,7 @@
       "query": "Which firms offer measured trials before a full hotel rollout?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "Zero Carbon Services",
-        "KiWi Power"
+        "Oracle Hospitality OPERA Cloud"
       ]
     },
     {
@@ -161,7 +175,8 @@
       "funnel_stage": "decision",
       "competitors_present": [
         "Bournemouth Energy",
-        "ST Electrical Contractors",
+        "Ridgewater Energy",
+        "Heart CIC",
         "Dorset Community Energy"
       ]
     },
@@ -172,7 +187,8 @@
       "competitors_present": [
         "Telnergy",
         "Nationwide Energy Consultants",
-        "Hospitality Energy Saving & Sustainability"
+        "GVL Energy",
+        "Energy Performance Direct"
       ]
     },
     {
@@ -181,8 +197,9 @@
       "funnel_stage": "consideration",
       "competitors_present": [
         "Envigilance",
-        "Honeywell",
-        "SensorFlow"
+        "Ecogroup",
+        "ES Global",
+        "Honeywell"
       ]
     },
     {
@@ -190,16 +207,15 @@
       "query": "Which hotel retrofit companies can verify savings after installation?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "SensorFlow",
-        "Bell Group",
-        "National Retrofit Solutions"
+        "Enertiv",
+        "OxMaint",
+        "Sensibo"
       ]
     }
   ],
   "source_quality_breakdown": {
-    "trade_publication": 3,
-    "general_web": 39,
-    "government": 1
+    "trade_publication": 2,
+    "general_web": 48
   },
   "source_quality_note": "Counts by tier across all captured citation URLs (government / trade_publication / general_web / low_value / unclassified). No single 0-100 score is asserted \u2014 see methodology for why a single number here would overstate precision.",
   "confidence_score_pct": 85.0,
@@ -213,48 +229,65 @@
     "engine_diversity_cap_applied": true
   },
   "new_competitors_this_run": [
-    "ADK",
+    "AECOM",
     "Advantage Utilities",
-    "Bell Group",
     "Bournemouth Energy",
-    "Businesswise Solutions",
-    "Clearworld",
+    "Budderfly",
+    "Bywaters",
+    "CBRE",
+    "Chateau Energy Solutions",
     "Dorset Community Energy",
+    "ES Global",
+    "Ecogroup",
     "Eden Energy Partners",
-    "Energy Audits UK",
+    "EnExpert",
+    "Energy Performance Direct",
+    "Enertiv",
     "Envigilance",
+    "GVL Energy",
+    "Heart CIC",
+    "Honeywell (INNCOM)",
+    "Hospitality Energy Saving Solutions (HESS)",
+    "Hotel Service Corp.",
+    "HotelEnergy.ai",
     "Inergy Group",
-    "KiWi Power",
-    "Mitsubishi Electric",
-    "National Retrofit Hub",
-    "National Retrofit Solutions",
+    "Kimpton",
+    "Mark Group",
     "Nationwide Energy Consultants",
     "Olympus Power",
-    "PasCheck Retrofit",
+    "Oracle Hospitality OPERA Cloud",
+    "OxMaint",
     "Powerdown220",
+    "Powerhub Solutions",
     "Powerstar",
-    "RCS Limited",
-    "ST Electrical Contractors",
+    "RISE",
+    "RISE Engineering",
+    "Ridgewater Energy",
+    "SMARTech Energy",
+    "Sensibo",
+    "SitelogIQ",
     "Spectra Energy Group",
-    "Sustainable Building Services",
+    "Sustainable Hospitality Alliance",
+    "TJ Ref",
     "Telkonet",
     "Telnergy",
     "Watford Control",
-    "Willmott Dixon Interiors",
-    "Zero Carbon Services"
+    "WiSuite"
   ],
   "trends": {
     "7_day": {
-      "available": false,
-      "reason": "No run exists 7+ days before 2026-09-03 yet. History starts 2026-09-03."
+      "available": true,
+      "baseline_date": "2026-09-26",
+      "independent_visibility_change_pct_points": 0.0
     },
     "30_day": {
-      "available": false,
-      "reason": "No run exists 30+ days before 2026-09-03 yet. History starts 2026-09-03."
+      "available": true,
+      "baseline_date": "2026-09-03",
+      "independent_visibility_change_pct_points": 0.0
     },
     "90_day": {
       "available": false,
-      "reason": "No run exists 90+ days before 2026-09-03 yet. History starts 2026-09-03."
+      "reason": "No run exists 90+ days before 2026-10-03 yet. History starts 2026-09-03."
     }
   }
 }
