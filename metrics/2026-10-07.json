@@ -1,81 +1,70 @@
 {
-  "run_date": "2026-09-16",
+  "run_date": "2026-10-07",
   "computed_utc": "2026-10-07T07:56:01Z",
   "sample": {
     "prompts_run": 15,
     "prompts_scheduled": 15,
     "coverage_pct": 100.0
   },
-  "independent_visibility_pct": 6.7,
-  "independent_visibility_evidence": [
-    "core-14"
-  ],
-  "top3_recommendation_rate_pct": 6.7,
-  "top3_evidence": [
-    "core-14"
-  ],
-  "owned_citation_rate_pct": 2.0,
-  "owned_citations": [
-    "https://evolutionnetzero.com/"
-  ],
-  "total_citations_captured": 50,
+  "independent_visibility_pct": 0.0,
+  "independent_visibility_evidence": [],
+  "top3_recommendation_rate_pct": 0.0,
+  "top3_evidence": [],
+  "owned_citation_rate_pct": 0.0,
+  "owned_citations": [],
+  "total_citations_captured": 46,
   "third_party_validation_rate_pct": null,
   "third_party_validation_note": "Not computed this run: no third-party review/discussion sources were collected yet (see methodology limitations). Do not treat as zero.",
-  "competitor_share_of_voice_pct": 2.0,
+  "competitor_share_of_voice_pct": 0.0,
   "mention_counts": {
-    "Schneider Electric": 2,
+    "Advantage Utilities": 3,
     "Verdant": 2,
-    "Advantage Utilities": 1,
-    "Eden Energy Partners": 1,
-    "SMS Energy": 1,
-    "ADK Kooling": 1,
-    "Inergy Group": 1,
-    "Spectra Energy Group": 1,
-    "Mitie": 1,
-    "Fisk Electric Co.": 1,
-    "Budderfly": 1,
-    "Renew Energy Partners": 1,
-    "OUS Capital, LLC": 1,
-    "ENGIE Impact": 1,
-    "Sustainable Energy Services": 1,
-    "IES Consulting": 1,
-    "Tourythm": 1,
+    "Evolve Energy": 1,
+    "Radius Energy": 1,
+    "Gleeds": 1,
+    "Zero Carbon Services": 1,
+    "Verdant (Copeland)": 1,
+    "Unitary Engineering Services": 1,
+    "Kane Group": 1,
+    "Daikin": 1,
+    "SSE Enterprise Solutions": 1,
+    "Grundfos": 1,
+    "Viconics": 1,
+    "Schneider Electric": 1,
+    "E.ON": 1,
+    "EnergyConnect": 1,
+    "Pacific Energy (Telkonet)": 1,
+    "ABB": 1,
+    "ista ME": 1,
+    "INTEREL": 1,
     "Honeywell (INNCOM)": 1,
-    "Telkonet": 1,
-    "Powerstar": 1,
+    "Evolve Guest Controls": 1,
+    "Minxon Hotel Technology": 1,
+    "EMSc (UK) / Powerstar": 1,
     "Olympus Power": 1,
-    "Powerdown220": 1,
-    "Powerhub Solutions": 1,
-    "AECOM": 1,
-    "Considerate Group": 1,
-    "Greenview": 1,
-    "SMS": 1,
-    "Aston Group": 1,
-    "Bell Group": 1,
-    "National Retrofit Hub": 1,
-    "Bournemouth Energy": 1,
-    "ST Electrical Contractors": 1,
-    "Dorset CAN (Community Action Network)": 1,
-    "Compliant Retrofits": 1,
-    "Telnergy": 1,
+    "t-mac Technologies": 1,
+    "Considerate Group (Con-Serve)": 1,
+    "DWF": 1,
+    "APT (Advisory Partners Technology)": 1,
+    "IHG": 1,
+    "Elite Renewable Energy Ltd": 1,
+    "Hurtwood": 1,
+    "Omega Energy Services": 1,
+    "Fidelity Energy": 1,
     "Nationwide Energy Consultants": 1,
-    "Light Up Energy": 1,
+    "Inspired": 1,
+    "Telnergy": 1,
     "Envigilance": 1,
-    "EcoGroup (Eniscope)": 1,
-    "Honeywell": 1,
-    "SensorFlow": 1,
-    "Evolution NetZero": 1,
-    "Mission Net Zero": 1,
-    "Hospitality Energy Saving": 1,
-    "TRC Companies": 1,
-    "Sensibo": 1,
-    "Enertiv": 1,
-    "OxMaint": 1
+    "BEST Energy (Eniscope)": 1,
+    "Carbon Trust": 1,
+    "Regency Lighting": 1,
+    "LightWaveRF": 1,
+    "Think Energy Management": 1
   },
-  "high_intent_visibility_pct": 12.5,
+  "high_intent_visibility_pct": 0.0,
   "high_intent_sample_size": 8,
   "prompt_coverage_pct": 100.0,
-  "content_gap_count": 12,
+  "content_gap_count": 14,
   "content_gap_prompts": [
     {
       "id": "core-01",
@@ -83,8 +72,10 @@
       "funnel_stage": "consideration",
       "competitors_present": [
         "Advantage Utilities",
-        "Eden Energy Partners",
-        "SMS Energy"
+        "Evolve Energy",
+        "Radius Energy",
+        "Gleeds",
+        "Zero Carbon Services"
       ]
     },
     {
@@ -92,10 +83,12 @@
       "query": "What are the best firms for HVAC optimisation in UK hotels?",
       "funnel_stage": "consideration",
       "competitors_present": [
-        "ADK Kooling",
-        "Inergy Group",
-        "Spectra Energy Group",
-        "Mitie"
+        "Verdant (Copeland)",
+        "Unitary Engineering Services",
+        "Kane Group",
+        "Daikin",
+        "SSE Enterprise Solutions",
+        "Grundfos"
       ]
     },
     {
@@ -103,7 +96,8 @@
       "query": "Who delivers low-disruption energy retrofits for occupied hotels?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "Fisk Electric Co.",
+        "Viconics",
+        "Verdant",
         "Schneider Electric"
       ]
     },
@@ -112,10 +106,10 @@
       "query": "Which companies manage multi-site hotel energy-efficiency upgrades?",
       "funnel_stage": "consideration",
       "competitors_present": [
-        "Budderfly",
-        "Renew Energy Partners",
-        "Verdant",
-        "OUS Capital, LLC"
+        "E.ON",
+        "EnergyConnect",
+        "Pacific Energy (Telkonet)",
+        "ABB"
       ]
     },
     {
@@ -123,10 +117,7 @@
       "query": "Who offers independent hotel energy audits and retrofit delivery?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "ENGIE Impact",
-        "Sustainable Energy Services",
-        "IES Consulting",
-        "Tourythm"
+        "ista ME"
       ]
     },
     {
@@ -134,10 +125,10 @@
       "query": "Which specialists provide guest-room energy management systems for hotels?",
       "funnel_stage": "consideration",
       "competitors_present": [
+        "INTEREL",
         "Honeywell (INNCOM)",
-        "Schneider Electric",
-        "Telkonet",
-        "Verdant"
+        "Evolve Guest Controls",
+        "Minxon Hotel Technology"
       ]
     },
     {
@@ -145,10 +136,9 @@
       "query": "Which UK companies provide hotel voltage optimisation and building monitoring?",
       "funnel_stage": "consideration",
       "competitors_present": [
-        "Powerstar",
+        "EMSc (UK) / Powerstar",
         "Olympus Power",
-        "Powerdown220",
-        "Powerhub Solutions"
+        "t-mac Technologies"
       ]
     },
     {
@@ -156,10 +146,17 @@
       "query": "How should a UK hotel group choose an energy-retrofit partner?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "SMS",
-        "Aston Group",
-        "Bell Group",
-        "National Retrofit Hub"
+        "Advantage Utilities",
+        "DWF"
+      ]
+    },
+    {
+      "id": "core-10",
+      "query": "Which firms offer measured trials before a full hotel rollout?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "APT (Advisory Partners Technology)",
+        "IHG"
       ]
     },
     {
@@ -167,10 +164,9 @@
       "query": "Which Dorset firms provide commercial energy audits and retrofit projects?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "Bournemouth Energy",
-        "ST Electrical Contractors",
-        "Dorset CAN (Community Action Network)",
-        "Compliant Retrofits"
+        "Elite Renewable Energy Ltd",
+        "Hurtwood",
+        "Omega Energy Services"
       ]
     },
     {
@@ -178,9 +174,11 @@
       "query": "What is the best energy consultancy for hospitality businesses in Dorset?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "Telnergy",
+        "Fidelity Energy",
+        "Advantage Utilities",
         "Nationwide Energy Consultants",
-        "Light Up Energy"
+        "Inspired",
+        "Telnergy"
       ]
     },
     {
@@ -189,9 +187,15 @@
       "funnel_stage": "consideration",
       "competitors_present": [
         "Envigilance",
-        "EcoGroup (Eniscope)",
-        "Honeywell",
-        "SensorFlow"
+        "BEST Energy (Eniscope)"
+      ]
+    },
+    {
+      "id": "core-14",
+      "query": "Who provides vendor-agnostic energy-efficiency advice to UK hotel groups?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "Carbon Trust"
       ]
     },
     {
@@ -199,16 +203,17 @@
       "query": "Which hotel retrofit companies can verify savings after installation?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "TRC Companies",
-        "Sensibo",
-        "Enertiv",
-        "OxMaint"
+        "Regency Lighting",
+        "LightWaveRF",
+        "Verdant",
+        "Think Energy Management"
       ]
     }
   ],
   "source_quality_breakdown": {
-    "trade_publication": 1,
-    "general_web": 49
+    "trade_publication": 6,
+    "general_web": 39,
+    "government": 1
   },
   "source_quality_note": "Counts by tier across all captured citation URLs (government / trade_publication / general_web / low_value / unclassified). No single 0-100 score is asserted \u2014 see methodology for why a single number here would overstate precision.",
   "confidence_score_pct": 85.0,
@@ -222,60 +227,62 @@
     "engine_diversity_cap_applied": true
   },
   "new_competitors_this_run": [
-    "ADK Kooling",
-    "AECOM",
+    "ABB",
+    "APT (Advisory Partners Technology)",
     "Advantage Utilities",
-    "Aston Group",
-    "Bell Group",
-    "Bournemouth Energy",
-    "Budderfly",
-    "Compliant Retrofits",
-    "Considerate Group",
-    "Dorset CAN (Community Action Network)",
-    "ENGIE Impact",
-    "EcoGroup (Eniscope)",
-    "Eden Energy Partners",
-    "Enertiv",
+    "BEST Energy (Eniscope)",
+    "Carbon Trust",
+    "Considerate Group (Con-Serve)",
+    "DWF",
+    "Daikin",
+    "E.ON",
+    "EMSc (UK) / Powerstar",
+    "Elite Renewable Energy Ltd",
+    "EnergyConnect",
     "Envigilance",
-    "Fisk Electric Co.",
-    "Greenview",
+    "Evolve Energy",
+    "Evolve Guest Controls",
+    "Fidelity Energy",
+    "Gleeds",
+    "Grundfos",
     "Honeywell (INNCOM)",
-    "Hospitality Energy Saving",
-    "IES Consulting",
-    "Inergy Group",
-    "Light Up Energy",
-    "National Retrofit Hub",
+    "Hurtwood",
+    "IHG",
+    "INTEREL",
+    "Inspired",
+    "Kane Group",
+    "LightWaveRF",
+    "Minxon Hotel Technology",
     "Nationwide Energy Consultants",
-    "OUS Capital, LLC",
     "Olympus Power",
-    "OxMaint",
-    "Powerdown220",
-    "Powerhub Solutions",
-    "Powerstar",
-    "Renew Energy Partners",
-    "SMS",
-    "ST Electrical Contractors",
-    "Sensibo",
-    "Spectra Energy Group",
-    "Sustainable Energy Services",
-    "TRC Companies",
-    "Telkonet",
+    "Omega Energy Services",
+    "Pacific Energy (Telkonet)",
+    "Radius Energy",
+    "Regency Lighting",
+    "SSE Enterprise Solutions",
     "Telnergy",
-    "Tourythm"
+    "Think Energy Management",
+    "Unitary Engineering Services",
+    "Verdant (Copeland)",
+    "Viconics",
+    "Zero Carbon Services",
+    "ista ME",
+    "t-mac Technologies"
   ],
   "trends": {
     "7_day": {
       "available": true,
-      "baseline_date": "2026-09-09",
-      "independent_visibility_change_pct_points": 0.0
+      "baseline_date": "2026-09-30",
+      "independent_visibility_change_pct_points": -6.7
     },
     "30_day": {
-      "available": false,
-      "reason": "No run exists 30+ days before 2026-09-16 yet. History starts 2026-09-03."
+      "available": true,
+      "baseline_date": "2026-09-03",
+      "independent_visibility_change_pct_points": -6.7
     },
     "90_day": {
       "available": false,
-      "reason": "No run exists 90+ days before 2026-09-16 yet. History starts 2026-09-03."
+      "reason": "No run exists 90+ days before 2026-10-07 yet. History starts 2026-09-03."
     }
   }
 }
