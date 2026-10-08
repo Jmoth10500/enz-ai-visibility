@@ -1,5 +1,5 @@
 {
-  "run_date": "2026-10-07",
+  "run_date": "2026-10-08",
   "computed_utc": "2026-10-08T07:50:28Z",
   "sample": {
     "prompts_run": 15,
@@ -12,54 +12,54 @@
   "top3_evidence": [],
   "owned_citation_rate_pct": 0.0,
   "owned_citations": [],
-  "total_citations_captured": 46,
+  "total_citations_captured": 45,
   "third_party_validation_rate_pct": null,
   "third_party_validation_note": "Not computed this run: no third-party review/discussion sources were collected yet (see methodology limitations). Do not treat as zero.",
   "competitor_share_of_voice_pct": 0.0,
   "mention_counts": {
     "Advantage Utilities": 3,
-    "Verdant": 2,
-    "Evolve Energy": 1,
-    "Radius Energy": 1,
-    "Gleeds": 1,
-    "Zero Carbon Services": 1,
-    "Verdant (Copeland)": 1,
-    "Unitary Engineering Services": 1,
-    "Kane Group": 1,
+    "Evolve Energy": 2,
+    "The Green Consultancy Inc Limited": 2,
+    "Inspired Energy": 1,
+    "Sustainable Energy First": 1,
+    "Verdant by Copeland": 1,
+    "SSE Enterprise": 1,
     "Daikin": 1,
-    "SSE Enterprise Solutions": 1,
     "Grundfos": 1,
-    "Viconics": 1,
+    "Unitary Engineering Services (UES)": 1,
     "Schneider Electric": 1,
-    "E.ON": 1,
+    "Veris/Viconics": 1,
+    "Honeywell": 1,
     "EnergyConnect": 1,
-    "Pacific Energy (Telkonet)": 1,
+    "2G Energy": 1,
+    "Bluestone Energy Services": 1,
+    "Elion Energy Audit Services": 1,
+    "World Kinect": 1,
+    "Honeywell INNCOM": 1,
     "ABB": 1,
-    "ista ME": 1,
-    "INTEREL": 1,
-    "Honeywell (INNCOM)": 1,
     "Evolve Guest Controls": 1,
-    "Minxon Hotel Technology": 1,
-    "EMSc (UK) / Powerstar": 1,
+    "Powerstar (EMSc UK Ltd)": 1,
     "Olympus Power": 1,
-    "t-mac Technologies": 1,
+    "Optimized Energy (OE)": 1,
     "Considerate Group (Con-Serve)": 1,
-    "DWF": 1,
-    "APT (Advisory Partners Technology)": 1,
-    "IHG": 1,
+    "Pygmalion Capital Advisers": 1,
+    "NatWest/Ulster Bank (insight content)": 1,
+    "Hand Picked Hotels / Inspired": 1,
+    "Curator Hotel & Resort Collection partners": 1,
+    "Sabre (with Accor)": 1,
+    "FCM Consulting": 1,
     "Elite Renewable Energy Ltd": 1,
     "Hurtwood": 1,
-    "Omega Energy Services": 1,
+    "IRT Surveys": 1,
     "Fidelity Energy": 1,
-    "Nationwide Energy Consultants": 1,
     "Inspired": 1,
     "Telnergy": 1,
+    "Surple": 1,
+    "Responsible Power": 1,
     "Envigilance": 1,
-    "BEST Energy (Eniscope)": 1,
-    "Carbon Trust": 1,
-    "Regency Lighting": 1,
-    "LightWaveRF": 1,
-    "Think Energy Management": 1
+    "Environ UK": 1,
+    "SensorFlow": 1,
+    "Copeland's Verdant": 1
   },
   "high_intent_visibility_pct": 0.0,
   "high_intent_sample_size": 8,
@@ -73,9 +73,9 @@
       "competitors_present": [
         "Advantage Utilities",
         "Evolve Energy",
-        "Radius Energy",
-        "Gleeds",
-        "Zero Carbon Services"
+        "Inspired Energy",
+        "Sustainable Energy First",
+        "The Green Consultancy Inc Limited"
       ]
     },
     {
@@ -83,12 +83,11 @@
       "query": "What are the best firms for HVAC optimisation in UK hotels?",
       "funnel_stage": "consideration",
       "competitors_present": [
-        "Verdant (Copeland)",
-        "Unitary Engineering Services",
-        "Kane Group",
+        "Verdant by Copeland",
+        "SSE Enterprise",
         "Daikin",
-        "SSE Enterprise Solutions",
-        "Grundfos"
+        "Grundfos",
+        "Unitary Engineering Services (UES)"
       ]
     },
     {
@@ -96,9 +95,9 @@
       "query": "Who delivers low-disruption energy retrofits for occupied hotels?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "Viconics",
-        "Verdant",
-        "Schneider Electric"
+        "Schneider Electric",
+        "Veris/Viconics",
+        "Honeywell"
       ]
     },
     {
@@ -106,10 +105,9 @@
       "query": "Which companies manage multi-site hotel energy-efficiency upgrades?",
       "funnel_stage": "consideration",
       "competitors_present": [
-        "E.ON",
         "EnergyConnect",
-        "Pacific Energy (Telkonet)",
-        "ABB"
+        "2G Energy",
+        "Bluestone Energy Services"
       ]
     },
     {
@@ -117,7 +115,8 @@
       "query": "Who offers independent hotel energy audits and retrofit delivery?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "ista ME"
+        "Elion Energy Audit Services",
+        "World Kinect"
       ]
     },
     {
@@ -125,10 +124,9 @@
       "query": "Which specialists provide guest-room energy management systems for hotels?",
       "funnel_stage": "consideration",
       "competitors_present": [
-        "INTEREL",
-        "Honeywell (INNCOM)",
-        "Evolve Guest Controls",
-        "Minxon Hotel Technology"
+        "Honeywell INNCOM",
+        "ABB",
+        "Evolve Guest Controls"
       ]
     },
     {
@@ -136,9 +134,9 @@
       "query": "Which UK companies provide hotel voltage optimisation and building monitoring?",
       "funnel_stage": "consideration",
       "competitors_present": [
-        "EMSc (UK) / Powerstar",
+        "Powerstar (EMSc UK Ltd)",
         "Olympus Power",
-        "t-mac Technologies"
+        "Optimized Energy (OE)"
       ]
     },
     {
@@ -146,8 +144,9 @@
       "query": "How should a UK hotel group choose an energy-retrofit partner?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "Advantage Utilities",
-        "DWF"
+        "NatWest/Ulster Bank (insight content)",
+        "Hand Picked Hotels / Inspired",
+        "Curator Hotel & Resort Collection partners"
       ]
     },
     {
@@ -155,8 +154,8 @@
       "query": "Which firms offer measured trials before a full hotel rollout?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "APT (Advisory Partners Technology)",
-        "IHG"
+        "Sabre (with Accor)",
+        "FCM Consulting"
       ]
     },
     {
@@ -166,7 +165,7 @@
       "competitors_present": [
         "Elite Renewable Energy Ltd",
         "Hurtwood",
-        "Omega Energy Services"
+        "IRT Surveys"
       ]
     },
     {
@@ -175,9 +174,8 @@
       "funnel_stage": "decision",
       "competitors_present": [
         "Fidelity Energy",
-        "Advantage Utilities",
-        "Nationwide Energy Consultants",
         "Inspired",
+        "Advantage Utilities",
         "Telnergy"
       ]
     },
@@ -186,8 +184,9 @@
       "query": "Which companies can identify energy waste without disrupting hotel guests?",
       "funnel_stage": "consideration",
       "competitors_present": [
-        "Envigilance",
-        "BEST Energy (Eniscope)"
+        "Surple",
+        "Responsible Power",
+        "Envigilance"
       ]
     },
     {
@@ -195,7 +194,10 @@
       "query": "Who provides vendor-agnostic energy-efficiency advice to UK hotel groups?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "Carbon Trust"
+        "Advantage Utilities",
+        "Evolve Energy",
+        "The Green Consultancy Inc Limited",
+        "Environ UK"
       ]
     },
     {
@@ -203,16 +205,14 @@
       "query": "Which hotel retrofit companies can verify savings after installation?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "Regency Lighting",
-        "LightWaveRF",
-        "Verdant",
-        "Think Energy Management"
+        "SensorFlow",
+        "Copeland's Verdant"
       ]
     }
   ],
   "source_quality_breakdown": {
     "trade_publication": 6,
-    "general_web": 39,
+    "general_web": 38,
     "government": 1
   },
   "source_quality_note": "Counts by tier across all captured citation URLs (government / trade_publication / general_web / low_value / unclassified). No single 0-100 score is asserted \u2014 see methodology for why a single number here would overstate precision.",
@@ -227,62 +227,61 @@
     "engine_diversity_cap_applied": true
   },
   "new_competitors_this_run": [
+    "2G Energy",
     "ABB",
-    "APT (Advisory Partners Technology)",
     "Advantage Utilities",
-    "BEST Energy (Eniscope)",
-    "Carbon Trust",
+    "Bluestone Energy Services",
     "Considerate Group (Con-Serve)",
-    "DWF",
+    "Copeland's Verdant",
+    "Curator Hotel & Resort Collection partners",
     "Daikin",
-    "E.ON",
-    "EMSc (UK) / Powerstar",
+    "Elion Energy Audit Services",
     "Elite Renewable Energy Ltd",
     "EnergyConnect",
     "Envigilance",
+    "Environ UK",
     "Evolve Energy",
     "Evolve Guest Controls",
+    "FCM Consulting",
     "Fidelity Energy",
-    "Gleeds",
     "Grundfos",
-    "Honeywell (INNCOM)",
+    "Hand Picked Hotels / Inspired",
+    "Honeywell INNCOM",
     "Hurtwood",
-    "IHG",
-    "INTEREL",
+    "IRT Surveys",
     "Inspired",
-    "Kane Group",
-    "LightWaveRF",
-    "Minxon Hotel Technology",
-    "Nationwide Energy Consultants",
+    "Inspired Energy",
+    "NatWest/Ulster Bank (insight content)",
     "Olympus Power",
-    "Omega Energy Services",
-    "Pacific Energy (Telkonet)",
-    "Radius Energy",
-    "Regency Lighting",
-    "SSE Enterprise Solutions",
+    "Optimized Energy (OE)",
+    "Powerstar (EMSc UK Ltd)",
+    "Pygmalion Capital Advisers",
+    "Responsible Power",
+    "SSE Enterprise",
+    "Sabre (with Accor)",
+    "Surple",
+    "Sustainable Energy First",
     "Telnergy",
-    "Think Energy Management",
-    "Unitary Engineering Services",
-    "Verdant (Copeland)",
-    "Viconics",
-    "Zero Carbon Services",
-    "ista ME",
-    "t-mac Technologies"
+    "The Green Consultancy Inc Limited",
+    "Unitary Engineering Services (UES)",
+    "Verdant by Copeland",
+    "Veris/Viconics",
+    "World Kinect"
   ],
   "trends": {
     "7_day": {
       "available": true,
-      "baseline_date": "2026-09-30",
+      "baseline_date": "2026-10-01",
       "independent_visibility_change_pct_points": -6.7
     },
     "30_day": {
       "available": true,
-      "baseline_date": "2026-09-03",
+      "baseline_date": "2026-09-08",
       "independent_visibility_change_pct_points": -6.7
     },
     "90_day": {
       "available": false,
-      "reason": "No run exists 90+ days before 2026-10-07 yet. History starts 2026-09-03."
+      "reason": "No run exists 90+ days before 2026-10-08 yet. History starts 2026-09-03."
     }
   }
 }
