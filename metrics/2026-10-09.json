@@ -1,74 +1,58 @@
 {
-  "run_date": "2026-09-29",
+  "run_date": "2026-10-09",
   "computed_utc": "2026-10-09T07:50:47Z",
   "sample": {
     "prompts_run": 15,
     "prompts_scheduled": 15,
     "coverage_pct": 100.0
   },
-  "independent_visibility_pct": 6.7,
-  "independent_visibility_evidence": [
-    "core-14"
-  ],
-  "top3_recommendation_rate_pct": 6.7,
-  "top3_evidence": [
-    "core-14"
-  ],
-  "owned_citation_rate_pct": 2.3,
-  "owned_citations": [
-    "https://evolutionnetzero.com/"
-  ],
-  "total_citations_captured": 43,
+  "independent_visibility_pct": 0.0,
+  "independent_visibility_evidence": [],
+  "top3_recommendation_rate_pct": 0.0,
+  "top3_evidence": [],
+  "owned_citation_rate_pct": 0.0,
+  "owned_citations": [],
+  "total_citations_captured": 40,
   "third_party_validation_rate_pct": null,
   "third_party_validation_note": "Not computed this run: no third-party review/discussion sources were collected yet (see methodology limitations). Do not treat as zero.",
-  "competitor_share_of_voice_pct": 2.3,
+  "competitor_share_of_voice_pct": 0.0,
   "mention_counts": {
-    "Hospitality Energy Saving & Sustainability": 2,
-    "AECOM": 2,
-    "Advantage Utilities": 1,
-    "Eden Energy Partners": 1,
-    "ADK": 1,
-    "Inergy Group": 1,
-    "Spectra Energy Group": 1,
-    "Mitsubishi Electric": 1,
-    "Fisk Electric Co.": 1,
-    "SitelogIQ": 1,
-    "Budderfly": 1,
-    "Chateau Energy": 1,
-    "WSP": 1,
-    "Blue Ocean Energy Management": 1,
-    "ENGIE Impact": 1,
+    "Advantage Utilities": 3,
+    "Powerstar": 3,
+    "Verdant by Copeland": 3,
+    "Evolve Energy": 2,
+    "Arup": 2,
+    "Telnergy": 2,
+    "SSE Enterprise": 1,
+    "Grundfos": 1,
+    "Ash Integrated Services": 1,
+    "EnergyConnect": 1,
+    "2G Energy": 1,
+    "Bluestone Energy Services": 1,
+    "ista ME": 1,
+    "Elion": 1,
     "Honeywell": 1,
-    "Telkonet": 1,
-    "Verdant": 1,
-    "WiSuite": 1,
-    "Powerstar": 1,
+    "ABB": 1,
+    "Evolve Guest Controls": 1,
     "Olympus Power": 1,
-    "Powerdown220": 1,
-    "Watford Control": 1,
-    "Greenview": 1,
-    "National Retrofit Hub": 1,
-    "Host Hotels & Resorts": 1,
-    "Bournemouth Energy": 1,
-    "Dorset Energy Solutions Ltd": 1,
-    "Ridgewater Energy": 1,
-    "Telnergy": 1,
-    "Nationwide Energy Consultants": 1,
-    "Energy Performance Direct": 1,
+    "t-mac Technologies": 1,
+    "AECOM": 1,
+    "Verco": 1,
+    "Elite Renewable Energy Ltd": 1,
+    "Dorset Energy Solutions": 1,
+    "Inspired": 1,
+    "Fidelity Energy": 1,
+    "Verdigris": 1,
     "Envigilance": 1,
-    "ES Global": 1,
-    "EcoGroup (Eniscope)": 1,
-    "Evolution NetZero": 1,
-    "Mission Net Zero": 1,
-    "Carbon Trust": 1,
-    "Enertiv": 1,
     "OxMaint": 1,
-    "Sensibo": 1
+    "The Green Consultancy Inc Limited": 1,
+    "Environ UK": 1,
+    "SensorFlow": 1
   },
-  "high_intent_visibility_pct": 12.5,
+  "high_intent_visibility_pct": 0.0,
   "high_intent_sample_size": 8,
   "prompt_coverage_pct": 100.0,
-  "content_gap_count": 13,
+  "content_gap_count": 12,
   "content_gap_prompts": [
     {
       "id": "core-01",
@@ -76,8 +60,9 @@
       "funnel_stage": "consideration",
       "competitors_present": [
         "Advantage Utilities",
-        "Eden Energy Partners",
-        "Hospitality Energy Saving & Sustainability"
+        "Evolve Energy",
+        "Arup",
+        "Powerstar"
       ]
     },
     {
@@ -85,10 +70,10 @@
       "query": "What are the best firms for HVAC optimisation in UK hotels?",
       "funnel_stage": "consideration",
       "competitors_present": [
-        "ADK",
-        "Inergy Group",
-        "Spectra Energy Group",
-        "Mitsubishi Electric"
+        "SSE Enterprise",
+        "Grundfos",
+        "Verdant by Copeland",
+        "Powerstar"
       ]
     },
     {
@@ -96,7 +81,8 @@
       "query": "Who delivers low-disruption energy retrofits for occupied hotels?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "Fisk Electric Co."
+        "Ash Integrated Services",
+        "Verdant by Copeland"
       ]
     },
     {
@@ -104,9 +90,9 @@
       "query": "Which companies manage multi-site hotel energy-efficiency upgrades?",
       "funnel_stage": "consideration",
       "competitors_present": [
-        "SitelogIQ",
-        "Budderfly",
-        "Chateau Energy"
+        "EnergyConnect",
+        "2G Energy",
+        "Bluestone Energy Services"
       ]
     },
     {
@@ -114,10 +100,8 @@
       "query": "Who offers independent hotel energy audits and retrofit delivery?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "WSP",
-        "AECOM",
-        "Blue Ocean Energy Management",
-        "ENGIE Impact"
+        "ista ME",
+        "Elion"
       ]
     },
     {
@@ -126,9 +110,8 @@
       "funnel_stage": "consideration",
       "competitors_present": [
         "Honeywell",
-        "Telkonet",
-        "Verdant",
-        "WiSuite"
+        "ABB",
+        "Evolve Guest Controls"
       ]
     },
     {
@@ -138,24 +121,7 @@
       "competitors_present": [
         "Powerstar",
         "Olympus Power",
-        "Powerdown220",
-        "Watford Control"
-      ]
-    },
-    {
-      "id": "core-09",
-      "query": "How should a UK hotel group choose an energy-retrofit partner?",
-      "funnel_stage": "decision",
-      "competitors_present": [
-        "National Retrofit Hub"
-      ]
-    },
-    {
-      "id": "core-10",
-      "query": "Which firms offer measured trials before a full hotel rollout?",
-      "funnel_stage": "decision",
-      "competitors_present": [
-        "Host Hotels & Resorts"
+        "t-mac Technologies"
       ]
     },
     {
@@ -163,9 +129,9 @@
       "query": "Which Dorset firms provide commercial energy audits and retrofit projects?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "Bournemouth Energy",
-        "Dorset Energy Solutions Ltd",
-        "Ridgewater Energy"
+        "Telnergy",
+        "Elite Renewable Energy Ltd",
+        "Dorset Energy Solutions"
       ]
     },
     {
@@ -174,8 +140,9 @@
       "funnel_stage": "decision",
       "competitors_present": [
         "Telnergy",
-        "Nationwide Energy Consultants",
-        "Energy Performance Direct"
+        "Inspired",
+        "Fidelity Energy",
+        "Advantage Utilities"
       ]
     },
     {
@@ -183,9 +150,20 @@
       "query": "Which companies can identify energy waste without disrupting hotel guests?",
       "funnel_stage": "consideration",
       "competitors_present": [
+        "Verdigris",
         "Envigilance",
-        "ES Global",
-        "EcoGroup (Eniscope)"
+        "OxMaint"
+      ]
+    },
+    {
+      "id": "core-14",
+      "query": "Who provides vendor-agnostic energy-efficiency advice to UK hotel groups?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "Advantage Utilities",
+        "Evolve Energy",
+        "The Green Consultancy Inc Limited",
+        "Environ UK"
       ]
     },
     {
@@ -193,15 +171,14 @@
       "query": "Which hotel retrofit companies can verify savings after installation?",
       "funnel_stage": "decision",
       "competitors_present": [
-        "Enertiv",
-        "OxMaint",
-        "Sensibo"
+        "SensorFlow",
+        "Verdant by Copeland"
       ]
     }
   ],
   "source_quality_breakdown": {
-    "trade_publication": 1,
-    "general_web": 42
+    "trade_publication": 6,
+    "general_web": 34
   },
   "source_quality_note": "Counts by tier across all captured citation URLs (government / trade_publication / general_web / low_value / unclassified). No single 0-100 score is asserted \u2014 see methodology for why a single number here would overstate precision.",
   "confidence_score_pct": 85.0,
@@ -215,56 +192,50 @@
     "engine_diversity_cap_applied": true
   },
   "new_competitors_this_run": [
-    "ADK",
+    "2G Energy",
+    "ABB",
     "AECOM",
     "Advantage Utilities",
-    "Blue Ocean Energy Management",
-    "Bournemouth Energy",
-    "Budderfly",
-    "Carbon Trust",
-    "Chateau Energy",
-    "Dorset Energy Solutions Ltd",
-    "ENGIE Impact",
-    "ES Global",
-    "EcoGroup (Eniscope)",
-    "Eden Energy Partners",
-    "Energy Performance Direct",
-    "Enertiv",
+    "Arup",
+    "Ash Integrated Services",
+    "Bluestone Energy Services",
+    "Dorset Energy Solutions",
+    "Elion",
+    "Elite Renewable Energy Ltd",
+    "EnergyConnect",
     "Envigilance",
-    "Fisk Electric Co.",
-    "Greenview",
-    "Host Hotels & Resorts",
-    "Inergy Group",
-    "Mitsubishi Electric",
-    "National Retrofit Hub",
-    "Nationwide Energy Consultants",
+    "Environ UK",
+    "Evolve Energy",
+    "Evolve Guest Controls",
+    "Fidelity Energy",
+    "Grundfos",
+    "Inspired",
     "Olympus Power",
     "OxMaint",
-    "Powerdown220",
     "Powerstar",
-    "Ridgewater Energy",
-    "Sensibo",
-    "SitelogIQ",
-    "Spectra Energy Group",
-    "Telkonet",
+    "SSE Enterprise",
     "Telnergy",
-    "WSP",
-    "Watford Control",
-    "WiSuite"
+    "The Green Consultancy Inc Limited",
+    "Verco",
+    "Verdant by Copeland",
+    "Verdigris",
+    "ista ME",
+    "t-mac Technologies"
   ],
   "trends": {
     "7_day": {
       "available": true,
-      "baseline_date": "2026-09-22",
-      "independent_visibility_change_pct_points": 0.0
+      "baseline_date": "2026-10-02",
+      "independent_visibility_change_pct_points": -6.7
     },
     "30_day": {
-      "available": false,
-      "reason": "No run exists 30+ days before 2026-09-29 yet. History starts 2026-09-03."
+      "available": true,
+      "baseline_date": "2026-09-09",
+      "independent_visibility_change_pct_points": -6.7
     },
     "90_day": {
       "available": false,
-      "reason": "No run exists 90+ days before 2026-09-29 yet. History starts 2026-09-03."
+      "reason": "No run exists 90+ days before 2026-10-09 yet. History starts 2026-09-03."
     }
   }
 }
