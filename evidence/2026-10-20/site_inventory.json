@@ -1,9 +1,6 @@
 {
-  "status": "carried_forward",
-  "collected_utc": "2026-10-19T11:57:08Z",
-  "original_collected_utc": "2026-10-19T11:57:08Z",
-  "original_collected_run_date": "2026-10-19",
-  "carried_forward_reason": "Today's live fetch failed (<urlopen error Tunnel connection failed: 403 Forbidden>); reusing last verified crawl from 2026-10-19 rather than fabricating fresh data.",
+  "status": "ok",
+  "collected_utc": "2026-10-20T10:51:20Z",
   "source": "evolutionnetzero.com sitemap_index.xml (Yoast SEO)",
   "collection_method": "direct HTTPS fetch, no auth",
   "pages_count": 38,
@@ -25,7 +22,6 @@
     "https://evolutionnetzero.com/case-study-georgian-house-hotel-london/",
     "https://evolutionnetzero.com/case-study-voco-st-davids-cardiff/",
     "https://evolutionnetzero.com/case-study-priest-house-hotel-castle-donington/",
-    "https://evolutionnetzero.com/free-cost-energy-waste-report/",
     "https://evolutionnetzero.com/case-studies/",
     "https://evolutionnetzero.com/commercial-landlord-energy-management/",
     "https://evolutionnetzero.com/commercial-energy-audit/",
@@ -40,13 +36,14 @@
     "https://evolutionnetzero.com/energy-resilience/",
     "https://evolutionnetzero.com/ez-esgpro/",
     "https://evolutionnetzero.com/shower-savings-calculator/",
-    "https://evolutionnetzero.com/remote-energy-assessment/",
     "https://evolutionnetzero.com/green-key-certification-for-hotels/",
     "https://evolutionnetzero.com/carbon-value-calculator/",
     "https://evolutionnetzero.com/energy-monitoring-commercial-buildings/",
     "https://evolutionnetzero.com/commercial-energy-procurement/",
     "https://evolutionnetzero.com/hospitality-energy-management/",
-    "https://evolutionnetzero.com/esos-energy-compliance-support/"
+    "https://evolutionnetzero.com/esos-energy-compliance-support/",
+    "https://evolutionnetzero.com/remote-energy-assessment/",
+    "https://evolutionnetzero.com/free-cost-energy-waste-report/"
   ],
   "posts": [
     "https://evolutionnetzero.com/blog/",
