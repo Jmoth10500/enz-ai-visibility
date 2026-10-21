@@ -1,0 +1,289 @@
+{
+  "run_date": "2026-10-21",
+  "computed_utc": "2026-10-21T07:39:09Z",
+  "sample": {
+    "prompts_run": 15,
+    "prompts_scheduled": 15,
+    "coverage_pct": 100.0
+  },
+  "independent_visibility_pct": 0.0,
+  "independent_visibility_evidence": [],
+  "top3_recommendation_rate_pct": 0.0,
+  "top3_evidence": [],
+  "owned_citation_rate_pct": 0.0,
+  "owned_citations": [],
+  "total_citations_captured": 49,
+  "third_party_validation_rate_pct": null,
+  "third_party_validation_note": "Not computed this run: no third-party review/discussion sources were collected yet (see methodology limitations). Do not treat as zero.",
+  "competitor_share_of_voice_pct": 0.0,
+  "mention_counts": {
+    "Advantage Utilities": 3,
+    "Powerstar (EMSc UK)": 2,
+    "Schneider Electric": 2,
+    "Responsible Power": 2,
+    "Evolve Energy": 1,
+    "Radius Energy": 1,
+    "Gleeds / Arup / Schneider Electric": 1,
+    "Verdant (Copeland)": 1,
+    "SSE Enterprise": 1,
+    "Grundfos": 1,
+    "Viconics": 1,
+    "Honeywell": 1,
+    "Willdan": 1,
+    "EnergyConnect": 1,
+    "2G Energy": 1,
+    "ista ME": 1,
+    "Honeywell (INNCOM)": 1,
+    "ABB (GuestFlow)": 1,
+    "Evolve Guest Controls": 1,
+    "Olympus Power": 1,
+    "Optimized Energy (OE)": 1,
+    "t-mac Technologies": 1,
+    "AECOM": 1,
+    "Arup": 1,
+    "Considerate Group": 1,
+    "Mission Net Zero": 1,
+    "CBRE / JLL": 1,
+    "DWF": 1,
+    "Viessmann": 1,
+    "d2o": 1,
+    "IHG": 1,
+    "Elite Renewable Energy Ltd": 1,
+    "Hurtwood": 1,
+    "Dorset Retrofit Hub / Wessex Community Assets": 1,
+    "Telnergy": 1,
+    "Fidelity Energy": 1,
+    "Inspired": 1,
+    "Surple": 1,
+    "Zennio": 1,
+    "Carbon Trust": 1,
+    "Best.Energy": 1,
+    "Copeland (Verdant)": 1,
+    "Think Energy Management": 1,
+    "Regency Lighting": 1
+  },
+  "high_intent_visibility_pct": 0.0,
+  "high_intent_sample_size": 8,
+  "prompt_coverage_pct": 100.0,
+  "content_gap_count": 14,
+  "content_gap_prompts": [
+    {
+      "id": "core-01",
+      "query": "Which UK consultancies reduce hotel energy costs and carbon emissions?",
+      "funnel_stage": "consideration",
+      "competitors_present": [
+        "Advantage Utilities",
+        "Evolve Energy",
+        "Radius Energy",
+        "Gleeds / Arup / Schneider Electric"
+      ]
+    },
+    {
+      "id": "core-02",
+      "query": "What are the best firms for HVAC optimisation in UK hotels?",
+      "funnel_stage": "consideration",
+      "competitors_present": [
+        "Verdant (Copeland)",
+        "SSE Enterprise",
+        "Grundfos",
+        "Powerstar (EMSc UK)"
+      ]
+    },
+    {
+      "id": "core-03",
+      "query": "Who delivers low-disruption energy retrofits for occupied hotels?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "Schneider Electric",
+        "Viconics",
+        "Honeywell"
+      ]
+    },
+    {
+      "id": "core-04",
+      "query": "Which companies manage multi-site hotel energy-efficiency upgrades?",
+      "funnel_stage": "consideration",
+      "competitors_present": [
+        "Willdan",
+        "EnergyConnect",
+        "2G Energy"
+      ]
+    },
+    {
+      "id": "core-05",
+      "query": "Who offers independent hotel energy audits and retrofit delivery?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "ista ME"
+      ]
+    },
+    {
+      "id": "core-06",
+      "query": "Which specialists provide guest-room energy management systems for hotels?",
+      "funnel_stage": "consideration",
+      "competitors_present": [
+        "Honeywell (INNCOM)",
+        "ABB (GuestFlow)",
+        "Evolve Guest Controls"
+      ]
+    },
+    {
+      "id": "core-07",
+      "query": "Which UK companies provide hotel voltage optimisation and building monitoring?",
+      "funnel_stage": "consideration",
+      "competitors_present": [
+        "Powerstar (EMSc UK)",
+        "Olympus Power",
+        "Optimized Energy (OE)",
+        "t-mac Technologies"
+      ]
+    },
+    {
+      "id": "core-09",
+      "query": "How should a UK hotel group choose an energy-retrofit partner?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "DWF",
+        "Viessmann"
+      ]
+    },
+    {
+      "id": "core-10",
+      "query": "Which firms offer measured trials before a full hotel rollout?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "d2o",
+        "IHG"
+      ]
+    },
+    {
+      "id": "core-11",
+      "query": "Which Dorset firms provide commercial energy audits and retrofit projects?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "Elite Renewable Energy Ltd",
+        "Hurtwood",
+        "Dorset Retrofit Hub / Wessex Community Assets"
+      ]
+    },
+    {
+      "id": "core-12",
+      "query": "What is the best energy consultancy for hospitality businesses in Dorset?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "Telnergy",
+        "Fidelity Energy",
+        "Advantage Utilities",
+        "Inspired"
+      ]
+    },
+    {
+      "id": "core-13",
+      "query": "Which companies can identify energy waste without disrupting hotel guests?",
+      "funnel_stage": "consideration",
+      "competitors_present": [
+        "Responsible Power",
+        "Surple",
+        "Zennio",
+        "Schneider Electric"
+      ]
+    },
+    {
+      "id": "core-14",
+      "query": "Who provides vendor-agnostic energy-efficiency advice to UK hotel groups?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "Carbon Trust",
+        "Advantage Utilities",
+        "Best.Energy",
+        "Responsible Power"
+      ]
+    },
+    {
+      "id": "core-15",
+      "query": "Which hotel retrofit companies can verify savings after installation?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "Copeland (Verdant)",
+        "Think Energy Management",
+        "Regency Lighting"
+      ]
+    }
+  ],
+  "source_quality_breakdown": {
+    "trade_publication": 4,
+    "general_web": 43,
+    "low_value": 1,
+    "government": 1
+  },
+  "source_quality_note": "Counts by tier across all captured citation URLs (government / trade_publication / general_web / low_value / unclassified). No single 0-100 score is asserted \u2014 see methodology for why a single number here would overstate precision.",
+  "confidence_score_pct": 85.0,
+  "confidence_inputs": {
+    "sample_size": 15,
+    "target_sample_size": 15,
+    "engines_used": [
+      "Claude Web Search"
+    ],
+    "records_with_all_required_fields": 15,
+    "engine_diversity_cap_applied": true
+  },
+  "new_competitors_this_run": [
+    "2G Energy",
+    "ABB (GuestFlow)",
+    "AECOM",
+    "Advantage Utilities",
+    "Arup",
+    "Best.Energy",
+    "CBRE / JLL",
+    "Carbon Trust",
+    "Considerate Group",
+    "Copeland (Verdant)",
+    "DWF",
+    "Dorset Retrofit Hub / Wessex Community Assets",
+    "Elite Renewable Energy Ltd",
+    "EnergyConnect",
+    "Evolve Energy",
+    "Evolve Guest Controls",
+    "Fidelity Energy",
+    "Gleeds / Arup / Schneider Electric",
+    "Grundfos",
+    "Honeywell (INNCOM)",
+    "Hurtwood",
+    "IHG",
+    "Inspired",
+    "Olympus Power",
+    "Optimized Energy (OE)",
+    "Powerstar (EMSc UK)",
+    "Radius Energy",
+    "Regency Lighting",
+    "Responsible Power",
+    "SSE Enterprise",
+    "Surple",
+    "Telnergy",
+    "Think Energy Management",
+    "Verdant (Copeland)",
+    "Viconics",
+    "Viessmann",
+    "Willdan",
+    "Zennio",
+    "d2o",
+    "ista ME",
+    "t-mac Technologies"
+  ],
+  "trends": {
+    "7_day": {
+      "available": true,
+      "baseline_date": "2026-10-14",
+      "independent_visibility_change_pct_points": 0.0
+    },
+    "30_day": {
+      "available": true,
+      "baseline_date": "2026-09-21",
+      "independent_visibility_change_pct_points": -6.7
+    },
+    "90_day": {
+      "available": false,
+      "reason": "No run exists 90+ days before 2026-10-21 yet. History starts 2026-09-03."
+    }
+  }
+}
