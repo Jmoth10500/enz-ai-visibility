@@ -1,9 +1,6 @@
 {
-  "status": "carried_forward",
-  "collected_utc": "2026-10-24T10:11:13Z",
-  "original_collected_utc": "2026-10-24T10:11:13Z",
-  "original_collected_run_date": "2026-10-24",
-  "carried_forward_reason": "Today's live fetch failed (<urlopen error Tunnel connection failed: 403 Forbidden>); reusing last verified crawl from 2026-10-24 rather than fabricating fresh data.",
+  "status": "ok",
+  "collected_utc": "2026-10-25T10:35:59Z",
   "source": "evolutionnetzero.com sitemap_index.xml (Yoast SEO)",
   "collection_method": "direct HTTPS fetch, no auth",
   "pages_count": 44,
