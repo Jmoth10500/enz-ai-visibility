@@ -1,0 +1,287 @@
+{
+  "run_date": "2026-10-28",
+  "computed_utc": "2026-10-28T07:38:56Z",
+  "sample": {
+    "prompts_run": 15,
+    "prompts_scheduled": 15,
+    "coverage_pct": 100.0
+  },
+  "independent_visibility_pct": 0.0,
+  "independent_visibility_evidence": [],
+  "top3_recommendation_rate_pct": 0.0,
+  "top3_evidence": [],
+  "owned_citation_rate_pct": 0.0,
+  "owned_citations": [],
+  "total_citations_captured": 53,
+  "third_party_validation_rate_pct": null,
+  "third_party_validation_note": "Not computed this run: no third-party review/discussion sources were collected yet (see methodology limitations). Do not treat as zero.",
+  "competitor_share_of_voice_pct": 0.0,
+  "mention_counts": {
+    "Advantage Utilities": 3,
+    "Schneider Electric": 3,
+    "Evolve Energy": 2,
+    "SensorFlow": 2,
+    "Honeywell": 2,
+    "The Considerate Group": 2,
+    "Inspired Energy": 2,
+    "The Green Consultancy Inc. Limited": 1,
+    "Zero Carbon Services": 1,
+    "Verdant by Copeland": 1,
+    "Powerstar (EMSc UK)": 1,
+    "SPIE UK": 1,
+    "Viconics": 1,
+    "EnergyConnect (BRE Select Hotels & Resorts)": 1,
+    "PGE Energy Services": 1,
+    "Mantis Innovation": 1,
+    "ABB": 1,
+    "Elion": 1,
+    "World Kinect": 1,
+    "INNCOM": 1,
+    "Evolve Guest Controls": 1,
+    "Interel": 1,
+    "EMSc (UK) Ltd / Powerstar": 1,
+    "Olympus Power": 1,
+    "Optimized Energy (OE)": 1,
+    "t-mac Technologies": 1,
+    "Arup": 1,
+    "AECOM": 1,
+    "CBRE": 1,
+    "d2o": 1,
+    "D3x": 1,
+    "Infor": 1,
+    "Elite Renewable Energy Ltd": 1,
+    "PKF Francis Clark": 1,
+    "Dorset Retrofit Hub (Wessex Community Assets)": 1,
+    "Fidelity Energy": 1,
+    "HESS (Hospitality Energy Saving & Sustainability)": 1,
+    "Responsible Power": 1,
+    "Fewton": 1,
+    "Envigilance": 1,
+    "OxMaint": 1,
+    "Environ UK": 1,
+    "Copeland Verdant": 1,
+    "Smart Lighting (NYC)": 1
+  },
+  "high_intent_visibility_pct": 0.0,
+  "high_intent_sample_size": 8,
+  "prompt_coverage_pct": 100.0,
+  "content_gap_count": 13,
+  "content_gap_prompts": [
+    {
+      "id": "core-01",
+      "query": "Which UK consultancies reduce hotel energy costs and carbon emissions?",
+      "funnel_stage": "consideration",
+      "competitors_present": [
+        "Advantage Utilities",
+        "Evolve Energy",
+        "The Green Consultancy Inc. Limited",
+        "Zero Carbon Services"
+      ]
+    },
+    {
+      "id": "core-02",
+      "query": "What are the best firms for HVAC optimisation in UK hotels?",
+      "funnel_stage": "consideration",
+      "competitors_present": [
+        "Verdant by Copeland",
+        "SensorFlow",
+        "Powerstar (EMSc UK)",
+        "SPIE UK"
+      ]
+    },
+    {
+      "id": "core-03",
+      "query": "Who delivers low-disruption energy retrofits for occupied hotels?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "Schneider Electric",
+        "Honeywell",
+        "Viconics"
+      ]
+    },
+    {
+      "id": "core-04",
+      "query": "Which companies manage multi-site hotel energy-efficiency upgrades?",
+      "funnel_stage": "consideration",
+      "competitors_present": [
+        "EnergyConnect (BRE Select Hotels & Resorts)",
+        "PGE Energy Services",
+        "Mantis Innovation",
+        "ABB"
+      ]
+    },
+    {
+      "id": "core-05",
+      "query": "Who offers independent hotel energy audits and retrofit delivery?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "Elion",
+        "World Kinect"
+      ]
+    },
+    {
+      "id": "core-06",
+      "query": "Which specialists provide guest-room energy management systems for hotels?",
+      "funnel_stage": "consideration",
+      "competitors_present": [
+        "Honeywell",
+        "Schneider Electric",
+        "INNCOM",
+        "Evolve Guest Controls",
+        "Interel"
+      ]
+    },
+    {
+      "id": "core-07",
+      "query": "Which UK companies provide hotel voltage optimisation and building monitoring?",
+      "funnel_stage": "consideration",
+      "competitors_present": [
+        "EMSc (UK) Ltd / Powerstar",
+        "Olympus Power",
+        "Optimized Energy (OE)",
+        "t-mac Technologies"
+      ]
+    },
+    {
+      "id": "core-10",
+      "query": "Which firms offer measured trials before a full hotel rollout?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "d2o",
+        "D3x",
+        "Infor"
+      ]
+    },
+    {
+      "id": "core-11",
+      "query": "Which Dorset firms provide commercial energy audits and retrofit projects?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "Elite Renewable Energy Ltd",
+        "PKF Francis Clark",
+        "Dorset Retrofit Hub (Wessex Community Assets)"
+      ]
+    },
+    {
+      "id": "core-12",
+      "query": "What is the best energy consultancy for hospitality businesses in Dorset?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "Fidelity Energy",
+        "Advantage Utilities",
+        "HESS (Hospitality Energy Saving & Sustainability)",
+        "Inspired Energy"
+      ]
+    },
+    {
+      "id": "core-13",
+      "query": "Which companies can identify energy waste without disrupting hotel guests?",
+      "funnel_stage": "consideration",
+      "competitors_present": [
+        "Responsible Power",
+        "Fewton",
+        "Envigilance",
+        "OxMaint"
+      ]
+    },
+    {
+      "id": "core-14",
+      "query": "Who provides vendor-agnostic energy-efficiency advice to UK hotel groups?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "Inspired Energy",
+        "The Considerate Group",
+        "Evolve Energy",
+        "Environ UK",
+        "Advantage Utilities"
+      ]
+    },
+    {
+      "id": "core-15",
+      "query": "Which hotel retrofit companies can verify savings after installation?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "SensorFlow",
+        "Copeland Verdant",
+        "Schneider Electric",
+        "Smart Lighting (NYC)"
+      ]
+    }
+  ],
+  "source_quality_breakdown": {
+    "trade_publication": 2,
+    "general_web": 47,
+    "government": 1,
+    "low_value": 3
+  },
+  "source_quality_note": "Counts by tier across all captured citation URLs (government / trade_publication / general_web / low_value / unclassified). No single 0-100 score is asserted \u2014 see methodology for why a single number here would overstate precision.",
+  "confidence_score_pct": 85.0,
+  "confidence_inputs": {
+    "sample_size": 15,
+    "target_sample_size": 15,
+    "engines_used": [
+      "Claude Web Search"
+    ],
+    "records_with_all_required_fields": 15,
+    "engine_diversity_cap_applied": true
+  },
+  "new_competitors_this_run": [
+    "ABB",
+    "AECOM",
+    "Advantage Utilities",
+    "Arup",
+    "CBRE",
+    "Copeland Verdant",
+    "D3x",
+    "Dorset Retrofit Hub (Wessex Community Assets)",
+    "EMSc (UK) Ltd / Powerstar",
+    "Elion",
+    "Elite Renewable Energy Ltd",
+    "EnergyConnect (BRE Select Hotels & Resorts)",
+    "Envigilance",
+    "Environ UK",
+    "Evolve Energy",
+    "Evolve Guest Controls",
+    "Fewton",
+    "Fidelity Energy",
+    "HESS (Hospitality Energy Saving & Sustainability)",
+    "INNCOM",
+    "Infor",
+    "Inspired Energy",
+    "Interel",
+    "Mantis Innovation",
+    "Olympus Power",
+    "Optimized Energy (OE)",
+    "OxMaint",
+    "PGE Energy Services",
+    "PKF Francis Clark",
+    "Powerstar (EMSc UK)",
+    "Responsible Power",
+    "SPIE UK",
+    "Smart Lighting (NYC)",
+    "The Considerate Group",
+    "The Green Consultancy Inc. Limited",
+    "Verdant by Copeland",
+    "Viconics",
+    "World Kinect",
+    "Zero Carbon Services",
+    "d2o",
+    "t-mac Technologies"
+  ],
+  "trends": {
+    "7_day": {
+      "available": true,
+      "baseline_date": "2026-10-21",
+      "independent_visibility_change_pct_points": 0.0
+    },
+    "30_day": {
+      "available": true,
+      "baseline_date": "2026-09-28",
+      "independent_visibility_change_pct_points": -6.7
+    },
+    "90_day": {
+      "available": false,
+      "reason": "No run exists 90+ days before 2026-10-28 yet. History starts 2026-09-03."
+    }
+  }
+}
