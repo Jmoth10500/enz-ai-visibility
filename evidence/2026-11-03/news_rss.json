@@ -1,55 +1,172 @@
 {
-  "collected_utc": "2026-11-03T07:38:03Z",
+  "collected_utc": "2026-11-03T13:32:22Z",
   "source_engine": "Google News RSS",
   "collection_method": "direct RSS fetch, no auth, no key",
-  "queries": [],
-  "gdelt": [],
-  "unavailable_sources": [
+  "queries": [
     {
-      "source": "evolutionnetzero.com sitemap",
-      "status": "carried_forward",
-      "reason": "Today's live fetch failed (<urlopen error Tunnel connection failed: 403 Forbidden>); reusing last verified crawl from 2026-11-02 rather than fabricating fresh data."
+      "query": "\"Evolution NetZero\"",
+      "url": "https://news.google.com/rss/search?q=%22Evolution%20NetZero%22&hl=en-GB&gl=GB&ceid=GB:en",
+      "result_count": 0,
+      "titles": []
     },
     {
-      "source": "Google News RSS (\"Evolution NetZero\")",
-      "status": "unavailable this run",
-      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      "query": "hotel energy retrofit UK",
+      "url": "https://news.google.com/rss/search?q=hotel%20energy%20retrofit%20UK&hl=en-GB&gl=GB&ceid=GB:en",
+      "result_count": 78,
+      "titles": [
+        "Pubs, restaurants and hotels slash bills with energy saving tool - GOV.UK",
+        "Investors sold on operational efficiency but not the green premium - Hospitality Investor",
+        "Travelodge: Saving \u00a33m on Energy Costs | SMS - sms-solutions.com",
+        "Energy use in Europe\u2019s buildings rises 5% since 2021, with UK the most energy intensive - Property Week",
+        "Hotel industry caught in the global push for energy efficiency - Hotel Management Network",
+        "Retrofitting historic stock requires a pragmatic approach - MODUS | RICS",
+        "Studio Egret West submits 767-home Edgware scheme including pub retrofit - The Architects\u2019 Journal",
+        "Gold Standard: Leonardo Hotels achieves top Green Tourism status across entire portfolio - hotel magazine",
+        "Eco Providers named Octopus Energy Trusted Partner of the Year - Lancashire Telegraph",
+        "CASE STUDY: How a Hammersmith hotel went energy efficient - London Borough of Hammersmith &amp; Fulham",
+        "Energy Management In The Hospitality Market Size &amp; Forecast - Market Growth Reports",
+        "Hospitality\u2019s high-tech strategy for water and energy efficiency - Financial Times",
+        "Global real estate outlook mid-year update - JLL",
+        "How smart buildings are revolutionising the hotel sector - www.howdengroup.com",
+        "Sustainability in the hospitality industry - Deloitte",
+        "A hotel stay with sustainability in mind - Savills",
+        "Building the Case for Net Zero: Retrofitting Office Buildings - UK Green Building Council",
+        "Canal water to heat some of Liverpool\u2019s most famous buildings in hi-tech carbon-cutting scheme - Liverpool City Region Combined Authority",
+        "Brampton Court - Torbay Council",
+        "Britain\u2019s hospitality sector to save \u00a33 million under new scheme - GOV.UK",
+        "Clean Heat: Financing the transition - Energy UK",
+        "Energy efficiency advice on offer at Winter Warmer event - Liverpool Express",
+        "Hotel recognised with international award for its commitment to sustainability - Great British Life",
+        "UK Net Zero Carbon Buildings Standard: What architects need to know about verification - RIBA",
+        "Retrofitting and refurbishing \u2013 the hidden figures - Construction Management Magazine",
+        "Dataset on occupant behavior, indoor environment, and energy use before and after dormitory retrofit - Nature",
+        "From grassroots sport to supermarkets, E.ON Control Solutions is helping make new energy work - E.ON UK",
+        "Three experts on the best ways to retrofit housing - MODUS | RICS",
+        "European assets report increased ESG interest - MODUS | RICS",
+        "Gloucester business premises rank third in the UK for energy efficiency - SoGlos",
+        "How to supercharge the world\u2019s small and midsize buildings - Financial Times",
+        "How UAE is legislating to decarbonise buildings - MODUS | RICS",
+        "How can NABERS advance energy efficiency in commercial buildings? - elementallondon.show",
+        "Why hoteliers should look beyond EPC ratings when creating a \u2018green\u2019 hotel - Savills",
+        "Retrofitting your care home: The long-term impact on sustainability and values - Christie &amp; Co",
+        "Part L in practice: Bridging energy efficiency design and building control - Planning, Building &amp; Construction Today",
+        "Energy efficiency: an uncertain certainty - Savills",
+        "Sustainability remains a key driver for European real estate investors - JLL",
+        "\u2018Collapse of green energy firm left my home in ruins\u2019 - The Telegraph",
+        "Energy efficiency changes for rental properties \u2013 deadline pushed back to 2030 - Simply Business",
+        "Jakarta solidifies climate leadership with new energy and water efficiency in buildings regulations and a showcase of green buildings - C40 Cities",
+        "Making Energy Greener proud to be recognised in two categories at 2025 Energy Efficiency Awards - Stand Up For Southport",
+        "Adaptation 2025: Field Data Confirms CO\u2082 Heat Pump-Chiller Efficiency in Hotel in Goa, India - NaturalRefrigerants.com",
+        "London\u2019s former US Embassy is reborn as an opulent hotel - RIBA Journal",
+        "Brampton House opens as Torbay Council launches first \u2018Hotels to Homes\u2019 social rent apartments - Torbay Weekly",
+        "Landlords warned heat pumps won\u2019t improve energy efficiency ratings - The Telegraph",
+        "Radisson Advances Net Zero Ambitions - THP News",
+        "Biltmore - Hotel - Carrier",
+        "Inconsistent standards make it difficult to compare the energy efficiency of buildings in Europe - ASSETPHYSICS",
+        "RSM: Scotland\u2019s hotel performance holds up, but uncertainty ahead amid geopolitical tensions - Scottish Financial News",
+        "News | Inside Meli\u00e1 Hotels International's sustainability journey - CoStar",
+        "The importance of ESG in hospitality: a strategic guide for hotels - BE News",
+        "Sustainable technologies: How smart hotels reduce environmental impact - Hospitality Net",
+        "Loans in focus: Blackstone refinances nine PBSA assets, lender club provides \u00a3450m for luxury London hotel, Generali finances Madrid's Four Seasons with \u20ac330m - pei-privaterealestate.com",
+        "First Eco Hotel Of Its Kind With Seaviews Coming To Yorkshire - The Yorkshireman",
+        "Runswick Bay hotel to be transformed into a UK first featuring 'design-led rooms and stunning views' - Teesside Live",
+        "Spotlight: UK Care Home Development 2023 - Savills",
+        "Universal Gas Solutions success at Energy Efficiency Awards - Luton Today",
+        "Court Catering ushers in a new era of kitchen efficiency for top hotel - Catering Insight",
+        "How Oxford United\u2019s all-electric stadium was designed - Construction Management Magazine",
+        "Marriott hotels using energy demand reduction to cut carbon footprint - The Guardian",
+        "Z Hotels' Leicester Square Property Hits the Market for \u00a342m - Hotel News Resource",
+        "How hotels are adapting to the EU and UK Accessibility Laws - Yahoo Finance",
+        "The judicial paralysis in Maspalomas is driving millions of TUI tourists to Vietnam, Bhutan and the Eastern Mediterranean - Maspalomas 24h",
+        "Heat Pumps and TRVs \u2013 What installers need to know - Installer Online",
+        "Green light for hotel conversion of listed warehouse in Edinburgh\u2019s UNESCO World Heritage Site - Building Design",
+        "Hotsat-1 satellite launched to identify energy inefficient buildings - Dezeen",
+        "Solar deck tech cuts fuel use on bulk carriers - The Engineer",
+        "Top 10: Greenest Buildings - Construction Digital",
+        "Raising The Standard: Orms retrofits Camden Council offices into hotel - The Architects\u2019 Journal",
+        "UK's first Mareno M Series suite fitted at The Mount Somerset - Foodservice Equipment Journal",
+        "The refurbished Best Oasis Tropical hotel in Almer\u00eda will reopen in June - spaintravelnews.co.uk",
+        "Energy efficiency specialist Robin Thom scoops Energy Efficiency Consultant of the year awards - Installer Online",
+        "Old hotel and pub to get 'high quality' extension despite objections - Liverpool Echo",
+        "Cooling with less carbon - Modern Building Services",
+        "ABB\u2013Arkitech collaboration delivers significant HVAC efficiency gains for MSC Magnifica - ABB",
+        "Energy Efficiency Workshop Held For Hotels - Bernews",
+        "CDL sees $28m in savings from energy-efficient measures at eight office buildings - The Straits Times"
+      ]
     },
     {
-      "source": "Google News RSS (hotel energy retrofit UK)",
-      "status": "unavailable this run",
-      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      "query": "hotel HVAC optimisation",
+      "url": "https://news.google.com/rss/search?q=hotel%20HVAC%20optimisation&hl=en-GB&gl=GB&ceid=GB:en",
+      "result_count": 10,
+      "titles": [
+        "Menara Astra Pioneers AI HVAC Optimisation in Jakarta - Colliers",
+        "Energy Management In The Hospitality Market Size &amp; Forecast - Market Growth Reports",
+        "Unlocking efficiency in hotel cooling with smarter HVAC strategies - Hotelier Middle East",
+        "Hotel Tech-in: The AI-powered HVAC system cutting costs for hoteliers - Hotel Dive",
+        "Why Hotels Can\u2019t Afford a Passive Approach to Energy - Sustainability Magazine",
+        "How Smart Hotels Leverage IoT Tech to Optimize Energy Consumption, Reduce Waste and Boost Guest Loyalty - Hotel Technology News",
+        "How technology is revolutionising UAE hospitality - Gulf News",
+        "How hoteliers can optimize operations through design - Hotel Dive",
+        "How a five-star hotel is using technology to deliver on the difficult task of sustainable luxury - Scroll.in",
+        "Energy efficiency through HVAC systems - Hotelier India"
+      ]
     },
     {
-      "source": "Google News RSS (hotel HVAC optimisation)",
-      "status": "unavailable this run",
-      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      "query": "hotel decarbonisation UK",
+      "url": "https://news.google.com/rss/search?q=hotel%20decarbonisation%20UK&hl=en-GB&gl=GB&ceid=GB:en",
+      "result_count": 14,
+      "titles": [
+        "From data to decarbonisation: A roadmap for hotels to reach net zero - sms-solutions.com",
+        "Pubs, restaurants and hotels slash bills with energy saving tool - GOV.UK",
+        "Why hotel industry must get sustainability right - MODUS | RICS",
+        "Becoming a sustainable hotel, B&amp;B, or guest house - British Business Bank",
+        "Sustainability in the hospitality industry - Deloitte",
+        "Accelerating decarbonisation across the UK housing sector with the Department for Energy Security and Net Zero - Turner &amp; Townsend",
+        "Whitbread gains SBTi validation and reinforces commitment to net zero with detailed transition plan - Whitbread PLC",
+        "Britain\u2019s hospitality sector to save \u00a33 million under new scheme - GOV.UK",
+        "Canal water to heat some of Liverpool\u2019s most famous buildings in hi-tech carbon-cutting scheme - Liverpool City Region Combined Authority",
+        "Hotel of Mum and Dad? Co-residence with parents among those aged 25\u201334 - IFS | Institute for Fiscal Studies",
+        "Retrofitting university estates: what can be learnt from other industries? - Willmott Dixon",
+        "Dr Vincent Walsh named director of decarbonisation at Levy UK + Ireland - The Caterer",
+        "Insights for a brighter way - JLL",
+        "Sustainable carbon credits strategy for the hospitality industry - Deloitte"
+      ]
     },
     {
-      "source": "Google News RSS (hotel decarbonisation UK)",
-      "status": "unavailable this run",
-      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      "query": "SensorFlow hotel",
+      "url": "https://news.google.com/rss/search?q=SensorFlow%20hotel&hl=en-GB&gl=GB&ceid=GB:en",
+      "result_count": 9,
+      "titles": [
+        "The Singaporean Startup Creating IoT Solutions to Transform the Energy Industry - Hive Life Magazine",
+        "SensorFlow utilizes cleantech to help hotels stay afloat during COVID-19: Startup Stories - KrASIA",
+        "Energy automation startup gets funding for global expansion - TNGlobal",
+        "SensorFlow provides smart energy management for hotels in Malaysia - Digital News Asia",
+        "Sensorflow expands into Malaysia - The Malaysian Reserve",
+        "7 smart innovations from Southeast Asia to speed up the energy transition - Eco-Business",
+        "SensorFlow Raises US$8.3 Million in Series A+ Funding to - GlobeNewswire",
+        "Ultima Asia Technology Expands Market Presence With Opening of Singapore Office | - Hotel Technology News",
+        "SensorFlow raises US$2.7mil in Series A funding - Digital News Asia"
+      ]
     },
     {
-      "source": "Google News RSS (SensorFlow hotel)",
-      "status": "unavailable this run",
-      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      "query": "Telnergy",
+      "url": "https://news.google.com/rss/search?q=Telnergy&hl=en-GB&gl=GB&ceid=GB:en",
+      "result_count": 0,
+      "titles": []
     },
     {
-      "source": "Google News RSS (Telnergy)",
-      "status": "unavailable this run",
-      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
-    },
-    {
-      "source": "Google News RSS (Envigilance hotel)",
-      "status": "unavailable this run",
-      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
-    },
-    {
-      "source": "GDELT DOC 2.0 API (\"Evolution NetZero\")",
-      "status": "unavailable this run",
-      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>",
-      "action": "Retry next scheduled run. Do not substitute an estimate."
+      "query": "Envigilance hotel",
+      "url": "https://news.google.com/rss/search?q=Envigilance%20hotel&hl=en-GB&gl=GB&ceid=GB:en",
+      "result_count": 0,
+      "titles": []
     }
-  ]
+  ],
+  "gdelt": [
+    {
+      "query": "\"Evolution NetZero\"",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=%22Evolution%20NetZero%22&mode=artlist&maxrecords=20&format=json&sort=datedesc",
+      "articles": []
+    }
+  ],
+  "unavailable_sources": []
 }
