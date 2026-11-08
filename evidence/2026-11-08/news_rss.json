@@ -1,54 +1,111 @@
 {
-  "collected_utc": "2026-11-08T07:38:18Z",
+  "collected_utc": "2026-11-08T12:41:06Z",
   "source_engine": "Google News RSS",
   "collection_method": "direct RSS fetch, no auth, no key",
-  "queries": [],
+  "queries": [
+    {
+      "query": "\"Evolution NetZero\"",
+      "url": "https://news.google.com/rss/search?q=%22Evolution%20NetZero%22&hl=en-GB&gl=GB&ceid=GB:en",
+      "result_count": 0,
+      "titles": []
+    },
+    {
+      "query": "hotel energy retrofit UK",
+      "url": "https://news.google.com/rss/search?q=hotel%20energy%20retrofit%20UK&hl=en-GB&gl=GB&ceid=GB:en",
+      "result_count": 22,
+      "titles": [
+        "IAAF conference to bring energy efficiency and retrofit sector together - Installer Online",
+        "Pubs, restaurants and hotels slash bills with energy saving tool - GOV.UK",
+        "Travelodge: Saving \u00a33m on Energy Costs | SMS - sms-solutions.com",
+        "Hotel industry caught in the global push for energy efficiency - Hotel Management Network",
+        "Scotts Hotel Killarney invests in energy retrofit with SEAI grant support - Irish Hotel News",
+        "Accelerating decarbonisation across the UK housing sector with the Department for Energy Security and Net Zero - Turner &amp; Townsend",
+        "Sparking Change: How to make clean heat cheaper and accelerate electrification - Energy UK",
+        "Sustainability in the hospitality industry - Deloitte",
+        "Building the Case for Net Zero: Retrofitting Office Buildings - UK Green Building Council",
+        "First all-electric Premier Inn hotel powered entirely by renewables opens in Swindon - Whitbread PLC",
+        "Why hotel industry must get sustainability right - MODUS | RICS",
+        "Brampton Court - Torbay Council",
+        "Britain\u2019s hospitality sector to save \u00a33 million under new scheme - GOV.UK",
+        "Transforming Towns Investment Breathes New Life into Historic Cambrian Hotel, Aberystwyth - Ceredigion County Council",
+        "What can we expect from the upcoming changes to Minimum Energy Efficiency Standards? - CBRE",
+        "Why hoteliers should look beyond EPC ratings when creating a \u2018green\u2019 hotel - Savills",
+        "Sustainability remains a key driver for European real estate investors - JLL",
+        "Energy efficiency changes for rental properties \u2013 deadline pushed back to 2030 - Simply Business",
+        "How UAE is legislating to decarbonise buildings - MODUS | RICS",
+        "Electric heating: Key to meeting minimum energy efficiency standards (MEES) and protecting asset values - CBRE",
+        "Sustainability and ESG Adoption in the Hotel Industry: A Global Status Update - CBRE",
+        "Marriott hotels using energy demand reduction to cut carbon footprint - The Guardian"
+      ]
+    },
+    {
+      "query": "hotel HVAC optimisation",
+      "url": "https://news.google.com/rss/search?q=hotel%20HVAC%20optimisation&hl=en-GB&gl=GB&ceid=GB:en",
+      "result_count": 10,
+      "titles": [
+        "Menara Astra Pioneers AI HVAC Optimisation in Jakarta - Colliers",
+        "Unlocking efficiency in hotel cooling with smarter HVAC strategies - Hotelier Middle East",
+        "Hotel Tech-in: The AI-powered HVAC system cutting costs for hoteliers - Hotel Dive",
+        "EEA appoints PURE AALTO as Engineering Partner and launches Hospitality Engineering Forum - Hospitality Net",
+        "Why Hotels Can\u2019t Afford a Passive Approach to Energy - Sustainability Magazine",
+        "Energy Management In The Hospitality Market Size &amp; Forecast - Market Growth Reports",
+        "How technology is revolutionising UAE hospitality - Gulf News",
+        "How hoteliers can optimize operations through design - Hotel Dive",
+        "How a five-star hotel is using technology to deliver on the difficult task of sustainable luxury - Scroll.in",
+        "Energy efficiency through HVAC systems - Hotelier India"
+      ]
+    },
+    {
+      "query": "hotel decarbonisation UK",
+      "url": "https://news.google.com/rss/search?q=hotel%20decarbonisation%20UK&hl=en-GB&gl=GB&ceid=GB:en",
+      "result_count": 10,
+      "titles": [
+        "Pubs, restaurants and hotels slash bills with energy saving tool - GOV.UK",
+        "From data to decarbonisation: A roadmap for hotels to reach net zero - sms-solutions.com",
+        "Why hotel industry must get sustainability right - MODUS | RICS",
+        "Sustainability in the hospitality industry - Deloitte",
+        "Whitbread gains SBTi validation and reinforces commitment to net zero with detailed transition plan - Whitbread PLC",
+        "Britain\u2019s hospitality sector to save \u00a33 million under new scheme - GOV.UK",
+        "Canal water to heat some of Liverpool\u2019s most famous buildings in hi-tech carbon-cutting scheme - Liverpool City Region Combined Authority",
+        "Hotel of Mum and Dad? Co-residence with parents among those aged 25\u201334 - IFS | Institute for Fiscal Studies",
+        "Retrofitting university estates: what can be learnt from other industries? - Willmott Dixon",
+        "Dr Vincent Walsh named director of decarbonisation at Levy UK + Ireland - The Caterer"
+      ]
+    },
+    {
+      "query": "SensorFlow hotel",
+      "url": "https://news.google.com/rss/search?q=SensorFlow%20hotel&hl=en-GB&gl=GB&ceid=GB:en",
+      "result_count": 8,
+      "titles": [
+        "The Singaporean Startup Creating IoT Solutions to Transform the Energy Industry - Hive Life Magazine",
+        "Energy automation startup gets funding for global expansion - TNGlobal",
+        "SensorFlow raises US$2.7mil in Series A funding - Digital News Asia",
+        "Sensorflow expands into Malaysia - The Malaysian Reserve",
+        "7 smart innovations from Southeast Asia to speed up the energy transition - Eco-Business",
+        "SensorFlow Raises US$8.3 Million in Series A+ Funding to - GlobeNewswire",
+        "Ultima Asia Technology Expands Market Presence With Opening of Singapore Office | - Hotel Technology News",
+        "SensorFlow provides smart energy management for hotels in Malaysia - Digital News Asia"
+      ]
+    },
+    {
+      "query": "Telnergy",
+      "url": "https://news.google.com/rss/search?q=Telnergy&hl=en-GB&gl=GB&ceid=GB:en",
+      "result_count": 0,
+      "titles": []
+    },
+    {
+      "query": "Envigilance hotel",
+      "url": "https://news.google.com/rss/search?q=Envigilance%20hotel&hl=en-GB&gl=GB&ceid=GB:en",
+      "result_count": 0,
+      "titles": []
+    }
+  ],
   "gdelt": [],
   "unavailable_sources": [
     {
-      "source": "evolutionnetzero.com sitemap",
-      "status": "carried_forward",
-      "reason": "Today's live fetch failed (<urlopen error Tunnel connection failed: 403 Forbidden>); reusing last verified crawl from 2026-11-07 rather than fabricating fresh data."
-    },
-    {
-      "source": "Google News RSS (\"Evolution NetZero\")",
-      "status": "unavailable this run",
-      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
-    },
-    {
-      "source": "Google News RSS (hotel energy retrofit UK)",
-      "status": "unavailable this run",
-      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
-    },
-    {
-      "source": "Google News RSS (hotel HVAC optimisation)",
-      "status": "unavailable this run",
-      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
-    },
-    {
-      "source": "Google News RSS (hotel decarbonisation UK)",
-      "status": "unavailable this run",
-      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
-    },
-    {
-      "source": "Google News RSS (SensorFlow hotel)",
-      "status": "unavailable this run",
-      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
-    },
-    {
-      "source": "Google News RSS (Telnergy)",
-      "status": "unavailable this run",
-      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
-    },
-    {
-      "source": "Google News RSS (Envigilance hotel)",
-      "status": "unavailable this run",
-      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
-    },
-    {
       "source": "GDELT DOC 2.0 API (\"Evolution NetZero\")",
       "status": "unavailable this run",
-      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "reason": "HTTP Error 429: Too Many Requests",
       "action": "Retry next scheduled run. Do not substitute an estimate."
     }
   ]
