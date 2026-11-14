@@ -1,0 +1,322 @@
+{
+  "run_date": "2026-11-14",
+  "run_timestamp_utc": "2026-11-14T07:35:00Z",
+  "collection_method": "Claude Code WebSearch tool (Brave Search-backed), live interactive query, one query per prompt, first-page results only",
+  "engine_label": "Claude Web Search",
+  "engine_caveat": "This is Claude's own grounded web search (a general web index), not a direct query to ChatGPT, Gemini, Copilot or Perplexity. No free API access exists to those engines, so this audit does not claim to represent them. See methodology.",
+  "prompt_bank_version": "core-15-v1",
+  "records": [
+    {
+      "id": "core-01",
+      "query": "Which UK consultancies reduce hotel energy costs and carbon emissions?",
+      "funnel_stage": "consideration",
+      "date_time_utc": "2026-11-14T07:35:00Z",
+      "source_engine": "Claude Web Search",
+      "result_type": "AI-synthesized answer with cited web sources",
+      "enz_mentioned": false,
+      "enz_recommendation_position": null,
+      "enz_url_cited": null,
+      "competitors_mentioned": [
+        {"name": "Advantage Utilities", "url": "https://www.pulse.bot/hotels/news/consultancy-of-the-year-winners-advantage-utilities-delivers-500000-in-energy-savings-for-uk-leading-74de0c14-afb4-498f-b49f-ac0056cc6e0f", "role": "energy consultancy (hotel sector)"},
+        {"name": "SMS Energy", "url": "https://www.smsenergy.com/?p=1087", "role": "decarbonisation consultancy"},
+        {"name": "Focus Group", "url": "https://focusgroup.co.uk/industries/hospitality/hospitality-energy-services", "role": "independent energy consultancy"},
+        {"name": "Inspired plc", "url": "https://inspiredplc.co.uk/insights/case-studies/hotel-and-spa-circuit-level-monitoring/", "role": "energy monitoring consultancy"}
+      ],
+      "sentiment_context": "neutral, vendor-marketing dominated listing",
+      "evidence_excerpt": "one of the UK's leading independent energy consultancies, offering hospitality energy services",
+      "confidence": "high",
+      "notes": "ENZ absent. Recurring names (Advantage Utilities, SMS Energy) match earlier runs; all savings figures are vendor self-reported and unaudited."
+    },
+    {
+      "id": "core-02",
+      "query": "What are the best firms for HVAC optimisation in UK hotels?",
+      "funnel_stage": "consideration",
+      "date_time_utc": "2026-11-14T07:36:00Z",
+      "source_engine": "Claude Web Search",
+      "result_type": "AI-synthesized answer with cited web sources",
+      "enz_mentioned": false,
+      "enz_recommendation_position": null,
+      "enz_url_cited": null,
+      "competitors_mentioned": [
+        {"name": "Optimised Buildings", "url": "https://www.wates.co.uk/wp-content/uploads/2022/09/149420780_12192645_1536350.pdf", "role": "HVAC optimisation (multi-sector incl. hotels)"},
+        {"name": "SSE Energy Solutions", "url": "https://sseenergysolutions.co.uk/file/london_marriot", "role": "energy solutions provider"},
+        {"name": "Smartcool", "url": "https://www.smartcool.net/case-studies/uk-hotel-chain", "role": "HVAC optimisation technology"},
+        {"name": "i-acs Controls", "url": "https://controls.i-acs.co.uk/hospitality", "role": "HVAC controls platform"}
+      ],
+      "sentiment_context": "neutral, no independent ranking found",
+      "evidence_excerpt": "Smartcool...reports £86,181 Annual Energy Savings without replacing functioning equipment",
+      "confidence": "high",
+      "notes": "No authoritative 'best firms' list exists; results are all vendor-published case studies."
+    },
+    {
+      "id": "core-03",
+      "query": "Who delivers low-disruption energy retrofits for occupied hotels?",
+      "funnel_stage": "decision",
+      "date_time_utc": "2026-11-14T07:37:00Z",
+      "source_engine": "Claude Web Search",
+      "result_type": "AI-synthesized answer with cited web sources",
+      "enz_mentioned": false,
+      "enz_recommendation_position": null,
+      "enz_url_cited": null,
+      "competitors_mentioned": [
+        {"name": "Franklin Energy", "url": "https://www.franklinenergy.com/hotel-energy-management", "role": "hotel energy retrofit installer"},
+        {"name": "Verdant (Copeland)", "url": "https://verdant.copeland.com/?p=136401", "role": "HVAC controls technology supplier"},
+        {"name": "Catalyst Power", "url": "https://lodgingmagazine.com/?p=126015", "role": "energy-as-a-service / CHP installer"},
+        {"name": "EDC", "url": "https://edc-wine.vercel.app/insights/how-edc-delivered-a-high-performance-energy-retrofit-for-clayton-hotels", "role": "retrofit delivery contractor"}
+      ],
+      "sentiment_context": "neutral",
+      "evidence_excerpt": "installation takes under 15 minutes per room with no downtime required",
+      "confidence": "medium",
+      "notes": "No single definitive provider named. Repeated content-gap: 'low-disruption retrofit for occupied hotels' is core to ENZ's own positioning but ENZ does not surface here, consistent with the 2026-09-03 baseline finding on this exact prompt."
+    },
+    {
+      "id": "core-04",
+      "query": "Which companies manage multi-site hotel energy-efficiency upgrades?",
+      "funnel_stage": "consideration",
+      "date_time_utc": "2026-11-14T07:38:00Z",
+      "source_engine": "Claude Web Search",
+      "result_type": "AI-synthesized answer with cited web sources",
+      "enz_mentioned": false,
+      "enz_recommendation_position": null,
+      "enz_url_cited": null,
+      "competitors_mentioned": [
+        {"name": "Budderfly", "url": "https://www.citybiz.co/?p=893877", "role": "energy-as-a-service provider"},
+        {"name": "Ameresco", "url": "https://smartenergydecisions.com/blog/2024/02/14/outrigger-kauai-beach-resort-and-spas-energy-efficiency-upgrades", "role": "energy efficiency contractor"},
+        {"name": "Schneider Electric", "url": "https://www.se.com/in/en/work/campaign/life-is-on/case-study/hilton.jsp", "role": "technology manufacturer"},
+        {"name": "Verdigris", "url": "https://verdigris.co/case-studies/orchard-hotel-group-case-study", "role": "monitoring / M&V provider"}
+      ],
+      "sentiment_context": "neutral",
+      "evidence_excerpt": "provides all the capital required and oversees every step of hotel upgrades",
+      "confidence": "high",
+      "notes": "No ranked or market-share list surfaced; all evidence is vendor-published case studies with self-reported savings."
+    },
+    {
+      "id": "core-05",
+      "query": "Who offers independent hotel energy audits and retrofit delivery?",
+      "funnel_stage": "decision",
+      "date_time_utc": "2026-11-14T07:39:00Z",
+      "source_engine": "Claude Web Search",
+      "result_type": "AI-synthesized answer with cited web sources",
+      "enz_mentioned": false,
+      "enz_recommendation_position": null,
+      "enz_url_cited": null,
+      "competitors_mentioned": [
+        {"name": "Engie Impact", "url": "https://www.engieimpact.com/insights/hotels-check-energy-savings-energy-audits", "role": "third-party energy audit firm"},
+        {"name": "CX Associates", "url": "https://www.cx-associates.com/hospitality-energy-management", "role": "energy incentive / programme support"},
+        {"name": "EcoGreenHotel", "url": "https://www.hotelexecutive.com/newswire/20231/firms-offer-free-on-site-environmental-audits", "role": "audit + financing (vendor-sponsored)"}
+      ],
+      "sentiment_context": "neutral, flags conflict-of-interest risk in vendor-sponsored free audits",
+      "evidence_excerpt": "paying a little more to have your audit performed by an independent third party",
+      "confidence": "medium",
+      "notes": "No firm clearly does both independent audit and retrofit delivery in one; same content-gap identified in the 2026-09-03 baseline run."
+    },
+    {
+      "id": "core-06",
+      "query": "Which specialists provide guest-room energy management systems for hotels?",
+      "funnel_stage": "consideration",
+      "date_time_utc": "2026-11-14T07:40:00Z",
+      "source_engine": "Claude Web Search",
+      "result_type": "AI-synthesized answer with cited web sources",
+      "enz_mentioned": false,
+      "enz_recommendation_position": null,
+      "enz_url_cited": null,
+      "competitors_mentioned": [
+        {"name": "Honeywell (INNCOM)", "url": "https://buildings.honeywell.com/us/en/brands/our-brands/hospitality/hospitality-and-guestroom", "role": "technology manufacturer"},
+        {"name": "Dutco Tennant", "url": "https://www.dutcotennant.com/inncom-premium", "role": "technology distributor"},
+        {"name": "ASSA ABLOY", "url": "https://www.accomnews.com.au/?p=85182", "role": "technology supplier"}
+      ],
+      "sentiment_context": "neutral, product-led",
+      "evidence_excerpt": "built a 40-year reputation for delivering world class energy management and IoT solutions",
+      "confidence": "high",
+      "notes": "SensorFlow (on the original watch-list, recurring in earlier runs) did not surface this run; Honeywell/INNCOM dominated instead."
+    },
+    {
+      "id": "core-07",
+      "query": "Which UK companies provide hotel voltage optimisation and building monitoring?",
+      "funnel_stage": "consideration",
+      "date_time_utc": "2026-11-14T07:41:00Z",
+      "source_engine": "Claude Web Search",
+      "result_type": "AI-synthesized answer with cited web sources",
+      "enz_mentioned": false,
+      "enz_recommendation_position": null,
+      "enz_url_cited": null,
+      "competitors_mentioned": [
+        {"name": "Powerstar (EMSc UK)", "url": "https://modbs.co.uk/news/fullstory.php/aid/16806/Optimising_voltage__in_the_hotel_sector.html", "role": "voltage optimisation manufacturer"},
+        {"name": "Olympus Power", "url": "https://olympuspower.co.uk/?p=260", "role": "voltage optimisation installer"},
+        {"name": "EnergyAce", "url": "https://www.energy-xprt.com/products/energyace-commercial-voltage-optimisation-systems-515666", "role": "voltage optimisation manufacturer"},
+        {"name": "HF Group", "url": "https://hf-group.co.uk/?p=9801", "role": "building services contractor"}
+      ],
+      "sentiment_context": "neutral",
+      "evidence_excerpt": "installed in over 400 Whitbread hotels and restaurants",
+      "confidence": "high",
+      "notes": "Single-technology voltage-optimisation specialists recur, consistent with earlier runs; different role classification from vendor-agnostic consultancy."
+    },
+    {
+      "id": "core-08",
+      "query": "Who can help hotel groups meet ESG and decarbonisation targets?",
+      "funnel_stage": "awareness",
+      "date_time_utc": "2026-11-14T07:42:00Z",
+      "source_engine": "Claude Web Search",
+      "result_type": "AI-synthesized answer with cited web sources",
+      "enz_mentioned": false,
+      "enz_recommendation_position": null,
+      "enz_url_cited": null,
+      "competitors_mentioned": [
+        {"name": "Sustainable Hospitality Alliance", "url": "https://sustainablehospitalityalliance.org/wp-content/uploads/2021/12/Net-Zero-Methodology-for-Hotels-Summary-December-2021.pdf", "role": "industry body"},
+        {"name": "AECOM", "url": "https://publications.aecom.com/sustainable-legacies/projects/esg-performance-and-reporting/", "role": "consultancy"},
+        {"name": "KPMG", "url": "https://kpmg.com/sg/en/campaigns/decarbonisation-journey-of-singapore-hotels.html", "role": "consultancy"}
+      ],
+      "sentiment_context": "neutral, standards/framework-led rather than vendor-led",
+      "evidence_excerpt": "ran a net zero target options assessment and scenario analysis for a European hotel operator",
+      "confidence": "high",
+      "notes": "No commercial vendor-agnostic consultancy surfaced; consistent with the 2026-09-03 baseline finding on this prompt."
+    },
+    {
+      "id": "core-09",
+      "query": "How should a UK hotel group choose an energy-retrofit partner?",
+      "funnel_stage": "decision",
+      "date_time_utc": "2026-11-14T07:43:00Z",
+      "source_engine": "Claude Web Search",
+      "result_type": "AI-synthesized answer with cited web sources",
+      "enz_mentioned": false,
+      "enz_recommendation_position": null,
+      "enz_url_cited": null,
+      "competitors_mentioned": [
+        {"name": "SMS Energy", "url": "https://www.smsenergy.com/?p=1087", "role": "energy services partner"},
+        {"name": "Advantage Utilities", "url": "https://thecaterer.com/all-content/advantage-utilities-recognised-for-500000-energy-savings-at-leading-uk-hotel", "role": "energy consultancy"},
+        {"name": "Mitie", "url": "https://www.mitie.com/?p=2137", "role": "facilities management / installation contractor"}
+      ],
+      "sentiment_context": "neutral, advice-led rather than a vendor comparison",
+      "evidence_excerpt": "hospitality clients need a partner who understands how their buildings work, how their operations flow",
+      "confidence": "high",
+      "notes": "No formal selection framework found; same buyer-guide content-gap flagged in the 2026-09-03 baseline."
+    },
+    {
+      "id": "core-10",
+      "query": "Which firms offer measured trials before a full hotel rollout?",
+      "funnel_stage": "decision",
+      "date_time_utc": "2026-11-14T07:44:00Z",
+      "source_engine": "Claude Web Search",
+      "result_type": "AI-synthesized answer with cited web sources",
+      "enz_mentioned": false,
+      "enz_recommendation_position": null,
+      "enz_url_cited": null,
+      "competitors_mentioned": [
+        {"name": "d2o", "url": "https://www.d2o.com/?p=93001", "role": "operations consultancy (pilot design)"},
+        {"name": "Renascence", "url": "https://www.renascence.io/news/27136/kempinski-pilots-new-customer-experience-concept-in-munich", "role": "CX consultancy"},
+        {"name": "Infor", "url": "https://www.infor.com/blog/hotel-ai-readiness-audit", "role": "technology vendor guidance"}
+      ],
+      "sentiment_context": "neutral; results skewed to AI/hospitality-tech pilots, not energy",
+      "evidence_excerpt": "deliberately tested a new operating approach at three properties before deciding whether it should be taken further",
+      "confidence": "medium",
+      "notes": "Query resolved almost entirely to AI/operations pilots rather than energy retrofit trials. 'Measured trial before rollout' is core to ENZ's delivery model but ENZ does not surface here, matching the 2026-09-03 baseline content-gap."
+    },
+    {
+      "id": "core-11",
+      "query": "Which Dorset firms provide commercial energy audits and retrofit projects?",
+      "funnel_stage": "decision",
+      "date_time_utc": "2026-11-14T07:45:00Z",
+      "source_engine": "Claude Web Search",
+      "result_type": "AI-synthesized answer with cited web sources",
+      "enz_mentioned": false,
+      "enz_recommendation_position": null,
+      "enz_url_cited": null,
+      "competitors_mentioned": [
+        {"name": "Reneweco Solutions", "url": "https://open.endole.co.uk/insight/brand/269985-reneweco-solutions", "role": "EPC / retrofit assessor"},
+        {"name": "Elite Renewable Energy", "url": "https://aecb.net/public-profile/helloelite-renewables-co-uk", "role": "renewable energy installer"},
+        {"name": "Ridgewater Energy", "url": "https://open.endole.co.uk/insight/brand/216821-ridgewater-energy", "role": "Dorset energy firm"},
+        {"name": "Dorset Retrofit Hub Ltd", "url": "https://bringo.co.uk/company/61951321", "role": "retrofit firm"},
+        {"name": "Low Carbon Dorset", "url": "https://www.local.gov.uk/case-studies/dorset-council-low-carbon-dorset-helping-dorsets-businesses-community-groups-and", "role": "public scheme"}
+      ],
+      "sentiment_context": "neutral, mostly directory listings",
+      "evidence_excerpt": "gives free energy-saving advice to help local organisations reduce their carbon emissions and save",
+      "confidence": "medium",
+      "notes": "HIGH-PRIORITY RECURRING GAP: ENZ is Dorset-headquartered and again absent from its own most literal local query — same gap as the 2026-09-03 baseline and the 2026-11-13 briefing's flagged action item."
+    },
+    {
+      "id": "core-12",
+      "query": "What is the best energy consultancy for hospitality businesses in Dorset?",
+      "funnel_stage": "decision",
+      "date_time_utc": "2026-11-14T07:46:00Z",
+      "source_engine": "Claude Web Search",
+      "result_type": "AI-synthesized answer with cited web sources",
+      "enz_mentioned": false,
+      "enz_recommendation_position": null,
+      "enz_url_cited": null,
+      "competitors_mentioned": [
+        {"name": "L2 Energy", "url": "https://www.designingbuildings.co.uk/wiki/User:L2energyuk", "role": "Dorset-based SBEM consultants"},
+        {"name": "Ridgewater Energy", "url": "https://www.bcpcouncil.gov.uk/adult-social-care-and-health/our-adult-social-care-directory/ridgewater-energy", "role": "Dorset energy firm"},
+        {"name": "Advantage Utilities", "url": "https://boutiquehotelnews.com/?p=50820", "role": "hospitality energy consultancy"},
+        {"name": "Consultiv Utilities", "url": "https://consultivutilities.com/services/utility-solutions-for-the-hospitality-industry", "role": "hospitality energy consultancy"},
+        {"name": "Centrica Business Solutions", "url": "https://www.centricabusinesssolutions.com/energy-solutions/industrial-and-commercial/hotels-and-hospitality", "role": "energy solutions provider"}
+      ],
+      "sentiment_context": "neutral, no definitive 'best' found",
+      "evidence_excerpt": "provided the catalyst and expert advice to local organisations",
+      "confidence": "medium",
+      "notes": "HIGH-PRIORITY RECURRING GAP: near-identical to ENZ's own positioning query, ENZ absent again, matching the 2026-09-03 baseline and 2026-11-13 briefing finding on this prompt."
+    },
+    {
+      "id": "core-13",
+      "query": "Which companies can identify energy waste without disrupting hotel guests?",
+      "funnel_stage": "consideration",
+      "date_time_utc": "2026-11-14T07:47:00Z",
+      "source_engine": "Claude Web Search",
+      "result_type": "AI-synthesized answer with cited web sources",
+      "enz_mentioned": false,
+      "enz_recommendation_position": null,
+      "enz_url_cited": null,
+      "competitors_mentioned": [
+        {"name": "Envigilance", "url": "https://envigilance.com/energy-monitoring/hotel-energy-monitoring/", "role": "energy monitoring technology"},
+        {"name": "Verdigris", "url": "https://verdigris.co/verticals/hospitality", "role": "energy monitoring technology"},
+        {"name": "Control4", "url": "https://www.ecmag.com/magazine/articles/article-detail/integrated-systems-room-service-hotels-gain-operational-efficiency-using-automation", "role": "automation technology"},
+        {"name": "Green Scope Solutions", "url": "https://ibtimes.com/green-scope-solutions-founders-how-hotels-can-cut-energy-waste-without-compromising-guest-3774666", "role": "energy consultancy"}
+      ],
+      "sentiment_context": "neutral, technology-led",
+      "evidence_excerpt": "installation is done without disrupting operations or requiring room closures",
+      "confidence": "high",
+      "notes": "Envigilance recurs as dominant technology-supplier competitor on this prompt, consistent with the 2026-09-03 baseline."
+    },
+    {
+      "id": "core-14",
+      "query": "Who provides vendor-agnostic energy-efficiency advice to UK hotel groups?",
+      "funnel_stage": "decision",
+      "date_time_utc": "2026-11-14T07:48:00Z",
+      "source_engine": "Claude Web Search",
+      "result_type": "AI-synthesized answer with cited web sources",
+      "enz_mentioned": false,
+      "enz_recommendation_position": null,
+      "enz_url_cited": null,
+      "competitors_mentioned": [
+        {"name": "Focus Group", "url": "https://focusgroup.co.uk/industries/hospitality/hospitality-energy-services", "role": "energy consultancy (claims independence)"},
+        {"name": "Considerate Group", "url": "https://sustainablehospitalityalliance.org/directory/considerate-group/", "role": "sustainability consultancy"},
+        {"name": "Advantage Utilities", "url": "https://thecaterer.com/all-content/advantage-utilities-recognised-for-500000-energy-savings-at-leading-uk-hotel", "role": "consultancy-led energy partner"},
+        {"name": "Sustainable Energy First", "url": "https://www.schoolsandacademiesshow.co.uk/sustainable-energy-first", "role": "energy & sustainability consultancy"}
+      ],
+      "sentiment_context": "neutral, several firms claim independence but none use the exact term 'vendor-agnostic'",
+      "evidence_excerpt": "works with 20+ suppliers to secure the best contracts for your business",
+      "confidence": "high",
+      "notes": "ENZ did not surface at all on this run. This is the single prompt where ENZ was the lead, position-1 cited result in the 2026-09-03 baseline run; it has not reappeared on this prompt on any run since (including 2026-11-13). Flagged for manual review of evolutionnetzero.com's own positioning/SEO on this exact phrase."
+    },
+    {
+      "id": "core-15",
+      "query": "Which hotel retrofit companies can verify savings after installation?",
+      "funnel_stage": "decision",
+      "date_time_utc": "2026-11-14T07:49:00Z",
+      "source_engine": "Claude Web Search",
+      "result_type": "AI-synthesized answer with cited web sources",
+      "enz_mentioned": false,
+      "enz_recommendation_position": null,
+      "enz_url_cited": null,
+      "competitors_mentioned": [
+        {"name": "Verdigris", "url": "https://medium.com/verdigristech/better-measurement-and-verification-with-verdigris-vfd-retrofit-at-the-orchard-hotel-5c9ba0ccb3a6", "role": "M&V provider"},
+        {"name": "Verdant (Copeland)", "url": "https://verdant.copeland.com/wp-content/uploads/2025/07/Verdant_Transworld_HamptonInn_Woodbridge_Case-Study.pdf", "role": "HVAC controls + M&V"},
+        {"name": "Schneider Electric", "url": "https://blog.se.com/buildings/hotel/2023/12/19/how-a-historic-hotel-embarked-on-its-decarbonization-journey-to-achieve-a-15-energy-reduction-within-6-months", "role": "technology manufacturer"},
+        {"name": "Enertiv", "url": "https://www.enertiv.com/resources/blog/mv-before-retrofit-installation", "role": "M&V methodology / technology"}
+      ],
+      "sentiment_context": "neutral",
+      "evidence_excerpt": "determining the effectiveness of a retrofit, measurement & verification (M&V), is the process",
+      "confidence": "high",
+      "notes": "Direct content-gap match, consistent with the 2026-09-03 baseline: verified-savings M&V evidence is a named ENZ strength on-site but did not surface here."
+    }
+  ]
+}
