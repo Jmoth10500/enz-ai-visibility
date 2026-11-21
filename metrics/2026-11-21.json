@@ -1,0 +1,263 @@
+{
+  "run_date": "2026-11-21",
+  "computed_utc": "2026-11-21T07:39:49Z",
+  "sample": {
+    "prompts_run": 15,
+    "prompts_scheduled": 15,
+    "coverage_pct": 100.0
+  },
+  "independent_visibility_pct": 0.0,
+  "independent_visibility_evidence": [],
+  "top3_recommendation_rate_pct": 0.0,
+  "top3_evidence": [],
+  "owned_citation_rate_pct": 0.0,
+  "owned_citations": [],
+  "total_citations_captured": 41,
+  "third_party_validation_rate_pct": null,
+  "third_party_validation_note": "Not computed this run: no third-party review/discussion sources were collected yet (see methodology limitations). Do not treat as zero.",
+  "competitor_share_of_voice_pct": 0.0,
+  "mention_counts": {
+    "Advantage Utilities": 4,
+    "Schneider Electric": 4,
+    "Verdigris": 2,
+    "Arup": 1,
+    "Wates": 1,
+    "Carrier UK": 1,
+    "i-acs": 1,
+    "Verdant (Copeland)": 1,
+    "Catalyst Power": 1,
+    "Fairbanks Energy Services": 1,
+    "ENGIE Impact": 1,
+    "SOL VISTA": 1,
+    "Think Energy Management": 1,
+    "Honeywell": 1,
+    "ABB": 1,
+    "Powerstar": 1,
+    "Olympus Power": 1,
+    "Inspired plc": 1,
+    "AECOM": 1,
+    "KPMG": 1,
+    "SMS Energy": 1,
+    "Marriott (Testbed programme)": 1,
+    "Renaissance Hotels (Marriott)": 1,
+    "Low Carbon Dorset (Dorset Council)": 1,
+    "Good Eco Group": 1,
+    "Elite Renewable Energy Ltd": 1,
+    "Consultiv Utilities": 1,
+    "Ridgewater Energy": 1,
+    "SensorFlow": 1,
+    "Envigilance": 1,
+    "Grid Dynamics": 1,
+    "Focus Group": 1,
+    "Considerate Group": 1,
+    "Think Energy": 1
+  },
+  "high_intent_visibility_pct": 0.0,
+  "high_intent_sample_size": 8,
+  "prompt_coverage_pct": 100.0,
+  "content_gap_count": 14,
+  "content_gap_prompts": [
+    {
+      "id": "core-01",
+      "query": "Which UK consultancies reduce hotel energy costs and carbon emissions?",
+      "funnel_stage": "consideration",
+      "competitors_present": [
+        "Advantage Utilities",
+        "Arup"
+      ]
+    },
+    {
+      "id": "core-02",
+      "query": "What are the best firms for HVAC optimisation in UK hotels?",
+      "funnel_stage": "consideration",
+      "competitors_present": [
+        "Wates",
+        "Carrier UK",
+        "i-acs"
+      ]
+    },
+    {
+      "id": "core-03",
+      "query": "Who delivers low-disruption energy retrofits for occupied hotels?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "Schneider Electric",
+        "Verdant (Copeland)",
+        "Catalyst Power"
+      ]
+    },
+    {
+      "id": "core-04",
+      "query": "Which companies manage multi-site hotel energy-efficiency upgrades?",
+      "funnel_stage": "consideration",
+      "competitors_present": [
+        "Schneider Electric",
+        "Verdigris",
+        "Fairbanks Energy Services"
+      ]
+    },
+    {
+      "id": "core-05",
+      "query": "Who offers independent hotel energy audits and retrofit delivery?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "ENGIE Impact",
+        "SOL VISTA",
+        "Think Energy Management"
+      ]
+    },
+    {
+      "id": "core-06",
+      "query": "Which specialists provide guest-room energy management systems for hotels?",
+      "funnel_stage": "consideration",
+      "competitors_present": [
+        "Honeywell",
+        "Schneider Electric",
+        "ABB"
+      ]
+    },
+    {
+      "id": "core-07",
+      "query": "Which UK companies provide hotel voltage optimisation and building monitoring?",
+      "funnel_stage": "consideration",
+      "competitors_present": [
+        "Powerstar",
+        "Olympus Power",
+        "Inspired plc"
+      ]
+    },
+    {
+      "id": "core-09",
+      "query": "How should a UK hotel group choose an energy-retrofit partner?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "SMS Energy",
+        "Advantage Utilities"
+      ]
+    },
+    {
+      "id": "core-10",
+      "query": "Which firms offer measured trials before a full hotel rollout?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "Marriott (Testbed programme)",
+        "Renaissance Hotels (Marriott)"
+      ]
+    },
+    {
+      "id": "core-11",
+      "query": "Which Dorset firms provide commercial energy audits and retrofit projects?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "Low Carbon Dorset (Dorset Council)",
+        "Good Eco Group",
+        "Elite Renewable Energy Ltd"
+      ]
+    },
+    {
+      "id": "core-12",
+      "query": "What is the best energy consultancy for hospitality businesses in Dorset?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "Advantage Utilities",
+        "Consultiv Utilities",
+        "Ridgewater Energy"
+      ]
+    },
+    {
+      "id": "core-13",
+      "query": "Which companies can identify energy waste without disrupting hotel guests?",
+      "funnel_stage": "consideration",
+      "competitors_present": [
+        "SensorFlow",
+        "Envigilance",
+        "Grid Dynamics"
+      ]
+    },
+    {
+      "id": "core-14",
+      "query": "Who provides vendor-agnostic energy-efficiency advice to UK hotel groups?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "Focus Group",
+        "Considerate Group",
+        "Advantage Utilities"
+      ]
+    },
+    {
+      "id": "core-15",
+      "query": "Which hotel retrofit companies can verify savings after installation?",
+      "funnel_stage": "decision",
+      "competitors_present": [
+        "Verdigris",
+        "Schneider Electric",
+        "Think Energy"
+      ]
+    }
+  ],
+  "source_quality_breakdown": {
+    "trade_publication": 4,
+    "general_web": 34,
+    "government": 2,
+    "low_value": 1
+  },
+  "source_quality_note": "Counts by tier across all captured citation URLs (government / trade_publication / general_web / low_value / unclassified). No single 0-100 score is asserted \u2014 see methodology for why a single number here would overstate precision.",
+  "confidence_score_pct": 85.0,
+  "confidence_inputs": {
+    "sample_size": 15,
+    "target_sample_size": 15,
+    "engines_used": [
+      "Claude Web Search"
+    ],
+    "records_with_all_required_fields": 15,
+    "engine_diversity_cap_applied": true
+  },
+  "new_competitors_this_run": [
+    "ABB",
+    "AECOM",
+    "Advantage Utilities",
+    "Arup",
+    "Carrier UK",
+    "Catalyst Power",
+    "Considerate Group",
+    "Consultiv Utilities",
+    "ENGIE Impact",
+    "Elite Renewable Energy Ltd",
+    "Envigilance",
+    "Fairbanks Energy Services",
+    "Focus Group",
+    "Good Eco Group",
+    "Grid Dynamics",
+    "Inspired plc",
+    "KPMG",
+    "Low Carbon Dorset (Dorset Council)",
+    "Marriott (Testbed programme)",
+    "Olympus Power",
+    "Powerstar",
+    "Renaissance Hotels (Marriott)",
+    "Ridgewater Energy",
+    "SOL VISTA",
+    "Think Energy",
+    "Think Energy Management",
+    "Verdant (Copeland)",
+    "Verdigris",
+    "Wates",
+    "i-acs"
+  ],
+  "trends": {
+    "7_day": {
+      "available": true,
+      "baseline_date": "2026-11-14",
+      "independent_visibility_change_pct_points": 0.0
+    },
+    "30_day": {
+      "available": true,
+      "baseline_date": "2026-10-22",
+      "independent_visibility_change_pct_points": 0.0
+    },
+    "90_day": {
+      "available": false,
+      "reason": "No run exists 90+ days before 2026-11-21 yet. History starts 2026-09-03."
+    }
+  }
+}
